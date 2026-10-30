@@ -54,7 +54,6 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 4. The Lost Sock — Little Bro hunts for his teal sock; it turns out he's wearing two on one foot.
 5. Mango Mystery — one mango, two brothers; Mom cuts it into a flower.
 6. Kite Day (window set) — the kite gets stuck and the brothers team up.
-7. Copycat Game — Little Bro copies everything Big Bro does; the twist is that Big Bro copies him back.
 8. Brushing Race — tooth-brushing race with a "2 minutes" sparkle timer (healthy-habit moral).
 9. Birthday Surprise — the brothers secretly make a card for Mom (uses the Mom puppet when ready).
 10. Rainy Day Fort — a pillow fort collapses and they rebuild it bigger.
