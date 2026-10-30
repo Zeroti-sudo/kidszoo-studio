@@ -6,6 +6,7 @@ Every daily run reads this before making anything and appends a row per attempt,
 | 27 Oct 2026 | ep001 | balloon pop (manual upload) | — | — | — | YgXSwT-h1C0 | published before automation |
 | 28 Oct 2026 | ep002 | the brothers are hungry (manual upload) | — | — | — | PE_fXnKVx-4 | published before automation |
 | 31 Oct 2026 | ep003 | Big Bro vs Little Bro: The LAST Cupcake! | PASS 13/13 + sheet reviewed | 411632886 | 31 Oct 16:00 | pending | first engine episode |
+| 31 Oct 2026 | ep004 | Big Bro & Little Bro: The Copycat Game! 🪞 #shorts | PASS 13/13 + sheet reviewed (2 rebuilds: bursts moved off faces/edges, camera reframed) | scheduling | 31 Oct 10:00 | pending | daily run; 16:00 slot already held by ep003 |
 
 ## Used concepts (don't repeat)
 - balloon popping challenge (ep001), hungry brothers + Mom's fruit basket (ep002), last cupcake / sharing (ep003)
