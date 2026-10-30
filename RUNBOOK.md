@@ -6,15 +6,16 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 
 | Stage | Status | How it works |
 |---|---|---|
-| Character bible | Done | `kidszoo/character-bible.md`, built from the two published Shorts |
+| Character bible | Done | `CHARACTER_BIBLE.md`, built from the two published Shorts |
 | Script and storyboard | Done | Each episode is one JSON file (`episodes/*.json`): beats, keyframed acting, captions, effects, sound effects, metadata |
 | Animation render | Done, tested | `engine/stage.html` + `engine.js` (SVG puppet rigs). `render.js` renders it frame by frame with headless Chromium into 1080×1920 30 fps H.264. About 60 s per 22 s Short |
 | Music and sound effects | Done, tested | `engine/audio.py`. Original procedural music plus synthesized effects. No samples, so no licensing issues |
 | Edit, mix, loudness | Done, tested | `build.sh`: mux, loudnorm to -14 LUFS / -1.5 dBTP, AAC 192k, faststart |
 | Technical QA | Done, tested | `qa.py`: 13 automatic checks. A failing video is never queued |
 | Visual QA | Done, run by Claude | Contact sheet of 12 stills per episode, checked against the bible before publishing |
-| Publish to YouTube | Connected, not yet tested | Metricool brand 7694204 is linked to Kidszoo (UC9Xdhe1mHcLqcLVzcpvBHhw). `createScheduledPost` needs a public MP4 URL. The hosting choice is still open (see Decisions) |
-| Daily scheduler | Not created yet | Will be a Claude scheduled task that runs a fresh session each day, after the first publish test passes |
+| Publish to YouTube | Scheduling tested | MP4 committed to `videos/`, public raw GitHub URL, then Metricool brand 7694204 (linked to Kidszoo UC9Xdhe1mHcLqcLVzcpvBHhw) `createScheduledPost`. Metricool copies the file at scheduling time. First post: ep003, id 411632886, 31 Oct 16:00 IST |
+| Daily scheduler | Set up | Claude scheduled task runs a fresh session daily at 04:23 IST and follows `CLAUDE.md` → 2 Shorts in the 10:00 and 16:00 IST slots |
+| Repo size | Watch | Each Short is about 5 MB in git history (~300 MB/month). Delete old videos after they're live. Near 1 GB, ask the owner whether to move video hosting elsewhere |
 | Analytics | Available | vidIQ `channel_stats` / `channel_videos` (5 credits each) and Metricool analytics |
 
 ## Why the brothers are rendered in code instead of with AI video
@@ -57,3 +58,6 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 8. Brushing Race — tooth-brushing race with a "2 minutes" sparkle timer (healthy-habit moral).
 9. Birthday Surprise — the brothers secretly make a card for Mom (uses the Mom puppet when ready).
 10. Rainy Day Fort — a pillow fort collapses and they rebuild it bigger.
+
+## Learnings
+(Filled in weekly from real channel numbers.)

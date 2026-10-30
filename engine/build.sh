@@ -10,5 +10,6 @@ echo "== render audio";  python3 "$HERE/audio.py" "$EP" "$OUT/audio.wav"
 echo "== mux + loudness"
 ffmpeg -y -loglevel error -i "$OUT/video.mp4" -i "$OUT/audio.wav" -map 0:v -map 1:a -c:v copy \
   -af "loudnorm=I=-14:TP=-1.5:LRA=11" -c:a aac -b:a 192k -ar 48000 -movflags +faststart -shortest "$OUT/$ID.mp4"
-ffmpeg -y -loglevel error -ss 12.3 -i "$OUT/$ID.mp4" -frames:v 1 -q:v 3 "$OUT/${ID}_thumb.jpg"
+ffmpeg -y -loglevel error -ss 2 -i "$OUT/$ID.mp4" -frames:v 1 -q:v 3 "$OUT/${ID}_thumb.jpg"
 echo "== QA";            python3 "$HERE/qa.py" "$OUT/$ID.mp4" "$EP" | tee "$OUT/qa.json"
+echo "== contact sheet"; python3 "$HERE/sheet.py" "$EP" "$OUT/${ID}_sheet.png"

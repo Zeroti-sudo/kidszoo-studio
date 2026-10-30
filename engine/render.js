@@ -30,7 +30,7 @@ const path = require('path');
   } else {
     const N = Math.round(ep.duration * fps);
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
-      '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-r', String(fps), out], { stdio: ['pipe', 'inherit', 'inherit'] });
+      '-c:v', 'libx264', '-preset', 'medium', '-crf', '22', '-tune', 'animation', '-pix_fmt', 'yuv420p', '-r', String(fps), out], { stdio: ['pipe', 'inherit', 'inherit'] });
     const t0 = Date.now();
     for (let i = 0; i < N; i++) {
       await page.evaluate(t => window.renderAt(t), i / fps);
