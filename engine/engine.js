@@ -160,6 +160,28 @@ const PROPS = {
       <circle cx="0" cy="-40" r="56" fill="#FFE45C" stroke="${OL}" stroke-width="${SW}"/>
       <rect x="-24" y="10" width="48" height="34" rx="6" fill="#9AA5B1" stroke="${OL}" stroke-width="${SW}"/>
       <path d="M-14,-30 Q0,-60 14,-30" stroke="#FF9F1C" stroke-width="7" fill="none" stroke-linecap="round"/></g>`,
+  // bubble wand: grip at the origin (attach to a hand), ring at (0,-140)
+  wand: (p) => { const c = p.color || '#9B5DE5'; return `<g>
+      <rect x="-9" y="-112" width="18" height="122" rx="9" fill="${c}" stroke="${OL}" stroke-width="6"/>
+      <circle cx="0" cy="-140" r="32" fill="#D6F1FF" fill-opacity=".55" stroke="${OL}" stroke-width="22"/>
+      <circle cx="0" cy="-140" r="32" fill="none" stroke="${c}" stroke-width="9"/></g>`; },
+  // soap bubble: radius p.r (default 60) so big bubbles keep the same outline width
+  bubble: (p) => { const r = p.r || 60; return `<g>
+      <circle cx="0" cy="0" r="${r}" fill="#BDE8FF" fill-opacity=".42" stroke="${OL}" stroke-width="6"/>
+      <circle cx="0" cy="0" r="${r - 7}" fill="none" stroke="#FF8FC7" stroke-opacity=".45" stroke-width="5" stroke-dasharray="${(r * 1.2).toFixed(0)} ${(r * 2.2).toFixed(0)}"/>
+      <path d="M${-r * .62},${-r * .2} Q${-r * .55},${-r * .62} ${-r * .18},${-r * .7}" stroke="#FFFFFF" stroke-width="${Math.max(6, r * .13).toFixed(0)}" fill="none" stroke-linecap="round"/>
+      <circle cx="${r * .42}" cy="${r * .4}" r="${Math.max(4, r * .1).toFixed(0)}" fill="#FFFFFF"/></g>`; },
+  // floor cushion, about 192 x 96, centred on the origin; colour p.color
+  pillow: (p) => { const c = p.color || '#1EA7FD'; return `<g>
+      <path d="M-92,-38 Q-100,-52 -84,-48 Q0,-34 84,-48 Q100,-52 92,-38 Q100,0 92,38 Q100,52 84,48 Q0,34 -84,48 Q-100,52 -92,38 Q-100,0 -92,-38 Z" fill="${c}" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M-58,-20 Q0,-10 58,-20" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <circle cx="0" cy="6" r="9" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/></g>`; },
+  // little fort flag: base of the pole at the origin
+  flag: () => `<g>
+      <rect x="-7" y="-176" width="14" height="180" rx="7" fill="#C98A4A" stroke="${OL}" stroke-width="6"/>
+      <path d="M6,-172 L104,-138 L6,-104 Z" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="${starPath(40, -138, 16, 7)}" fill="#E63980"/>
+      <circle cx="0" cy="-180" r="11" fill="#E63980" stroke="${OL}" stroke-width="5"/></g>`,
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
