@@ -58,3 +58,10 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 
 ## Learnings
 (Filled in weekly from real channel numbers.)
+
+### Week ending Sun 1 Nov 2026 (vidIQ, pulled 1 Nov ~04:40 IST)
+Channel: 408 subscribers (0 gained this week), 4 Shorts live. Sample is tiny, so treat these as hunches, not rules.
+- **Best hook:** ep004 Copycat Game ("COPYCAT game!" + both brothers cheering) had 3 views and 1 like after ~24 h, against 1 view and 0 likes for ep003 LAST Cupcake after ~18 h. A playful action hook did a little better than a food/conflict hook so far.
+- **Best theme:** ep001 balloon pop leads with 16 views (4 days live), then ep002 hungry brothers with 6. Simple physical-comedy themes (popping, bouncing) are the early leader; keep Balloon Tower and bubble/pop payoffs in rotation.
+- **Weakest episode:** ep003 LAST Cupcake, 1 view after ~18 h (16:00 slot). Too early to blame the theme; re-check next Sunday whether the 16:00 slot underperforms the 10:00 slot.
+- Note: YouTube currently lists the channel topic as "Video game culture", which doesn't match the content. Consistent kids-cartoon titles and tags should correct it over time.
