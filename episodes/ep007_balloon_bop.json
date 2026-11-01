@@ -1,0 +1,1097 @@
+{
+ "id": "ep007",
+ "title": "Balloon Bop",
+ "theme": "balloons / sharing by playing together / physical comedy",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000,
+   "d": 0
+  },
+  {
+   "t": 7.3,
+   "shake": 7,
+   "d": 0
+  },
+  {
+   "t": 7.6,
+   "shake": 0,
+   "d": 0.3
+  }
+ ],
+ "actors": {
+  "b1": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#E63980",
+   "len": 520,
+   "init": {
+    "x": 540,
+    "y": 1330,
+    "rot": -12,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.1,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 2.55,
+     "attach": "big:R",
+     "ab": 1,
+     "d": 0.25,
+     "layer": "back",
+     "rot": -14
+    },
+    {
+     "t": 7.25,
+     "x": 577,
+     "y": 1010,
+     "d": 0
+    },
+    {
+     "t": 7.25,
+     "ab": 0,
+     "d": 0.2
+    },
+    {
+     "t": 7.26,
+     "x": 420,
+     "y": -500,
+     "rot": -18,
+     "d": 1.6,
+     "e": "in"
+    }
+   ]
+  },
+  "b2": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#1EA7FD",
+   "len": 520,
+   "init": {
+    "x": 540,
+    "y": 1330,
+    "rot": -6,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.18,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 2.6,
+     "attach": "big:R",
+     "ab": 1,
+     "d": 0.25,
+     "layer": "back",
+     "rot": -5
+    },
+    {
+     "t": 7.25,
+     "x": 577,
+     "y": 1010,
+     "d": 0
+    },
+    {
+     "t": 7.25,
+     "ab": 0,
+     "d": 0.2
+    },
+    {
+     "t": 7.26,
+     "x": 600,
+     "y": -500,
+     "rot": 10,
+     "d": 1.6,
+     "e": "in"
+    }
+   ]
+  },
+  "b4": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#FF7828",
+   "len": 520,
+   "init": {
+    "x": 540,
+    "y": 1330,
+    "rot": 6,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.26,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 3.3,
+     "attach": "little:L",
+     "ab": 1,
+     "d": 0.25,
+     "layer": "back",
+     "rot": -2
+    },
+    {
+     "t": 7.25,
+     "x": 620,
+     "y": 1179,
+     "d": 0
+    },
+    {
+     "t": 7.25,
+     "ab": 0,
+     "d": 0.2
+    },
+    {
+     "t": 7.26,
+     "x": 520,
+     "y": -500,
+     "rot": -10,
+     "d": 1.6,
+     "e": "in"
+    }
+   ]
+  },
+  "b5": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#2B60DE",
+   "len": 520,
+   "init": {
+    "x": 540,
+    "y": 1330,
+    "rot": 12,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.34,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 3.35,
+     "attach": "little:L",
+     "ab": 1,
+     "d": 0.25,
+     "layer": "back",
+     "rot": 8
+    },
+    {
+     "t": 7.25,
+     "x": 620,
+     "y": 1179,
+     "d": 0
+    },
+    {
+     "t": 7.25,
+     "ab": 0,
+     "d": 0.2
+    },
+    {
+     "t": 7.26,
+     "x": 720,
+     "y": -500,
+     "rot": 16,
+     "d": 1.6,
+     "e": "in"
+    }
+   ]
+  },
+  "b3": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#FFD13B",
+   "len": 520,
+   "init": {
+    "x": 540,
+    "y": 1330,
+    "rot": 0,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.42,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 11.7,
+     "x": 586,
+     "y": 1562,
+     "rot": -6,
+     "d": 0.9,
+     "layer": "front"
+    },
+    {
+     "t": 12.85,
+     "x": 600,
+     "d": 0.7,
+     "e": "lin",
+     "rot": 4
+    },
+    {
+     "t": 12.85,
+     "y": 1150,
+     "d": 0.35,
+     "e": "out"
+    },
+    {
+     "t": 13.2,
+     "y": 1715,
+     "d": 0.35,
+     "e": "in"
+    },
+    {
+     "t": 13.55,
+     "x": 586,
+     "d": 0.7,
+     "e": "lin",
+     "rot": -4
+    },
+    {
+     "t": 13.55,
+     "y": 1150,
+     "d": 0.35,
+     "e": "out"
+    },
+    {
+     "t": 13.9,
+     "y": 1562,
+     "d": 0.35,
+     "e": "in"
+    },
+    {
+     "t": 14.25,
+     "x": 555,
+     "d": 0.9,
+     "e": "io",
+     "rot": 0
+    },
+    {
+     "t": 14.25,
+     "y": 1300,
+     "d": 0.45,
+     "e": "out"
+    },
+    {
+     "t": 14.7,
+     "y": 1360,
+     "d": 0.45,
+     "e": "io"
+    },
+    {
+     "t": 16.0,
+     "y": 1340,
+     "d": 0.8
+    },
+    {
+     "t": 16.8,
+     "y": 1360,
+     "d": 0.8
+    },
+    {
+     "t": 17.6,
+     "y": 1340,
+     "d": 0.8
+    },
+    {
+     "t": 18.4,
+     "y": 1360,
+     "d": 0.8
+    },
+    {
+     "t": 19.2,
+     "y": 1340,
+     "d": 0.8
+    },
+    {
+     "t": 20.0,
+     "y": 1360,
+     "d": 0.8
+    },
+    {
+     "t": 20.8,
+     "y": 1340,
+     "d": 0.8
+    }
+   ]
+  },
+  "table": {
+   "kind": "prop",
+   "type": "table",
+   "init": {
+    "x": 540,
+    "y": 1330,
+    "layer": "back"
+   }
+  },
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 330,
+    "sc": 1.1,
+    "eyes": "happy",
+    "mouth": "bigO",
+    "look": 1
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "armL": 150,
+     "armR": 150,
+     "d": 0.3,
+     "e": "back",
+     "hop": 30
+    },
+    {
+     "t": 1.8,
+     "armL": 10,
+     "armR": 10,
+     "hop": 0,
+     "d": 0.3,
+     "eyes": "open",
+     "mouth": "grin"
+    },
+    {
+     "t": 2.15,
+     "x": 390,
+     "run": 14,
+     "d": 0.35
+    },
+    {
+     "t": 2.5,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 2.4,
+     "armR": 35,
+     "d": 0.2,
+     "e": "out"
+    },
+    {
+     "t": 2.9,
+     "x": 330,
+     "run": 14,
+     "d": 0.4,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 3.3,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 2.9,
+     "armR": 15,
+     "d": 0.35
+    },
+    {
+     "t": 4.5,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 1
+    },
+    {
+     "t": 5.4,
+     "armL": 35,
+     "d": 0.3
+    },
+    {
+     "t": 6.3,
+     "armL": 10,
+     "d": 0.3
+    },
+    {
+     "t": 6.9,
+     "x": 380,
+     "run": 14,
+     "d": 0.3,
+     "eyes": "open",
+     "brows": "angry",
+     "mouth": "grin"
+    },
+    {
+     "t": 7.2,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 6.9,
+     "armL": 150,
+     "armR": 150,
+     "d": 0.3,
+     "e": "out"
+    },
+    {
+     "t": 7.35,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 8.3,
+     "armL": 10,
+     "armR": 10,
+     "d": 0.4
+    },
+    {
+     "t": 8.7,
+     "eyes": "open",
+     "brows": "worried",
+     "mouth": "sad",
+     "tilt": 5,
+     "d": 0.3
+    },
+    {
+     "t": 10.7,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "tilt": 0,
+     "look": 0
+    },
+    {
+     "t": 11.1,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "grin",
+     "look": 1
+    },
+    {
+     "t": 11.6,
+     "x": 330,
+     "run": 14,
+     "d": 0.4
+    },
+    {
+     "t": 12.0,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 12.7,
+     "armR": 125,
+     "d": 0.15,
+     "e": "out",
+     "jump": 30,
+     "mouth": "bigO"
+    },
+    {
+     "t": 12.95,
+     "jump": 0,
+     "d": 0.2,
+     "e": "in"
+    },
+    {
+     "t": 13.2,
+     "armR": 20,
+     "d": 0.3,
+     "mouth": "smile"
+    },
+    {
+     "t": 14.1,
+     "armR": 125,
+     "d": 0.15,
+     "e": "out",
+     "jump": 30,
+     "mouth": "bigO"
+    },
+    {
+     "t": 14.35,
+     "jump": 0,
+     "d": 0.2,
+     "e": "in"
+    },
+    {
+     "t": 14.6,
+     "armR": 20,
+     "d": 0.3,
+     "mouth": "smile"
+    },
+    {
+     "t": 15.1,
+     "x": 400,
+     "run": 14,
+     "d": 0.4
+    },
+    {
+     "t": 15.5,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 15.6,
+     "armL": 165,
+     "armR": 165,
+     "d": 0.3,
+     "e": "back",
+     "hop": 40,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 17.6,
+     "mouth": "smile"
+    },
+    {
+     "t": 19.3,
+     "hop": 0,
+     "d": 0.2
+    },
+    {
+     "t": 19.6,
+     "hop": 24,
+     "d": 0.2
+    },
+    {
+     "t": 21.5,
+     "hop": 0,
+     "d": 0.3
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 800,
+    "sc": 0.78,
+    "eyes": "happy",
+    "mouth": "bigO",
+    "look": -1
+   },
+   "keys": [
+    {
+     "t": 0.3,
+     "armL": 150,
+     "armR": 150,
+     "d": 0.3,
+     "e": "back",
+     "hop": 36
+    },
+    {
+     "t": 1.9,
+     "armL": 10,
+     "armR": 10,
+     "hop": 0,
+     "d": 0.3,
+     "eyes": "open",
+     "mouth": "grin"
+    },
+    {
+     "t": 2.9,
+     "x": 740,
+     "run": 16,
+     "d": 0.35
+    },
+    {
+     "t": 3.25,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 3.15,
+     "armL": 50,
+     "d": 0.2,
+     "e": "out"
+    },
+    {
+     "t": 3.65,
+     "x": 800,
+     "run": 16,
+     "d": 0.4,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 4.05,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 3.65,
+     "armL": 15,
+     "d": 0.35
+    },
+    {
+     "t": 4.5,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 5.6,
+     "armR": 60,
+     "d": 0.3
+    },
+    {
+     "t": 6.4,
+     "armR": 10,
+     "d": 0.3
+    },
+    {
+     "t": 6.9,
+     "x": 760,
+     "run": 16,
+     "d": 0.3,
+     "eyes": "open",
+     "brows": "angry",
+     "mouth": "grin"
+    },
+    {
+     "t": 7.2,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 6.9,
+     "armL": 150,
+     "armR": 150,
+     "d": 0.3,
+     "e": "out"
+    },
+    {
+     "t": 7.35,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 8.3,
+     "armL": 10,
+     "armR": 10,
+     "d": 0.4
+    },
+    {
+     "t": 8.7,
+     "eyes": "open",
+     "brows": "worried",
+     "mouth": "wobble",
+     "tilt": -7,
+     "sq": 0.95,
+     "d": 0.3
+    },
+    {
+     "t": 11.2,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "O",
+     "tilt": 0,
+     "sq": 1,
+     "look": -1
+    },
+    {
+     "t": 11.6,
+     "x": 800,
+     "run": 16,
+     "d": 0.4,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 12.0,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 13.4,
+     "armL": 125,
+     "d": 0.15,
+     "e": "out",
+     "jump": 30,
+     "mouth": "bigO"
+    },
+    {
+     "t": 13.65,
+     "jump": 0,
+     "d": 0.2,
+     "e": "in"
+    },
+    {
+     "t": 13.9,
+     "armL": 20,
+     "d": 0.3,
+     "mouth": "smile"
+    },
+    {
+     "t": 15.1,
+     "x": 700,
+     "run": 16,
+     "d": 0.4
+    },
+    {
+     "t": 15.5,
+     "run": 0,
+     "d": 0.1
+    },
+    {
+     "t": 15.6,
+     "armL": 165,
+     "armR": 165,
+     "d": 0.3,
+     "e": "back",
+     "hop": 46,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 17.6,
+     "mouth": "smile"
+    },
+    {
+     "t": 19.3,
+     "hop": 0,
+     "d": 0.2
+    },
+    {
+     "t": 19.6,
+     "hop": 30,
+     "d": 0.2
+    },
+    {
+     "t": 21.5,
+     "hop": 0,
+     "d": 0.3
+    }
+   ]
+  },
+  "bulb": {
+   "kind": "prop",
+   "type": "bulb",
+   "init": {
+    "x": 380,
+    "y": 760,
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 10.75,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 11.6,
+     "sc": 0,
+     "d": 0.25,
+     "e": "in"
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.05,
+   "x": 540,
+   "y": 720,
+   "r": 200,
+   "dur": 1.5,
+   "n": 9
+  },
+  {
+   "type": "lines",
+   "t": 7.3,
+   "x": 540,
+   "y": 600,
+   "dir": -1,
+   "dur": 0.7
+  },
+  {
+   "type": "lines",
+   "t": 7.3,
+   "x": 560,
+   "y": 600,
+   "dir": 1,
+   "dur": 0.7
+  },
+  {
+   "type": "sparkle",
+   "t": 10.75,
+   "x": 380,
+   "y": 720,
+   "r": 120,
+   "dur": 1.0,
+   "n": 6,
+   "seed": 5
+  },
+  {
+   "type": "burst",
+   "t": 12.85,
+   "x": 440,
+   "y": 760,
+   "text": "BOP!",
+   "r": 80,
+   "dur": 0.6
+  },
+  {
+   "type": "burst",
+   "t": 13.55,
+   "x": 760,
+   "y": 860,
+   "text": "BOP!",
+   "r": 80,
+   "dur": 0.6,
+   "color": "#1EA7FD",
+   "rot": 8
+  },
+  {
+   "type": "burst",
+   "t": 14.25,
+   "x": 440,
+   "y": 760,
+   "text": "BOP!",
+   "r": 80,
+   "dur": 0.6,
+   "color": "#FF8FC7"
+  },
+  {
+   "type": "sparkle",
+   "t": 15.4,
+   "x": 550,
+   "y": 780,
+   "r": 150,
+   "dur": 1.4,
+   "n": 8,
+   "seed": 9
+  },
+  {
+   "type": "confetti",
+   "t": 15.6,
+   "dur": 4.8,
+   "n": 130
+  },
+  {
+   "type": "hearts",
+   "t": 17.7,
+   "x": 550,
+   "y": 640,
+   "dur": 1.8,
+   "n": 7,
+   "seed": 13,
+   "spread": 160
+  },
+  {
+   "type": "hearts",
+   "t": 19.6,
+   "x": 550,
+   "y": 640,
+   "dur": 2.0,
+   "n": 8,
+   "seed": 21,
+   "spread": 200
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 2.0,
+   "text": "{BALLOON}\nday!",
+   "size": 116,
+   "y": 250
+  },
+  {
+   "t0": 2.1,
+   "t1": 4.4,
+   "text": "Two for {me}...\ntwo for {you}!",
+   "size": 92,
+   "y": 250
+  },
+  {
+   "t0": 4.5,
+   "t1": 6.8,
+   "text": "Who gets the\n{LAST} one?",
+   "size": 100,
+   "y": 250
+  },
+  {
+   "t0": 6.9,
+   "t1": 8.6,
+   "text": "Uh oh...\n{WHOOSH}!",
+   "size": 108,
+   "y": 250
+  },
+  {
+   "t0": 8.7,
+   "t1": 10.6,
+   "text": "Only {ONE}\nleft...",
+   "size": 104,
+   "y": 250
+  },
+  {
+   "t0": 10.7,
+   "t1": 12.6,
+   "text": "Let's {SHARE} it!",
+   "size": 104,
+   "y": 280
+  },
+  {
+   "t0": 12.7,
+   "t1": 15.1,
+   "text": "Keep it {UP}!",
+   "size": 116,
+   "y": 280
+  },
+  {
+   "t0": 15.2,
+   "t1": 17.6,
+   "text": "Sharing is\n{FUN}!",
+   "size": 112,
+   "y": 250
+  },
+  {
+   "t0": 17.7,
+   "t1": 22.0,
+   "text": "Balloon\n{buddies}!",
+   "size": 112,
+   "y": 250
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.1,
+   "type": "pops",
+   "gain": 0.7
+  },
+  {
+   "t": 0.15,
+   "type": "sparkle"
+  },
+  {
+   "t": 0.5,
+   "type": "ding"
+  },
+  {
+   "t": 2.55,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 3.3,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 4.5,
+   "type": "drumroll",
+   "dur": 2.3,
+   "gain": 0.6
+  },
+  {
+   "t": 7.25,
+   "type": "whoosh"
+  },
+  {
+   "t": 7.4,
+   "type": "boing",
+   "gain": 0.6
+  },
+  {
+   "t": 8.8,
+   "type": "sad",
+   "gain": 0.6
+  },
+  {
+   "t": 10.75,
+   "type": "idea"
+  },
+  {
+   "t": 12.85,
+   "type": "boing",
+   "gain": 0.7
+  },
+  {
+   "t": 13.55,
+   "type": "boing",
+   "gain": 0.7
+  },
+  {
+   "t": 14.25,
+   "type": "boing",
+   "gain": 0.7
+  },
+  {
+   "t": 15.4,
+   "type": "tada"
+  },
+  {
+   "t": 15.6,
+   "type": "pops"
+  },
+  {
+   "t": 17.7,
+   "type": "clap"
+  },
+  {
+   "t": 19.6,
+   "type": "sparkle"
+  },
+  {
+   "t": 20.3,
+   "type": "chime"
+  }
+ ],
+ "music": {
+  "bpm": 120,
+  "seed": 7,
+  "gain": 0.42,
+  "fadeOut": 1.2,
+  "duck": [
+   {
+    "t0": 8.7,
+    "t1": 10.6,
+    "gain": 0.5
+   }
+  ]
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: Balloon Bop! 🎈 #shorts",
+  "description": "Balloon day! Big Bro and Little Bro take two balloons each... but who gets the LAST one? They both reach for it and WHOOSH, their balloons float away! Then Big Bro has a fun idea: let's share it and play balloon bop together. A happy Kidszoo cartoon about sharing and playing together.\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #balloons #brothers #sharingiscaring #funnycartoon #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "balloons",
+   "balloon game",
+   "sharing is caring",
+   "kidszoo",
+   "animated shorts",
+   "funny cartoon"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}

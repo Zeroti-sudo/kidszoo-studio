@@ -43,7 +43,7 @@ Source: frame-by-frame analysis of the two published Shorts (YgXSwT-h1C0 "Brothe
 - Comic impact words in starbursts: POP!, BOING!, NOM!, CRUNCH!, CHOMP!
 
 ## Recurring props / FX
-Implemented: table, cupcake (whole/half), tray, idea bulb, "?", bubble wand, soap bubble, floor pillow, fort flag; fx burst, hearts, sparkle, confetti, speed lines.
+Implemented: table, cupcake (whole/half), tray, idea bulb, "?", bubble wand, soap bubble, floor pillow, fort flag, party balloon; fx burst, hearts, sparkle, confetti, speed lines.
 Allowed to add (same style): balloons (magenta `#E63980`, sky `#1EA7FD`, yellow `#FFD13B`, orange `#FF7828`, royal `#2B60DE`), fruit basket and fruits, ball, toy blocks, pillows, kite, bubbles.
 
 ## Known glitches to avoid

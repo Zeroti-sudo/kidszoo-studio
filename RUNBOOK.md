@@ -33,7 +33,7 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 7. Weekly: pull Kidszoo stats and adjust the theme rotation. Never invent numbers.
 
 ## Episode JSON cheat sheet
-- `actors.<id>`: `{kind:"kid", who:"big"|"little", init:{...}, keys:[...]}` or `{kind:"prop", type:"table|cupcake|tray|bulb|question|wand|bubble|pillow|flag", ...}` (wand/pillow take `color`, bubble takes `r`).
+- `actors.<id>`: `{kind:"kid", who:"big"|"little", init:{...}, keys:[...]}` or `{kind:"prop", type:"table|cupcake|tray|bulb|question|wand|bubble|pillow|flag|balloon", ...}` (wand/pillow/balloon take `color`, bubble takes `r`, balloon takes `len` = string length; its origin is the string end, so attach it to a hand).
 - A key `{t, d, e, ...props}` starts at `t` and reaches its values after `d` seconds (default 0.35) with ease `e` (io, out, in, back, lin). Text values (`eyes`, `brows`, `mouth`, `attach`, `layer`) switch at `t`.
 - Kid props: x, y (feet, default 1590), sc (big 1.1, little 0.78), armL/armR (0 = down, 165 = up, negative = across to the mouth), jump, hop (bouncing), run (leg swing), lean, tilt, sq (squash), look (-1/1), eyes (open|happy|wide|closed), brows (normal|up|worried|angry), mouth (grin|smile|O|bigO|sad|flat|wobble|chew).
 - Props: `attach:"big:R"` plus `ab` 0→1 blends the prop into a hand; `layer` back|front.
@@ -48,8 +48,8 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 - Animated, clearly non-realistic content doesn't need YouTube's altered or synthetic disclosure. Re-check if realistic AI footage is ever added.
 
 ## Episode slate (unused)
-1. Balloon Tower — each brother stacks balloons; the tower floats away; they share the last balloon.
-2. Who's Taller? — Little Bro stands on tiptoes, then a cushion; Big Bro kneels to make it a tie.
+1. ~~Balloon Tower~~ (made as ep007 Balloon Bop)
+2. ~~Who's Taller?~~ (made as ep008)
 4. The Lost Sock — Little Bro hunts for his teal sock; it turns out he's wearing two on one foot.
 5. Mango Mystery — one mango, two brothers; Mom cuts it into a flower.
 6. Kite Day (window set) — the kite gets stuck and the brothers team up.

@@ -182,6 +182,12 @@ const PROPS = {
       <path d="M6,-172 L104,-138 L6,-104 Z" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
       <path d="${starPath(40, -138, 16, 7)}" fill="#E63980"/>
       <circle cx="0" cy="-180" r="11" fill="#E63980" stroke="${OL}" stroke-width="5"/></g>`,
+  // party balloon on a string: string end (hand / tie point) at the origin, balloon body centre at (0, -len-84); colour p.color, string length p.len (default 300)
+  balloon: (p) => { const c = p.color || '#E63980', L = p.len || 300; return `<g>
+      <path d="M0,0 Q-16,${(-L * .3).toFixed(0)} 4,${(-L * .55).toFixed(0)} Q22,${(-L * .8).toFixed(0)} 0,${-L}" stroke="${OL}" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M-13,${-L + 3} L13,${-L + 3} L0,${-L - 16} Z" fill="${c}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="${-L - 84}" rx="66" ry="80" fill="${c}" stroke="${OL}" stroke-width="${SW}"/>
+      <path d="M-38,${-L - 112} Q-34,${-L - 146} -8,${-L - 152}" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="12" fill="none" stroke-linecap="round"/></g>`; },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
