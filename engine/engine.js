@@ -188,6 +188,28 @@ const PROPS = {
       <path d="M-13,${-L + 3} L13,${-L + 3} L0,${-L - 16} Z" fill="${c}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>
       <ellipse cx="0" cy="${-L - 84}" rx="66" ry="80" fill="${c}" stroke="${OL}" stroke-width="${SW}"/>
       <path d="M-38,${-L - 112} Q-34,${-L - 146} -8,${-L - 152}" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="12" fill="none" stroke-linecap="round"/></g>`; },
+  // stripy sock: cuff (grip point) at the origin, leg hangs down, toe points +x; colour p.color, stripes p.stripe
+  sock: (p) => { const c = p.color || '#2CA58D', st = p.stripe || '#F5E050'; return `<g>
+      <path d="M-30,0 L30,0 L30,92 Q30,108 48,110 L84,110 Q108,112 108,136 Q108,160 82,160 L4,160 Q-30,160 -30,122 Z" fill="${c}" stroke="${OL}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M-30,34 L30,34 L30,50 L-30,50 Z M-30,68 L30,68 L30,82 L-30,82 Z" fill="${st}" stroke="${OL}" stroke-width="4"/>
+      <path d="M82,112 Q108,112 108,136 Q108,160 82,160 Q92,136 82,112 Z" fill="${st}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>
+      <rect x="-36" y="-14" width="72" height="22" rx="8" fill="#FFFFFF" stroke="${OL}" stroke-width="6"/></g>`; },
+  // toothbrush: handle end (grip point) at the origin, head at (0,-150) with bristles facing +x; colour p.color
+  toothbrush: (p) => { const c = p.color || '#1EA7FD'; return `<g>
+      <rect x="-10" y="-150" width="20" height="160" rx="10" fill="${c}" stroke="${OL}" stroke-width="6"/>
+      <rect x="-4" y="-120" width="8" height="70" rx="4" fill="#FFFFFF" fill-opacity=".6"/>
+      <rect x="10" y="-160" width="26" height="46" rx="5" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/>
+      <path d="M17,-154 L17,-120 M26,-154 L26,-120" stroke="#9FD8F5" stroke-width="5" stroke-linecap="round"/>
+      <ellipse cx="38" cy="-150" rx="16" ry="12" fill="#FFFFFF" stroke="${OL}" stroke-width="4"/></g>`; },
+  // sand timer, about 120 x 200, centred on the origin
+  hourglass: () => `<g>
+      <rect x="-66" y="-104" width="132" height="22" rx="8" fill="#C98A4A" stroke="${OL}" stroke-width="6"/>
+      <rect x="-66" y="82" width="132" height="22" rx="8" fill="#C98A4A" stroke="${OL}" stroke-width="6"/>
+      <path d="M-48,-82 L48,-82 Q48,-30 8,0 Q48,30 48,82 L-48,82 Q-48,30 -8,0 Q-48,-30 -48,-82 Z" fill="#E6F7FF" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-30,-46 L30,-46 Q20,-22 0,-6 Q-20,-22 -30,-46 Z" fill="#FFD13B"/>
+      <path d="M-2,-4 L2,-4 L2,60 L-2,60 Z" fill="#FFD13B"/>
+      <path d="M-40,78 Q0,40 40,78 Z" fill="#FFD13B"/>
+      <path d="M-34,-70 Q-34,-48 -22,-36" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/></g>`,
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
@@ -298,6 +320,11 @@ window.loadEpisode = function (ep) {
 };
 
 function handPoint(kidId, side) {
+  if (side === 'H') { // top of the head (hats, a sock on the head...)
+    const head = $(`${kidId}-head`); if (!head) return null;
+    const p = new DOMPoint(0, -690).matrixTransform($('world').getCTM().inverse().multiply(head.getCTM()));
+    return { x: p.x, y: p.y };
+  }
   const arm = $(`${kidId}-arm${side}`), hand = $(`${kidId}-hand${side}`);
   if (!arm || !hand) return null;
   const m = $('world').getCTM().inverse().multiply(hand.getCTM());

@@ -151,6 +151,11 @@ def sfx(kind, dur=None):
             s = int(h * SR); out[s:s + len(g)] += g * (0.25 + 0.5 * i / len(hits))
         c = clap() * 1.2; s = int(d * SR); out[s:s + len(c)] += c[:len(out) - s]
         return out
+    if kind == 'scrub':  # brushing teeth: soft swishy noise, back and forth
+        d = dur or 1.5; t = tt(d)
+        n = bp(rng.standard_normal(len(t)), 2500, 9000)
+        am = 0.35 + 0.65 * np.abs(np.sin(2 * np.pi * 3.5 * t))
+        return n * am * np.minimum(1, np.minimum(t / 0.05, (d - t) / 0.1)) * 0.35
     raise ValueError('unknown sfx ' + kind)
 
 
