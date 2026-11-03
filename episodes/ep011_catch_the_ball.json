@@ -1,0 +1,946 @@
+{
+ "id": "ep011",
+ "title": "Catch the Ball",
+ "theme": "practice / keep your eyes on the ball / encouragement",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "z": 1.28,
+   "cx": 540,
+   "cy": 1250,
+   "d": 0
+  },
+  {
+   "t": 1.8,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000,
+   "d": 0.5
+  },
+  {
+   "t": 3.4,
+   "z": 1.6,
+   "cx": 740,
+   "cy": 1280,
+   "d": 0.4
+  },
+  {
+   "t": 4.9,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000,
+   "d": 0.4
+  },
+  {
+   "t": 13.0,
+   "z": 1.5,
+   "cx": 620,
+   "cy": 1250,
+   "d": 0.45
+  },
+  {
+   "t": 13.72,
+   "shake": 5,
+   "d": 0
+  },
+  {
+   "t": 14.0,
+   "shake": 0,
+   "d": 0
+  },
+  {
+   "t": 15.6,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000,
+   "d": 0.5
+  }
+ ],
+ "actors": {
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 280,
+    "sc": 1.1,
+    "armR": 40,
+    "eyes": "happy",
+    "brows": "up",
+    "mouth": "grin",
+    "look": 1
+   },
+   "keys": [
+    {
+     "t": 1.9,
+     "eyes": "open",
+     "brows": "normal",
+     "mouth": "grin"
+    },
+    {
+     "t": 2.0,
+     "armR": 15,
+     "d": 0.3
+    },
+    {
+     "t": 2.3,
+     "armR": 125,
+     "d": 0.2,
+     "e": "out"
+    },
+    {
+     "t": 2.7,
+     "armR": 25,
+     "d": 0.4
+    },
+    {
+     "t": 3.3,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O"
+    },
+    {
+     "t": 3.9,
+     "brows": "worried",
+     "mouth": "flat",
+     "eyes": "open"
+    },
+    {
+     "t": 5.0,
+     "armR": 80,
+     "d": 0.3,
+     "e": "back",
+     "eyes": "happy",
+     "brows": "up",
+     "mouth": "smile"
+    },
+    {
+     "t": 6.3,
+     "armR": 40,
+     "d": 0.3,
+     "eyes": "open",
+     "brows": "normal",
+     "mouth": "grin"
+    },
+    {
+     "t": 6.8,
+     "armR": 15,
+     "d": 0.3
+    },
+    {
+     "t": 7.1,
+     "armR": 125,
+     "d": 0.2,
+     "e": "out"
+    },
+    {
+     "t": 7.5,
+     "armR": 25,
+     "d": 0.4
+    },
+    {
+     "t": 8.1,
+     "eyes": "wide",
+     "mouth": "O",
+     "brows": "up"
+    },
+    {
+     "t": 8.8,
+     "brows": "worried",
+     "mouth": "flat",
+     "eyes": "open"
+    },
+    {
+     "t": 9.4,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO",
+     "look": 0,
+     "armL": 125,
+     "d": 0.3,
+     "e": "back"
+    },
+    {
+     "t": 10.3,
+     "armL": 15,
+     "d": 0.3,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile",
+     "look": 1
+    },
+    {
+     "t": 10.4,
+     "armR": 40,
+     "d": 0.3
+    },
+    {
+     "t": 11.9,
+     "armR": 15,
+     "d": 0.3,
+     "eyes": "open",
+     "brows": "normal",
+     "mouth": "grin"
+    },
+    {
+     "t": 12.2,
+     "armR": 120,
+     "d": 0.25,
+     "e": "out"
+    },
+    {
+     "t": 12.6,
+     "armR": 20,
+     "d": 0.4
+    },
+    {
+     "t": 13.6,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO"
+    },
+    {
+     "t": 14.0,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "armL": 165,
+     "armR": 165,
+     "d": 0.3,
+     "e": "back",
+     "hop": 40
+    },
+    {
+     "t": 16.6,
+     "hop": 45,
+     "d": 0.2,
+     "mouth": "bigO"
+    },
+    {
+     "t": 19.4,
+     "mouth": "smile",
+     "hop": 25,
+     "d": 0.2
+    },
+    {
+     "t": 21.5,
+     "hop": 0,
+     "d": 0.3
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 810,
+    "sc": 0.78,
+    "armL": 20,
+    "eyes": "wide",
+    "brows": "up",
+    "mouth": "O",
+    "look": -1
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "hop": 20,
+     "d": 0.2
+    },
+    {
+     "t": 1.8,
+     "hop": 0,
+     "d": 0.2
+    },
+    {
+     "t": 2.2,
+     "armL": 70,
+     "armR": 70,
+     "d": 0.25,
+     "mouth": "grin",
+     "look": 0
+    },
+    {
+     "t": 2.6,
+     "jump": 95,
+     "d": 0.22,
+     "e": "out",
+     "armL": 160,
+     "armR": 160
+    },
+    {
+     "t": 2.82,
+     "jump": 0,
+     "d": 0.22,
+     "e": "in"
+    },
+    {
+     "t": 3.45,
+     "eyes": "wide",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 3.8,
+     "armL": 15,
+     "armR": 15,
+     "d": 0.3,
+     "eyes": "open",
+     "brows": "worried",
+     "mouth": "sad",
+     "tilt": -6
+    },
+    {
+     "t": 5.6,
+     "eyes": "happy",
+     "brows": "up",
+     "mouth": "smile",
+     "tilt": 0,
+     "hop": 16
+    },
+    {
+     "t": 6.3,
+     "hop": 0,
+     "d": 0.2
+    },
+    {
+     "t": 6.7,
+     "eyes": "closed",
+     "brows": "worried",
+     "mouth": "wobble",
+     "sq": 0.92,
+     "armL": -45,
+     "armR": -45,
+     "d": 0.3,
+     "tilt": -5
+    },
+    {
+     "t": 8.2,
+     "eyes": "open",
+     "mouth": "O",
+     "sq": 1,
+     "armL": 15,
+     "armR": 15,
+     "d": 0.3,
+     "tilt": 0,
+     "look": -1
+    },
+    {
+     "t": 8.7,
+     "mouth": "wobble",
+     "brows": "worried"
+    },
+    {
+     "t": 9.6,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 10.6,
+     "tilt": 8,
+     "d": 0.2
+    },
+    {
+     "t": 10.85,
+     "tilt": -6,
+     "d": 0.2
+    },
+    {
+     "t": 11.1,
+     "tilt": 0,
+     "d": 0.2,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 11.8,
+     "armL": 70,
+     "d": 0.3,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "grin",
+     "look": -1
+    },
+    {
+     "t": 12.6,
+     "look": 0
+    },
+    {
+     "t": 13.3,
+     "look": -1
+    },
+    {
+     "t": 13.7,
+     "armL": 60,
+     "d": 0.1
+    },
+    {
+     "t": 13.82,
+     "armL": 70,
+     "d": 0.15
+    },
+    {
+     "t": 14.0,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "brows": "normal",
+     "armL": 125,
+     "armR": 150,
+     "d": 0.3,
+     "e": "back",
+     "jump": 110
+    },
+    {
+     "t": 14.3,
+     "jump": 0,
+     "d": 0.25,
+     "e": "in"
+    },
+    {
+     "t": 14.6,
+     "hop": 30,
+     "d": 0.2
+    },
+    {
+     "t": 16.6,
+     "hop": 40,
+     "d": 0.2
+    },
+    {
+     "t": 19.4,
+     "mouth": "smile",
+     "hop": 26,
+     "d": 0.2
+    },
+    {
+     "t": 21.5,
+     "hop": 0,
+     "d": 0.3
+    }
+   ]
+  },
+  "bulb": {
+   "kind": "prop",
+   "type": "bulb",
+   "init": {
+    "x": 280,
+    "y": 740,
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 9.4,
+     "sc": 0.9,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 11.4,
+     "sc": 0,
+     "d": 0.25,
+     "e": "in"
+    }
+   ]
+  },
+  "ball": {
+   "kind": "prop",
+   "type": "ball",
+   "r": 46,
+   "color": "#E63980",
+   "band": "#FFD13B",
+   "init": {
+    "attach": "big:R",
+    "ab": 1,
+    "oy": -40,
+    "ox": 0,
+    "sc": 0,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 0.1,
+     "sc": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 2.42,
+     "x": 549,
+     "y": 1043,
+     "d": 0,
+     "ab": 0
+    },
+    {
+     "t": 2.42,
+     "x": 600,
+     "d": 0.5300000000000002,
+     "e": "lin"
+    },
+    {
+     "t": 2.42,
+     "y": 640,
+     "d": 0.5300000000000002,
+     "e": "out"
+    },
+    {
+     "t": 2.95,
+     "x": 650,
+     "d": 0.5,
+     "e": "lin"
+    },
+    {
+     "t": 2.95,
+     "y": 1650,
+     "d": 0.5,
+     "e": "in"
+    },
+    {
+     "t": 3.45,
+     "rot": -200,
+     "d": 1.0,
+     "e": "lin"
+    },
+    {
+     "t": 3.45,
+     "y": 1480,
+     "d": 0.3,
+     "e": "out"
+    },
+    {
+     "t": 3.75,
+     "y": 1650,
+     "d": 0.3,
+     "e": "in"
+    },
+    {
+     "t": 3.45,
+     "x": 600,
+     "d": 0.6,
+     "e": "lin"
+    },
+    {
+     "t": 4.05,
+     "x": 440,
+     "d": 1.1,
+     "e": "out"
+    },
+    {
+     "t": 4.05,
+     "rot": -520,
+     "d": 1.1,
+     "e": "out"
+    },
+    {
+     "t": 5.4,
+     "attach": "big:R",
+     "oy": -40,
+     "ox": 0,
+     "ab": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 7.22,
+     "x": 549,
+     "y": 1040,
+     "d": 0,
+     "ab": 0
+    },
+    {
+     "t": 7.22,
+     "x": 600,
+     "d": 0.5,
+     "e": "lin"
+    },
+    {
+     "t": 7.22,
+     "y": 700,
+     "d": 0.5,
+     "e": "out"
+    },
+    {
+     "t": 7.72,
+     "x": 660,
+     "d": 0.39999999999999947,
+     "e": "lin"
+    },
+    {
+     "t": 7.72,
+     "y": 1650,
+     "d": 0.39999999999999947,
+     "e": "in"
+    },
+    {
+     "t": 8.12,
+     "y": 1500,
+     "d": 0.28,
+     "e": "out"
+    },
+    {
+     "t": 8.4,
+     "y": 1650,
+     "d": 0.28,
+     "e": "in"
+    },
+    {
+     "t": 8.12,
+     "x": 610,
+     "d": 0.56,
+     "e": "lin"
+    },
+    {
+     "t": 8.68,
+     "x": 440,
+     "d": 1.0,
+     "e": "out"
+    },
+    {
+     "t": 8.12,
+     "rot": -760,
+     "d": 1.6,
+     "e": "out"
+    },
+    {
+     "t": 10.5,
+     "attach": "big:R",
+     "ab": 1,
+     "d": 0.35,
+     "e": "back"
+    },
+    {
+     "t": 12.35,
+     "x": 555,
+     "y": 1055,
+     "d": 0,
+     "ab": 0
+    },
+    {
+     "t": 12.35,
+     "x": 600,
+     "d": 0.5999999999999996,
+     "e": "lin"
+    },
+    {
+     "t": 12.35,
+     "y": 780,
+     "d": 0.5999999999999996,
+     "e": "out"
+    },
+    {
+     "t": 12.95,
+     "x": 612,
+     "d": 0.75,
+     "e": "lin"
+    },
+    {
+     "t": 12.95,
+     "y": 1302,
+     "d": 0.75,
+     "e": "in"
+    },
+    {
+     "t": 12.35,
+     "rot": -1100,
+     "d": 1.35,
+     "e": "lin"
+    },
+    {
+     "t": 13.7,
+     "attach": "little:L",
+     "ab": 1,
+     "d": 0.06,
+     "oy": -40,
+     "ox": -6
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.05,
+   "x": 549,
+   "y": 1050,
+   "r": 110,
+   "dur": 1.5,
+   "n": 7
+  },
+  {
+   "type": "burst",
+   "t": 3.45,
+   "x": 520,
+   "y": 1520,
+   "text": "BOING!",
+   "r": 105,
+   "dur": 0.8,
+   "color": "#1EA7FD"
+  },
+  {
+   "type": "burst",
+   "t": 8.12,
+   "x": 560,
+   "y": 1470,
+   "text": "BOING!",
+   "r": 100,
+   "dur": 0.8,
+   "color": "#FF7828",
+   "rot": 8
+  },
+  {
+   "type": "sparkle",
+   "t": 9.4,
+   "x": 280,
+   "y": 700,
+   "r": 120,
+   "dur": 1.2,
+   "n": 6,
+   "seed": 5
+  },
+  {
+   "type": "lines",
+   "t": 12.4,
+   "x": 470,
+   "y": 800,
+   "dir": -1,
+   "dur": 0.5
+  },
+  {
+   "type": "burst",
+   "t": 13.72,
+   "x": 560,
+   "y": 820,
+   "text": "CATCH!",
+   "r": 100,
+   "dur": 1.0,
+   "color": "#FFD13B"
+  },
+  {
+   "type": "sparkle",
+   "t": 13.72,
+   "x": 612,
+   "y": 1272,
+   "r": 100,
+   "dur": 1.2,
+   "n": 8,
+   "seed": 9
+  },
+  {
+   "type": "hearts",
+   "t": 14.6,
+   "x": 550,
+   "y": 1250,
+   "dur": 1.8,
+   "n": 8,
+   "seed": 13,
+   "spread": 160
+  },
+  {
+   "type": "confetti",
+   "t": 16.6,
+   "dur": 4.8,
+   "n": 120
+  },
+  {
+   "type": "hearts",
+   "t": 19.4,
+   "x": 545,
+   "y": 1200,
+   "dur": 1.8,
+   "n": 9,
+   "seed": 21,
+   "spread": 200
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.8,
+   "text": "Can Little Bro\n{CATCH} it?",
+   "size": 100
+  },
+  {
+   "t0": 2.0,
+   "t1": 3.3,
+   "text": "Ready... {THROW}!",
+   "size": 100
+  },
+  {
+   "t0": 3.5,
+   "t1": 4.9,
+   "text": "{Oops}! Missed!",
+   "size": 104
+  },
+  {
+   "t0": 5.0,
+   "t1": 6.6,
+   "text": "Try {AGAIN}!",
+   "size": 112
+  },
+  {
+   "t0": 6.8,
+   "t1": 9.2,
+   "text": "Eyes {shut}...\nmissed again!",
+   "size": 96
+  },
+  {
+   "t0": 9.4,
+   "t1": 11.6,
+   "text": "{WATCH} the ball!",
+   "size": 104
+  },
+  {
+   "t0": 12.2,
+   "t1": 13.6,
+   "text": "Look... look...",
+   "size": 100
+  },
+  {
+   "t0": 14.0,
+   "t1": 16.4,
+   "text": "He {CAUGHT} it!",
+   "size": 108
+  },
+  {
+   "t0": 16.6,
+   "t1": 19.2,
+   "text": "{YAY}! Great catch!",
+   "size": 100
+  },
+  {
+   "t0": 19.4,
+   "t1": 22.0,
+   "text": "Keep your {EYES}\non the {BALL}!",
+   "size": 104
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.1,
+   "type": "sparkle"
+  },
+  {
+   "t": 2.0,
+   "type": "drumroll",
+   "dur": 0.4
+  },
+  {
+   "t": 2.4,
+   "type": "whoosh"
+  },
+  {
+   "t": 3.45,
+   "type": "boing"
+  },
+  {
+   "t": 3.9,
+   "type": "sad"
+  },
+  {
+   "t": 5.45,
+   "type": "pop"
+  },
+  {
+   "t": 5.6,
+   "type": "ding"
+  },
+  {
+   "t": 7.2,
+   "type": "whoosh"
+  },
+  {
+   "t": 8.12,
+   "type": "boing"
+  },
+  {
+   "t": 8.4,
+   "type": "pop",
+   "gain": 0.5
+  },
+  {
+   "t": 9.4,
+   "type": "idea"
+  },
+  {
+   "t": 10.55,
+   "type": "pop"
+  },
+  {
+   "t": 12.35,
+   "type": "whoosh"
+  },
+  {
+   "t": 12.4,
+   "type": "drumroll",
+   "dur": 1.2
+  },
+  {
+   "t": 13.72,
+   "type": "pop"
+  },
+  {
+   "t": 13.75,
+   "type": "tada"
+  },
+  {
+   "t": 14.6,
+   "type": "chime"
+  },
+  {
+   "t": 16.6,
+   "type": "pops"
+  },
+  {
+   "t": 16.7,
+   "type": "clap"
+  },
+  {
+   "t": 19.4,
+   "type": "sparkle"
+  },
+  {
+   "t": 19.5,
+   "type": "chime"
+  }
+ ],
+ "music": {
+  "bpm": 118,
+  "seed": 11,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 3.8,
+    "t1": 5.0,
+    "gain": 0.35
+   },
+   {
+    "t0": 8.6,
+    "t1": 9.4,
+    "gain": 0.4
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: Catch the Ball! 🙌 #shorts",
+  "description": "Can Little Bro catch the ball? 🙌 Big Bro throws... OOPS, missed! Eyes shut... missed again! Then Big Bro shares a tip: watch the ball! A happy Kidszoo cartoon about practising, trying again and cheering each other on.\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #brothers #funnycartoon #tryagain #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "catch the ball",
+   "playing catch",
+   "try again",
+   "kidszoo",
+   "animated shorts",
+   "funny cartoon for kids"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}

@@ -210,6 +210,30 @@ const PROPS = {
       <path d="M-2,-4 L2,-4 L2,60 L-2,60 Z" fill="#FFD13B"/>
       <path d="M-40,78 Q0,40 40,78 Z" fill="#FFD13B"/>
       <path d="M-34,-70 Q-34,-48 -22,-36" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/></g>`,
+  // bouncy play ball, centred on the origin, radius p.r (default 48); colour p.color, band p.band
+  ball: (p) => { const r = p.r || 48, c = p.color || '#E63980', b = p.band || '#FFD13B'; return `<g>
+      <circle cx="0" cy="0" r="${r}" fill="${c}"/>
+      <path d="M${-r * .99},${(-r * .16).toFixed(1)} Q0,${(-r * .5).toFixed(1)} ${r * .99},${(-r * .16).toFixed(1)} L${r * .99},${(r * .2).toFixed(1)} Q0,${(-r * .12).toFixed(1)} ${-r * .99},${(r * .2).toFixed(1)} Z" fill="${b}"/>
+      <circle cx="0" cy="0" r="${r}" fill="none" stroke="${OL}" stroke-width="${SW}"/>
+      <path d="M${(-r * .58).toFixed(1)},${(r * .3).toFixed(1)} Q${(-r * .1).toFixed(1)},${(r * .62).toFixed(1)} ${(r * .5).toFixed(1)},${(r * .42).toFixed(1)}" stroke="${OL}" stroke-opacity=".25" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="${(-r * .38).toFixed(1)}" cy="${(-r * .5).toFixed(1)}" rx="${(r * .2).toFixed(1)}" ry="${(r * .12).toFixed(1)}" fill="#FFFFFF" transform="rotate(-30 ${(-r * .38).toFixed(1)} ${(-r * .5).toFixed(1)})"/></g>`; },
+  // toy block (cube), bottom-centre at the origin, edge p.s (default 76); colour p.color, letter p.letter
+  block: (p) => { const s = p.s || 76, h = s / 2, c = p.color || '#1EA7FD', d = s * .22; return `<g>
+      <path d="M${-h},${-s} L${-h + d},${-s - d} L${h + d},${-s - d} L${h},${-s} Z" fill="#FFFFFF" fill-opacity=".55" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M${-h},${-s} L${-h + d},${-s - d} L${h + d},${-s - d} L${h},${-s} Z" fill="${c}" fill-opacity=".55"/>
+      <path d="M${h},${-s} L${h + d},${-s - d} L${h + d},${-d} L${h},0 Z" fill="${c}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M${h},${-s} L${h + d},${-s - d} L${h + d},${-d} L${h},0 Z" fill="#000" fill-opacity=".22"/>
+      <rect x="${-h}" y="${-s}" width="${s}" height="${s}" rx="6" fill="${c}" stroke="${OL}" stroke-width="6"/>
+      <text x="0" y="${(-s * .26).toFixed(1)}" text-anchor="middle" class="cap" font-size="${(s * .66).toFixed(0)}" fill="#FFFFFF" stroke-width="9">${p.letter || ''}</text></g>`; },
+  // toy box, bottom-centre at the origin, 300 wide x 160 tall. Use two actors: part:"back" (layer back, the inside)
+  // and part:"front" (layer front, the front panel); blocks dropped in with layer "back" land between them
+  toybox: (p) => p.part === 'back' ? `<g>
+      <rect x="-134" y="-196" width="268" height="80" rx="12" fill="#1F7A68" stroke="${OL}" stroke-width="${SW}"/>
+      <rect x="-118" y="-180" width="236" height="50" rx="8" fill="#17604F"/></g>` : `<g>
+      <rect x="-140" y="-150" width="280" height="150" rx="16" fill="#2CA58D" stroke="${OL}" stroke-width="${SW}"/>
+      <path d="M-112,-24 L112,-24" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="10" stroke-linecap="round"/>
+      <path d="${starPath(0, -76, 40, 18)}" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="-152" y="-168" width="304" height="30" rx="12" fill="#F5E050" stroke="${OL}" stroke-width="${SW}"/></g>`,
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
