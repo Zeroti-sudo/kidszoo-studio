@@ -14,8 +14,8 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 | Technical QA | Done, tested | `qa.py`: 13 automatic checks. A failing video is never queued |
 | Visual QA | Done, run by Claude | Contact sheet of 12 stills per episode, checked against the bible before publishing |
 | Publish to YouTube | Scheduling tested | MP4 committed to `videos/`, public raw GitHub URL, then Metricool brand 7694204 (linked to Kidszoo UC9Xdhe1mHcLqcLVzcpvBHhw) `createScheduledPost`. Metricool copies the file at scheduling time. First post: ep003, id 411632886, 31 Oct 16:00 IST |
-| Daily scheduler | Set up | Claude scheduled task runs a fresh session daily at 04:23 IST and follows `CLAUDE.md` → 2 Shorts in the 10:00 and 16:00 IST slots |
-| Repo size | Watch | Each Short is about 5 MB in git history (~300 MB/month). Delete old videos after they're live. Near 1 GB, ask the owner whether to move video hosting elsewhere |
+| Daily scheduler | Set up | Claude scheduled task runs a fresh session daily at 04:23 IST and follows `CLAUDE.md` → 4 Shorts in the 10:00, 13:00, 16:00 and 19:00 IST slots (2/day until 4 Nov 2026) |
+| Repo size | Watch | Each Short is about 6 MB in git history (~700 MB/month at 4 a day). Delete old videos after they're live. Near 1 GB, ask the owner whether to move video hosting elsewhere |
 | Analytics | Available | vidIQ `channel_stats` / `channel_videos` (5 credits each) and Metricool analytics |
 
 ## Why the brothers are rendered in code instead of with AI video
@@ -25,7 +25,7 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 
 ## Daily production loop (what the scheduled run does)
 1. Read the bible, this runbook and `production-log.md`, and check Metricool `getScheduledPosts` so nothing is made or posted twice.
-2. Pick 2–4 unused concepts from the slate. Rotate themes; no theme twice in a row.
+2. Pick 4 unused concepts (slate or fresh ideas). Rotate themes; no theme twice in a row.
 3. Write each episode JSON with the story formula: hook (0–2 s) → challenge → funny escalation → warm or surprising payoff → celebration plus a short moral caption. 18–25 s.
 4. `engine/build.sh episodes/<id>.json`. QA must pass, then review the 12-still contact sheet. If anything fails, fix the JSON and rebuild (at most 3 tries), otherwise skip that episode and log it.
 5. Host the MP4, then Metricool `createScheduledPost`: network youtube, type short, `madeForKids: true`, category FILM_ANIMATION, slots in Asia/Calcutta.
