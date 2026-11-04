@@ -1,0 +1,718 @@
+{
+ "id": "ep014",
+ "title": "Hide and Seek",
+ "theme": "hide and seek / peekaboo / playing together",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "d": 0,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000
+  },
+  {
+   "t": 10.8,
+   "d": 0,
+   "shake": 6
+  },
+  {
+   "t": 11.1,
+   "d": 0,
+   "shake": 0
+  }
+ ],
+ "actors": {
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 280,
+    "sc": 1.1,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "brows": "normal",
+    "mouth": "smile",
+    "look": 0
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.2,
+     "hop": 24
+    },
+    {
+     "t": 0.1,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160
+    },
+    {
+     "t": 1.8,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 1.9,
+     "d": 0.3,
+     "armL": -158,
+     "armR": -158,
+     "eyes": "closed",
+     "brows": "normal",
+     "mouth": "grin"
+    },
+    {
+     "t": 2.3,
+     "d": 0.2,
+     "tilt": 5
+    },
+    {
+     "t": 2.8,
+     "d": 0.2,
+     "tilt": -5
+    },
+    {
+     "t": 3.3,
+     "d": 0.2,
+     "tilt": 0
+    },
+    {
+     "t": 3.7,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "bigO"
+    },
+    {
+     "t": 4.6,
+     "d": 0.3,
+     "armL": 20,
+     "armR": 20,
+     "mouth": "grin"
+    },
+    {
+     "t": 5.5,
+     "d": 0.3,
+     "armL": 45,
+     "armR": 45,
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 6.0,
+     "look": 1
+    },
+    {
+     "t": 6.5,
+     "d": 0.1,
+     "look": -1
+    },
+    {
+     "t": 7.3,
+     "look": -1
+    },
+    {
+     "t": 7.8,
+     "d": 0.15,
+     "look": 1,
+     "eyes": "wide",
+     "mouth": "flat",
+     "brows": "up",
+     "armL": 20,
+     "armR": 20
+    },
+    {
+     "t": 9.2,
+     "d": 0.3,
+     "e": "back",
+     "armR": 95,
+     "eyes": "happy",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 10.0,
+     "d": 0.25,
+     "armR": 20
+    },
+    {
+     "t": 10.0,
+     "d": 0.7,
+     "e": "lin",
+     "x": 405,
+     "run": 5
+    },
+    {
+     "t": 10.7,
+     "d": 0.05,
+     "run": 0
+    },
+    {
+     "t": 10.8,
+     "d": 0.15,
+     "sq": 0.92,
+     "eyes": "wide",
+     "mouth": "bigO",
+     "armL": 35,
+     "armR": 35
+    },
+    {
+     "t": 11.0,
+     "d": 0.3,
+     "e": "back",
+     "sq": 1
+    },
+    {
+     "t": 12.0,
+     "d": 0.3,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "armL": 20,
+     "armR": 20
+    },
+    {
+     "t": 12.9,
+     "d": 0.3,
+     "e": "back",
+     "armR": 50,
+     "mouth": "bigO"
+    },
+    {
+     "t": 14.2,
+     "d": 0.3,
+     "armR": 20
+    },
+    {
+     "t": 14.6,
+     "d": 0.3,
+     "e": "back",
+     "armL": 165,
+     "armR": 165,
+     "hop": 40,
+     "mouth": "bigO"
+    },
+    {
+     "t": 17.6,
+     "d": 0.2,
+     "mouth": "smile",
+     "hop": 26
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 640,
+    "sc": 0.78,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "brows": "normal",
+    "mouth": "smile",
+    "look": 0
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.2,
+     "hop": 32
+    },
+    {
+     "t": 0.1,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160
+    },
+    {
+     "t": 1.8,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 1.9,
+     "d": 0.35,
+     "e": "out",
+     "x": 740,
+     "look": 1,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 1.9,
+     "d": 0.35,
+     "e": "out",
+     "jump": 300,
+     "armL": 150,
+     "armR": 150
+    },
+    {
+     "t": 2.25,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0,
+     "y": 1712,
+     "sq": 0.8
+    },
+    {
+     "t": 2.6,
+     "d": 0.2,
+     "armL": 20,
+     "armR": 20
+    },
+    {
+     "t": 6.2,
+     "d": 0.2,
+     "e": "out",
+     "jump": 150,
+     "eyes": "happy",
+     "mouth": "smile",
+     "look": -1
+    },
+    {
+     "t": 6.75,
+     "d": 0.15,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 7.3,
+     "d": 0.2,
+     "e": "out",
+     "jump": 150
+    },
+    {
+     "t": 7.85,
+     "d": 0.12,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 9.0,
+     "d": 0.12,
+     "jump": 72
+    },
+    {
+     "t": 9.25,
+     "d": 0.12,
+     "jump": 40
+    },
+    {
+     "t": 9.5,
+     "d": 0.12,
+     "jump": 72
+    },
+    {
+     "t": 9.75,
+     "d": 0.12,
+     "jump": 40
+    },
+    {
+     "t": 10.0,
+     "d": 0.12,
+     "jump": 72
+    },
+    {
+     "t": 10.25,
+     "d": 0.12,
+     "jump": 40
+    },
+    {
+     "t": 10.5,
+     "d": 0.15,
+     "jump": 0
+    },
+    {
+     "t": 10.8,
+     "d": 0.3,
+     "e": "back",
+     "jump": 330,
+     "sq": 1.0,
+     "armL": 165,
+     "armR": 165,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "bigO",
+     "look": -1
+    },
+    {
+     "t": 12.0,
+     "d": 0.35,
+     "e": "io",
+     "jump": 225,
+     "armL": 40,
+     "armR": 40,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 13.0,
+     "d": 0.2,
+     "sq": 0.93,
+     "mouth": "bigO"
+    },
+    {
+     "t": 13.3,
+     "d": 0.2,
+     "sq": 1
+    },
+    {
+     "t": 13.6,
+     "d": 0.2,
+     "sq": 0.93
+    },
+    {
+     "t": 13.9,
+     "d": 0.2,
+     "sq": 1
+    },
+    {
+     "t": 14.6,
+     "d": 0.3,
+     "e": "back",
+     "armL": 165,
+     "armR": 165,
+     "hop": 30,
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 17.6,
+     "d": 0.2,
+     "mouth": "smile",
+     "hop": 20
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0
+    }
+   ]
+  },
+  "box": {
+   "kind": "prop",
+   "type": "cardbox",
+   "h": 430,
+   "init": {
+    "x": 740,
+    "y": 1730,
+    "layer": "front",
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 1.9,
+     "d": 0.35,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 10.8,
+     "d": 0.1,
+     "sc": 1.05
+    },
+    {
+     "t": 10.9,
+     "d": 0.25,
+     "e": "back",
+     "sc": 1.0
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.1,
+   "x": 430,
+   "y": 780,
+   "r": 200,
+   "dur": 1.6,
+   "n": 9,
+   "seed": 5
+  },
+  {
+   "type": "sparkle",
+   "t": 1.9,
+   "x": 740,
+   "y": 1450,
+   "r": 170,
+   "dur": 1.2,
+   "n": 7,
+   "seed": 3
+  },
+  {
+   "type": "sparkle",
+   "t": 6.25,
+   "x": 600,
+   "y": 1080,
+   "r": 60,
+   "dur": 0.6,
+   "n": 4,
+   "seed": 8
+  },
+  {
+   "type": "burst",
+   "t": 9.1,
+   "x": 640,
+   "y": 820,
+   "text": "HEE!",
+   "r": 80,
+   "dur": 1.1,
+   "color": "#FF7AA8"
+  },
+  {
+   "type": "sparkle",
+   "t": 12.7,
+   "x": 740,
+   "y": 700,
+   "r": 140,
+   "dur": 1.0,
+   "n": 6,
+   "seed": 12
+  },
+  {
+   "type": "confetti",
+   "t": 14.6,
+   "dur": 5.0,
+   "n": 130
+  },
+  {
+   "type": "hearts",
+   "t": 15.2,
+   "x": 590,
+   "y": 760,
+   "n": 8,
+   "dur": 1.8,
+   "spread": 160,
+   "seed": 6
+  },
+  {
+   "type": "sparkle",
+   "t": 19.4,
+   "x": 560,
+   "y": 660,
+   "r": 200,
+   "dur": 1.8,
+   "n": 10,
+   "seed": 21
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.8,
+   "text": "Hide and {SEEK}!",
+   "size": 112
+  },
+  {
+   "t0": 1.9,
+   "t1": 3.6,
+   "text": "One... two...\n{THREE}...",
+   "size": 104
+  },
+  {
+   "t0": 3.7,
+   "t1": 5.4,
+   "text": "Ready or not,\nhere I {COME}!",
+   "size": 96
+  },
+  {
+   "t0": 5.5,
+   "t1": 7.2,
+   "text": "Where is\n{Little Bro}?",
+   "size": 100
+  },
+  {
+   "t0": 7.3,
+   "t1": 8.9,
+   "text": "Hmm... {nobody}?",
+   "size": 100
+  },
+  {
+   "t0": 9.0,
+   "t1": 10.7,
+   "text": "That spiky {hair}...!",
+   "size": 92
+  },
+  {
+   "t0": 10.8,
+   "t1": 12.4,
+   "text": "{PEEKABOO!}",
+   "size": 150,
+   "y": 340
+  },
+  {
+   "t0": 12.5,
+   "t1": 14.5,
+   "text": "{FOUND} you!",
+   "size": 120
+  },
+  {
+   "t0": 14.6,
+   "t1": 17.5,
+   "text": "Best {GAME} ever!",
+   "size": 104
+  },
+  {
+   "t0": 17.7,
+   "t1": 22.0,
+   "text": "Playing together\nis {FUN}!",
+   "size": 104
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.15,
+   "type": "boing"
+  },
+  {
+   "t": 0.2,
+   "type": "sparkle"
+  },
+  {
+   "t": 1.95,
+   "type": "ding"
+  },
+  {
+   "t": 2.45,
+   "type": "ding"
+  },
+  {
+   "t": 2.95,
+   "type": "ding"
+  },
+  {
+   "t": 1.9,
+   "type": "pop"
+  },
+  {
+   "t": 1.95,
+   "type": "boing",
+   "gain": 0.8
+  },
+  {
+   "t": 2.55,
+   "type": "pop",
+   "gain": 0.7
+  },
+  {
+   "t": 3.7,
+   "type": "chime"
+  },
+  {
+   "t": 6.2,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 7.3,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 7.8,
+   "type": "whoosh"
+  },
+  {
+   "t": 9.0,
+   "type": "pops"
+  },
+  {
+   "t": 9.2,
+   "type": "idea"
+  },
+  {
+   "t": 10.0,
+   "type": "drumroll",
+   "dur": 0.8
+  },
+  {
+   "t": 10.8,
+   "type": "boing"
+  },
+  {
+   "t": 10.85,
+   "type": "pop"
+  },
+  {
+   "t": 12.0,
+   "type": "whoosh"
+  },
+  {
+   "t": 12.6,
+   "type": "boing",
+   "gain": 0.7
+  },
+  {
+   "t": 12.9,
+   "type": "ding"
+  },
+  {
+   "t": 14.6,
+   "type": "tada"
+  },
+  {
+   "t": 14.65,
+   "type": "pops"
+  },
+  {
+   "t": 14.8,
+   "type": "clap"
+  },
+  {
+   "t": 19.4,
+   "type": "sparkle"
+  },
+  {
+   "t": 19.5,
+   "type": "chime"
+  }
+ ],
+ "music": {
+  "bpm": 116,
+  "seed": 14,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 7.7,
+    "t1": 8.9,
+    "gain": 0.4
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: Hide and Seek! 📦 #shorts",
+  "description": "One... two... THREE! Ready or not, here I come! 📦 Little Bro hides in a big box, but his spiky hair gives him away... PEEKABOO! A happy Kidszoo cartoon about hide and seek and playing together.\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #hideandseek #peekaboo #brothers #funnycartoon #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "hide and seek",
+   "peekaboo",
+   "playing together",
+   "kidszoo",
+   "animated shorts",
+   "funny cartoon for kids"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}

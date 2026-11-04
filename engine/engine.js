@@ -234,6 +234,49 @@ const PROPS = {
       <path d="M-112,-24 L112,-24" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="10" stroke-linecap="round"/>
       <path d="${starPath(0, -76, 40, 18)}" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
       <rect x="-152" y="-168" width="304" height="30" rx="12" fill="#F5E050" stroke="${OL}" stroke-width="${SW}"/></g>`,
+  // big cardboard box (hide-and-seek), bottom-centre at the origin, 340 wide x p.h tall (default 440), open flaps on top.
+  // Use layer "front" so a kid standing behind it (larger y is fine) is hidden; peeking = jump
+  cardbox: (p) => { const h = p.h || 440; return `<g>
+      <path d="M-170,${-h} L-206,${-h - 58} L-50,${-h - 66} L0,${-h} Z" fill="#C48A50" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M170,${-h} L206,${-h - 58} L50,${-h - 66} L0,${-h} Z" fill="#C48A50" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <rect x="-170" y="${-h}" width="340" height="${h}" rx="10" fill="#D9A066" stroke="${OL}" stroke-width="${SW}"/>
+      <path d="M-150,${-h + 26} L150,${-h + 26}" stroke="#B5763D" stroke-width="7" stroke-linecap="round"/>
+      <rect x="-26" y="${-h + 4}" width="52" height="${h * .42}" fill="#F5E050" fill-opacity=".85" stroke="${OL}" stroke-width="5"/>
+      <rect x="-56" y="${-h * .5}" width="112" height="34" rx="17" fill="#8A5A2E" stroke="${OL}" stroke-width="6"/>
+      <path d="${heartPath(34)}" transform="translate(0,${-h * .2})" fill="#F06292" stroke="${OL}" stroke-width="5"/></g>`; },
+  // terracotta flower pot, bottom-centre at the origin, about 190 wide x 140 tall; soil surface at (0,-140)
+  pot: () => `<g>
+      <path d="M-82,-118 L82,-118 L62,0 L-62,0 Z" fill="#D9622B" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M-40,-90 L-34,-24" stroke="#F08A5D" stroke-width="10" stroke-linecap="round"/>
+      <rect x="-96" y="-150" width="192" height="40" rx="10" fill="#E9784A" stroke="${OL}" stroke-width="${SW}"/>
+      <ellipse cx="0" cy="-146" rx="80" ry="10" fill="#6B4226"/></g>`,
+  // little green sprout, base (soil) at the origin, about 70 tall
+  sprout: () => `<g>
+      <path d="M0,0 Q-4,-34 0,-58" stroke="${OL}" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <path d="M0,0 Q-4,-34 0,-58" stroke="#4CAF50" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M0,-56 Q-50,-90 -62,-52 Q-30,-36 0,-56 Z" fill="#6CCB5F" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M0,-56 Q50,-96 64,-58 Q30,-38 0,-56 Z" fill="#6CCB5F" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/></g>`,
+  // grown flower, base (soil) at the origin, head centre at (0,-300); petals p.color (default pink)
+  flower: (p) => { const c = p.color || '#FF8FC7'; let pet = '';
+    for (let i = 0; i < 8; i++) pet += `<ellipse cx="0" cy="-44" rx="24" ry="38" fill="${c}" stroke="${OL}" stroke-width="6" transform="translate(0,-300) rotate(${i * 45})"/>`;
+    return `<g>
+      <path d="M0,0 Q-14,-150 0,-290" stroke="${OL}" stroke-width="22" fill="none" stroke-linecap="round"/>
+      <path d="M0,0 Q-14,-150 0,-290" stroke="#4CAF50" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M-6,-110 Q-70,-160 -92,-110 Q-50,-86 -6,-110 Z" fill="#6CCB5F" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-4,-170 Q60,-224 86,-176 Q44,-150 -4,-170 Z" fill="#6CCB5F" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      ${pet}<circle cx="0" cy="-300" r="34" fill="#FFD13B" stroke="${OL}" stroke-width="7"/>
+      <circle cx="-10" cy="-310" r="8" fill="#FFFFFF" fill-opacity=".8"/></g>`; },
+  // watering can held by its top handle: grip at the origin, body hangs below, spout points -x with the rose at (-140,5)
+  can: () => `<g>
+      <path d="M-128,4 L-50,64 L-50,90 L-140,22 Z" fill="#1EA7FD" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse cx="-138" cy="8" rx="12" ry="20" transform="rotate(-38 -138 8)" fill="#9FD8F5" stroke="${OL}" stroke-width="6"/>
+      <path d="M-38,32 Q0,-26 38,32" stroke="${OL}" stroke-width="20" fill="none" stroke-linecap="round"/>
+      <path d="M-38,32 Q0,-26 38,32" stroke="#FFD13B" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <rect x="-56" y="28" width="112" height="96" rx="18" fill="#1EA7FD" stroke="${OL}" stroke-width="${SW}"/>
+      <path d="M-40,52 L40,52" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="9" stroke-linecap="round"/>
+      <path d="${heartPath(22)}" transform="translate(0,96)" fill="#FFD13B" stroke="${OL}" stroke-width="4"/></g>`,
+  // falling water drops: a short column of 4 drops, top at the origin, 60 px apart (slide oy by 60 in a loop to animate)
+  drops: () => `<g>${[0, 60, 120, 180].map((y, i) => `<path d="M${i % 2 ? 6 : -6},${y - 18} Q${(i % 2 ? 6 : -6) + 13},${y + 2} ${i % 2 ? 6 : -6},${y + 10} Q${(i % 2 ? 6 : -6) - 13},${y + 2} ${i % 2 ? 6 : -6},${y - 18} Z" fill="#5BC0F8" stroke="${OL}" stroke-width="4"/>`).join('')}</g>`,
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 

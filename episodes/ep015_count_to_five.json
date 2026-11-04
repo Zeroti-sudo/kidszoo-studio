@@ -1,0 +1,992 @@
+{
+ "id": "ep015",
+ "title": "Count to Five",
+ "theme": "counting 1 to 5 / numbers / fixing mistakes together",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "d": 0,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000
+  }
+ ],
+ "actors": {
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 290,
+    "sc": 1.1,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "brows": "normal",
+    "mouth": "smile",
+    "look": 0
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.2,
+     "hop": 22
+    },
+    {
+     "t": 0.1,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160
+    },
+    {
+     "t": 1.7,
+     "d": 0.25,
+     "hop": 0,
+     "armL": 20,
+     "armR": 20
+    },
+    {
+     "t": 2.0,
+     "d": 0.3,
+     "armR": 30,
+     "lean": 4,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 2.5,
+     "d": 0.4,
+     "armR": 85,
+     "lean": 0
+    },
+    {
+     "t": 3.45,
+     "d": 0.3,
+     "armR": 20,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 5.5,
+     "d": 0.3,
+     "armR": 30,
+     "lean": 4,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 6.0,
+     "d": 0.4,
+     "armR": 85,
+     "lean": 0
+    },
+    {
+     "t": 6.95,
+     "d": 0.3,
+     "armR": 20,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 3.2,
+     "look": 1
+    },
+    {
+     "t": 4.9,
+     "look": 0
+    },
+    {
+     "t": 9.0,
+     "d": 0.3,
+     "armR": 45,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 1
+    },
+    {
+     "t": 10.6,
+     "d": 0.35,
+     "armR": 85,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "normal"
+    },
+    {
+     "t": 11.3,
+     "d": 0.4,
+     "armR": 125
+    },
+    {
+     "t": 12.55,
+     "d": 0.4,
+     "armR": 85
+    },
+    {
+     "t": 13.35,
+     "d": 0.3,
+     "armR": 20,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 13.5,
+     "d": 0.3,
+     "armR": 55,
+     "mouth": "bigO",
+     "look": 1
+    },
+    {
+     "t": 15.3,
+     "d": 0.2,
+     "armR": 20
+    },
+    {
+     "t": 15.4,
+     "d": 0.3,
+     "e": "back",
+     "armL": 165,
+     "armR": 165,
+     "hop": 36,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 17.9,
+     "d": 0.2,
+     "mouth": "smile",
+     "hop": 24
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 790,
+    "sc": 0.78,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "brows": "normal",
+    "mouth": "smile",
+    "look": 0
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.2,
+     "hop": 30
+    },
+    {
+     "t": 0.1,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160
+    },
+    {
+     "t": 1.7,
+     "d": 0.25,
+     "hop": 0,
+     "armL": 20,
+     "armR": 20
+    },
+    {
+     "t": 3.6,
+     "d": 0.3,
+     "armL": 30,
+     "lean": -4,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 4.1,
+     "d": 0.4,
+     "armL": 90,
+     "lean": 0
+    },
+    {
+     "t": 5.05,
+     "d": 0.3,
+     "armL": 20,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 7.3,
+     "d": 0.3,
+     "armL": 30,
+     "lean": -4,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 7.8,
+     "d": 0.4,
+     "armL": 90,
+     "lean": 0
+    },
+    {
+     "t": 8.75,
+     "d": 0.3,
+     "armL": 20,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 2.9,
+     "look": -1
+    },
+    {
+     "t": 5.3,
+     "look": 0
+    },
+    {
+     "t": 8.8,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "hop": 20
+    },
+    {
+     "t": 9.4,
+     "d": 0.25,
+     "armL": 20,
+     "armR": 20,
+     "hop": 0,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 10.0,
+     "d": 0.2,
+     "tilt": -6,
+     "mouth": "wobble",
+     "look": 1,
+     "brows": "worried"
+    },
+    {
+     "t": 10.5,
+     "d": 0.2,
+     "tilt": 0
+    },
+    {
+     "t": 10.7,
+     "eyes": "happy",
+     "brows": "up",
+     "mouth": "smile",
+     "look": 0
+    },
+    {
+     "t": 11.1,
+     "d": 0.3,
+     "armL": 30,
+     "lean": -4,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 11.6,
+     "d": 0.4,
+     "armL": 90,
+     "lean": 0
+    },
+    {
+     "t": 12.55,
+     "d": 0.3,
+     "armL": 20,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 13.5,
+     "d": 0.3,
+     "armL": 55,
+     "mouth": "bigO",
+     "look": -1
+    },
+    {
+     "t": 15.3,
+     "d": 0.2,
+     "armL": 20
+    },
+    {
+     "t": 15.4,
+     "d": 0.3,
+     "e": "back",
+     "armL": 165,
+     "armR": 165,
+     "hop": 36,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 17.9,
+     "d": 0.2,
+     "mouth": "smile",
+     "hop": 24
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0
+    }
+   ]
+  },
+  "b1": {
+   "kind": "prop",
+   "type": "block",
+   "letter": "1",
+   "color": "#E63980",
+   "s": 92,
+   "init": {
+    "x": 410,
+    "y": 1790,
+    "layer": "front",
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 0.13,
+     "d": 0.3,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 2.1,
+     "d": 0.35,
+     "e": "back",
+     "attach": "big:R",
+     "ab": 1,
+     "oy": 46.0
+    },
+    {
+     "t": 3.1,
+     "d": 0,
+     "x": 580,
+     "y": 1235.0,
+     "ab": 0
+    },
+    {
+     "t": 3.1,
+     "d": 0.3,
+     "e": "lin",
+     "x": 545
+    },
+    {
+     "t": 3.1,
+     "d": 0.3,
+     "e": "in",
+     "y": 1720
+    },
+    {
+     "t": 13.6,
+     "d": 0.12,
+     "sc": 1.15
+    },
+    {
+     "t": 13.72,
+     "d": 0.22,
+     "e": "back",
+     "sc": 1
+    }
+   ]
+  },
+  "b2": {
+   "kind": "prop",
+   "type": "block",
+   "letter": "2",
+   "color": "#1EA7FD",
+   "s": 92,
+   "init": {
+    "x": 790,
+    "y": 1790,
+    "layer": "front",
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 0.21,
+     "d": 0.3,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 3.7,
+     "d": 0.35,
+     "e": "back",
+     "attach": "little:L",
+     "ab": 1,
+     "oy": 46.0
+    },
+    {
+     "t": 4.7,
+     "d": 0,
+     "x": 584,
+     "y": 1339.0,
+     "ab": 0
+    },
+    {
+     "t": 4.7,
+     "d": 0.3,
+     "e": "lin",
+     "x": 545
+    },
+    {
+     "t": 4.7,
+     "d": 0.3,
+     "e": "in",
+     "y": 1628
+    },
+    {
+     "t": 13.9,
+     "d": 0.12,
+     "sc": 1.15
+    },
+    {
+     "t": 14.02,
+     "d": 0.22,
+     "e": "back",
+     "sc": 1
+    }
+   ]
+  },
+  "b3": {
+   "kind": "prop",
+   "type": "block",
+   "letter": "3",
+   "color": "#FFD13B",
+   "s": 92,
+   "init": {
+    "x": 300,
+    "y": 1790,
+    "layer": "front",
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 0.29,
+     "d": 0.3,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 5.6,
+     "d": 0.35,
+     "e": "back",
+     "attach": "big:R",
+     "ab": 1,
+     "oy": 46.0
+    },
+    {
+     "t": 6.6,
+     "d": 0,
+     "x": 580,
+     "y": 1239.0,
+     "ab": 0
+    },
+    {
+     "t": 6.6,
+     "d": 0.3,
+     "e": "lin",
+     "x": 545
+    },
+    {
+     "t": 6.6,
+     "d": 0.3,
+     "e": "in",
+     "y": 1536
+    },
+    {
+     "t": 14.2,
+     "d": 0.12,
+     "sc": 1.15
+    },
+    {
+     "t": 14.32,
+     "d": 0.22,
+     "e": "back",
+     "sc": 1
+    }
+   ]
+  },
+  "b4": {
+   "kind": "prop",
+   "type": "block",
+   "letter": "4",
+   "color": "#FF7828",
+   "s": 92,
+   "init": {
+    "x": 690,
+    "y": 1790,
+    "layer": "front",
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 0.37,
+     "d": 0.3,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 9.05,
+     "d": 0.12,
+     "sc": 1.15
+    },
+    {
+     "t": 9.17,
+     "d": 0.22,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 11.2,
+     "d": 0.35,
+     "e": "back",
+     "attach": "little:L",
+     "ab": 1,
+     "oy": 46.0
+    },
+    {
+     "t": 12.2,
+     "d": 0,
+     "x": 584,
+     "y": 1339.0,
+     "ab": 0
+    },
+    {
+     "t": 12.2,
+     "d": 0.3,
+     "e": "lin",
+     "x": 545
+    },
+    {
+     "t": 12.2,
+     "d": 0.3,
+     "e": "in",
+     "y": 1444
+    },
+    {
+     "t": 14.5,
+     "d": 0.12,
+     "sc": 1.15
+    },
+    {
+     "t": 14.62,
+     "d": 0.22,
+     "e": "back",
+     "sc": 1
+    }
+   ]
+  },
+  "b5": {
+   "kind": "prop",
+   "type": "block",
+   "letter": "5",
+   "color": "#2CA58D",
+   "s": 92,
+   "init": {
+    "x": 890,
+    "y": 1790,
+    "layer": "front",
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 0.45,
+     "d": 0.3,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 7.4,
+     "d": 0.35,
+     "e": "back",
+     "attach": "little:L",
+     "ab": 1,
+     "oy": 46.0
+    },
+    {
+     "t": 8.4,
+     "d": 0,
+     "x": 584,
+     "y": 1338.0,
+     "ab": 0
+    },
+    {
+     "t": 8.4,
+     "d": 0.3,
+     "e": "lin",
+     "x": 545
+    },
+    {
+     "t": 8.4,
+     "d": 0.3,
+     "e": "in",
+     "y": 1444
+    },
+    {
+     "t": 11.0,
+     "d": 0.3,
+     "e": "io",
+     "attach": "big:R",
+     "ab": 1,
+     "oy": 46.0
+    },
+    {
+     "t": 13.05,
+     "d": 0,
+     "x": 580,
+     "y": 1236.0,
+     "ab": 0
+    },
+    {
+     "t": 13.05,
+     "d": 0.3,
+     "e": "lin",
+     "x": 545
+    },
+    {
+     "t": 13.05,
+     "d": 0.3,
+     "e": "in",
+     "y": 1352
+    },
+    {
+     "t": 14.8,
+     "d": 0.12,
+     "sc": 1.15
+    },
+    {
+     "t": 14.92,
+     "d": 0.22,
+     "e": "back",
+     "sc": 1
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.1,
+   "x": 545,
+   "y": 1700,
+   "r": 330,
+   "dur": 1.4,
+   "n": 10,
+   "seed": 5
+  },
+  {
+   "type": "sparkle",
+   "t": 3.4,
+   "x": 545,
+   "y": 1640,
+   "r": 90,
+   "dur": 0.7,
+   "n": 4,
+   "seed": 6
+  },
+  {
+   "type": "sparkle",
+   "t": 5.0,
+   "x": 545,
+   "y": 1550,
+   "r": 90,
+   "dur": 0.7,
+   "n": 4,
+   "seed": 7
+  },
+  {
+   "type": "sparkle",
+   "t": 6.9,
+   "x": 545,
+   "y": 1460,
+   "r": 90,
+   "dur": 0.7,
+   "n": 4,
+   "seed": 8
+  },
+  {
+   "type": "burst",
+   "t": 9.05,
+   "x": 700,
+   "y": 860,
+   "text": "4?",
+   "r": 85,
+   "dur": 1.4,
+   "color": "#FF7828"
+  },
+  {
+   "type": "sparkle",
+   "t": 13.35,
+   "x": 545,
+   "y": 1260,
+   "r": 90,
+   "dur": 0.7,
+   "n": 4,
+   "seed": 9
+  },
+  {
+   "type": "burst",
+   "t": 15.4,
+   "x": 545,
+   "y": 820,
+   "text": "5!",
+   "r": 90,
+   "dur": 1.1,
+   "color": "#FFD13B"
+  },
+  {
+   "type": "confetti",
+   "t": 15.4,
+   "dur": 5.0,
+   "n": 130
+  },
+  {
+   "type": "sparkle",
+   "t": 19.4,
+   "x": 545,
+   "y": 1150,
+   "r": 110,
+   "dur": 1.8,
+   "n": 8,
+   "seed": 21
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.8,
+   "text": "Let's {COUNT}!",
+   "size": 120
+  },
+  {
+   "t0": 1.9,
+   "t1": 5.4,
+   "text": "One... {two}...",
+   "size": 112
+  },
+  {
+   "t0": 5.5,
+   "t1": 7.2,
+   "text": "{Three}!",
+   "size": 130
+  },
+  {
+   "t0": 7.3,
+   "t1": 8.9,
+   "text": "And... {FIVE}!",
+   "size": 116
+  },
+  {
+   "t0": 9.0,
+   "t1": 10.6,
+   "text": "Wait... where is\n{FOUR}?",
+   "size": 100
+  },
+  {
+   "t0": 10.7,
+   "t1": 13.4,
+   "text": "{Five} off...\n{four} on!",
+   "size": 104
+  },
+  {
+   "t0": 13.5,
+   "t1": 15.3,
+   "text": "1, 2, 3, {4, 5}!",
+   "size": 112
+  },
+  {
+   "t0": 15.4,
+   "t1": 17.8,
+   "text": "We {DID IT}! Yay!",
+   "size": 104
+  },
+  {
+   "t0": 17.9,
+   "t1": 22.0,
+   "text": "Counting is\n{FUN}!",
+   "size": 116
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.15,
+   "type": "boing"
+  },
+  {
+   "t": 0.2,
+   "type": "pops"
+  },
+  {
+   "t": 2.1,
+   "type": "pop"
+  },
+  {
+   "t": 3.35,
+   "type": "ding"
+  },
+  {
+   "t": 3.7,
+   "type": "pop"
+  },
+  {
+   "t": 4.95,
+   "type": "ding"
+  },
+  {
+   "t": 5.6,
+   "type": "pop"
+  },
+  {
+   "t": 6.85,
+   "type": "ding"
+  },
+  {
+   "t": 7.4,
+   "type": "pop"
+  },
+  {
+   "t": 8.65,
+   "type": "ding"
+  },
+  {
+   "t": 8.8,
+   "type": "boing",
+   "gain": 0.7
+  },
+  {
+   "t": 9.0,
+   "type": "whoosh"
+  },
+  {
+   "t": 9.1,
+   "type": "sad",
+   "gain": 0.6
+  },
+  {
+   "t": 10.7,
+   "type": "idea"
+  },
+  {
+   "t": 11.0,
+   "type": "pop"
+  },
+  {
+   "t": 11.2,
+   "type": "pop"
+  },
+  {
+   "t": 12.45,
+   "type": "ding"
+  },
+  {
+   "t": 13.3,
+   "type": "ding"
+  },
+  {
+   "t": 13.6,
+   "type": "ding"
+  },
+  {
+   "t": 13.9,
+   "type": "ding"
+  },
+  {
+   "t": 14.2,
+   "type": "ding"
+  },
+  {
+   "t": 14.5,
+   "type": "ding"
+  },
+  {
+   "t": 14.8,
+   "type": "chime"
+  },
+  {
+   "t": 15.4,
+   "type": "tada"
+  },
+  {
+   "t": 15.45,
+   "type": "pops"
+  },
+  {
+   "t": 15.6,
+   "type": "clap"
+  },
+  {
+   "t": 19.4,
+   "type": "sparkle"
+  },
+  {
+   "t": 19.5,
+   "type": "chime"
+  }
+ ],
+ "music": {
+  "bpm": 112,
+  "seed": 15,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 9.0,
+    "t1": 10.6,
+    "gain": 0.4
+   },
+   {
+    "t0": 13.5,
+    "t1": 15.2,
+    "gain": 0.6
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro Count to Five! 🔢 #shorts",
+  "description": "Let's COUNT! 🔢 Big Bro and Little Bro build a tower of number blocks. One, two, three... FIVE? Wait, where is FOUR? They fix it together and count 1, 2, 3, 4, 5! A happy Kidszoo cartoon about counting, numbers and fixing mistakes together.\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #counting #numbers #brothers #learning #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "counting for kids",
+   "count to five",
+   "learn numbers",
+   "kidszoo",
+   "animated shorts",
+   "number blocks"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}
