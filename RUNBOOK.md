@@ -68,3 +68,10 @@ Channel: 408 subscribers (0 gained this week), 4 Shorts live. Sample is tiny, so
 - **Best theme:** ep001 balloon pop leads with 16 views (4 days live), then ep002 hungry brothers with 6. Simple physical-comedy themes (popping, bouncing) are the early leader; keep Balloon Tower and bubble/pop payoffs in rotation.
 - **Weakest episode:** ep003 LAST Cupcake, 1 view after ~18 h (16:00 slot). Too early to blame the theme; re-check next Sunday whether the 16:00 slot underperforms the 10:00 slot.
 - Note: YouTube currently lists the channel topic as "Video game culture", which doesn't match the content. Consistent kids-cartoon titles and tags should correct it over time.
+
+### Week ending Sun 8 Nov 2026 (vidIQ, pulled 8 Nov ~04:50 IST)
+Channel: 408 subscribers (0 gained this week), 57 total views (+31 this week), 16 Shorts live; no uploads on 7 Nov (missed run). The 12 Shorts from 1–5 Nov got 22 views in total, so these are still hunches.
+- **Best hook:** goal-in-the-title hooks: ep006 "Build a Pillow Fort!" has 9 views (best of the week) and ep005 "Make a GIANT Bubble!" 4 views and 2 likes. A big thing to build or make, shown in the first second, beat every other hook this week.
+- **Best theme:** build/make challenges (ep005 + ep006: 13 views) against 9 views for the other ten Shorts combined. Keep a make-or-build episode in each day's four.
+- **Weakest episodes:** ep009 Lost Sock, ep010 Brushing Race, ep012 Tidy-Up Race and ep014 Hide and Seek, 0 views each after 3–5 days. Chore and routine themes (brushing, tidying) look weakest; pair them with a stronger action hook or rotate them out. vidIQ still lists the channel topic as "Video game culture" and its title as "ZenAi"; the owner may want to rename the channel to Kidszoo in YouTube Studio.
+
