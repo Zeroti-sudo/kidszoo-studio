@@ -277,6 +277,42 @@ const PROPS = {
       <path d="${heartPath(22)}" transform="translate(0,96)" fill="#FFD13B" stroke="${OL}" stroke-width="4"/></g>`,
   // falling water drops: a short column of 4 drops, top at the origin, 60 px apart (slide oy by 60 in a loop to animate)
   drops: () => `<g>${[0, 60, 120, 180].map((y, i) => `<path d="M${i % 2 ? 6 : -6},${y - 18} Q${(i % 2 ? 6 : -6) + 13},${y + 2} ${i % 2 ? 6 : -6},${y + 10} Q${(i % 2 ? 6 : -6) - 13},${y + 2} ${i % 2 ? 6 : -6},${y - 18} Z" fill="#5BC0F8" stroke="${OL}" stroke-width="4"/>`).join('')}</g>`,
+  // drinking cup with water, centred on the origin (hold it with attach + ab 1), about 76 x 96, handle on +x; colour p.color
+  cup: (p) => { const c = p.color || '#1EA7FD'; return `<g>
+      <path d="M34,-24 Q62,-24 62,2 Q62,28 32,28" stroke="${OL}" stroke-width="20" fill="none" stroke-linecap="round"/>
+      <path d="M34,-24 Q62,-24 62,2 Q62,28 32,28" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M-40,-46 L40,-46 L32,48 Q32,52 26,52 L-26,52 Q-32,52 -32,48 Z" fill="${c}" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M-37,-14 L37,-14 L35,6 L-35,6 Z" fill="#FFD13B" stroke="${OL}" stroke-width="4"/>
+      <ellipse cx="0" cy="-46" rx="40" ry="10" fill="#9FD8F5" stroke="${OL}" stroke-width="6"/>
+      <path d="M-22,22 L-20,40" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="7" stroke-linecap="round"/></g>`; },
+  // broccoli floret, stem bottom at the origin, about 130 wide x 150 tall
+  broccoli: () => `<g>
+      <path d="M-20,0 L-14,-70 L14,-70 L20,0 Q0,8 -20,0 Z" fill="#A5D66B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-6,-66 L-30,-92 M6,-66 L30,-92" stroke="${OL}" stroke-width="16" stroke-linecap="round"/>
+      <path d="M-6,-66 L-30,-92 M6,-66 L30,-92" stroke="#A5D66B" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-58,-84 Q-74,-112 -50,-124 Q-48,-150 -18,-146 Q0,-166 22,-148 Q52,-152 52,-124 Q76,-110 58,-84 Q30,-70 0,-80 Q-30,-70 -58,-84 Z" fill="#4CAF50" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <circle cx="-30" cy="-112" r="9" fill="#6CCB5F"/><circle cx="6" cy="-128" r="10" fill="#6CCB5F"/><circle cx="34" cy="-106" r="8" fill="#6CCB5F"/><circle cx="-4" cy="-98" r="7" fill="#6CCB5F"/></g>`,
+  // round dinner plate, centred on the origin, about 220 x 60
+  plate: () => `<g>
+      <ellipse cx="0" cy="0" rx="110" ry="28" fill="#FFFFFF" stroke="${OL}" stroke-width="${SW}"/>
+      <ellipse cx="0" cy="-2" rx="76" ry="16" fill="#EAF6FF" stroke="#9FD8F5" stroke-width="5"/></g>`,
+  // gift box, bottom-centre at the origin. part:"box" (default) is 200 wide x 150 tall; part:"lid" is the lid with a bow,
+  // its bottom-centre sits on the box top at (0,-150) — pop it off with y/rot keys
+  gift: (p) => { const c = p.color || '#E63980', r = p.ribbon || '#FFD13B'; return p.part === 'lid' ? `<g>
+      <path d="M-6,-44 Q-60,-96 -64,-58 Q-60,-34 -6,-44 Z" fill="${r}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M6,-44 Q60,-96 64,-58 Q60,-34 6,-44 Z" fill="${r}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="-116" y="-46" width="232" height="46" rx="10" fill="${c}" stroke="${OL}" stroke-width="${SW}"/>
+      <rect x="-20" y="-46" width="40" height="46" fill="${r}" stroke="${OL}" stroke-width="5"/>
+      <circle cx="0" cy="-48" r="15" fill="${r}" stroke="${OL}" stroke-width="6"/></g>` : `<g>
+      <rect x="-100" y="-150" width="200" height="150" rx="10" fill="${c}" stroke="${OL}" stroke-width="${SW}"/>
+      <rect x="-20" y="-150" width="40" height="150" fill="${r}" stroke="${OL}" stroke-width="5"/>
+      <path d="M-80,-30 L-80,-120" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="10" stroke-linecap="round"/></g>`; },
+  // party hat (cone), base-centre at the origin, about 100 wide x 140 tall; attach to "<kid>:H"; colour p.color
+  partyhat: (p) => { const c = p.color || '#9B5DE5'; return `<g>
+      <path d="M-50,0 L0,-136 L50,0 Q0,14 -50,0 Z" fill="${c}" stroke="${OL}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M-30,-56 L30,-56 M-40,-24 L40,-24" stroke="#FFD13B" stroke-width="10" stroke-linecap="round"/>
+      <path d="M-50,0 L0,-136 L50,0 Q0,14 -50,0 Z" fill="none" stroke="${OL}" stroke-width="7" stroke-linejoin="round"/>
+      <circle cx="0" cy="-140" r="17" fill="#FFFFFF" stroke="${OL}" stroke-width="6"/></g>`; },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 

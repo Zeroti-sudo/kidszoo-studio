@@ -156,6 +156,20 @@ def sfx(kind, dur=None):
         n = bp(rng.standard_normal(len(t)), 2500, 9000)
         am = 0.35 + 0.65 * np.abs(np.sin(2 * np.pi * 3.5 * t))
         return n * am * np.minimum(1, np.minimum(t / 0.05, (d - t) / 0.1)) * 0.35
+    if kind == 'hic':  # cartoon hiccup: quick upward chirp with a tiny pop
+        t = tt(0.16); f = 260 + 900 * (t / 0.16) ** 1.5
+        v = np.sin(2 * np.pi * np.cumsum(f) / SR); v = lp(np.sign(v) * np.abs(v) ** 0.6, 2500)
+        return v * env(len(t), 0.002, 0.03, 18) * 0.55 + np.pad(sfx('pop')[:int(SR * .08)] * .35, (0, len(t) - int(SR * .08)))
+    if kind == 'gulp':  # soft downward "gloop"
+        t = tt(0.18); f = 520 * np.exp(-9 * t) + 140
+        return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / 0.18) * 0.5
+    if kind == 'giggle':  # "hee-hee-hee" made of little triangle-wave chirps
+        out = np.zeros(int(SR * 0.9))
+        for i in range(6):
+            t = tt(0.085); f = (720 + 60 * (i % 2)) * (1 + 0.25 * np.sin(np.pi * t / 0.085))
+            ph = (np.cumsum(f) / SR) % 1; tri = 2 * np.abs(2 * ph - 1) - 1
+            s = int(i * 0.13 * SR); out[s:s + len(t)] += lp(tri, 3000) * np.sin(np.pi * t / 0.085) * (0.42 - i * 0.03)
+        return out
     raise ValueError('unknown sfx ' + kind)
 
 

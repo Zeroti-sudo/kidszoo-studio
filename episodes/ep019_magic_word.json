@@ -1,0 +1,801 @@
+{
+ "id": "ep019",
+ "title": "The Magic Word",
+ "theme": "good manners / please and thank you",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "d": 0,
+   "z": 1.4,
+   "cx": 592,
+   "cy": 1250
+  },
+  {
+   "t": 1.95,
+   "d": 0.5,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000
+  },
+  {
+   "t": 11.8,
+   "d": 0.4,
+   "z": 1.4,
+   "cx": 592,
+   "cy": 1250
+  },
+  {
+   "t": 12.85,
+   "d": 0.4,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000
+  }
+ ],
+ "actors": {
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 395,
+    "sc": 1.1
+   },
+   "keys": [
+    {
+     "t": 0,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile",
+     "look": 0,
+     "armR": 14
+    },
+    {
+     "t": 0.3,
+     "d": 0.15,
+     "hop": 14
+    },
+    {
+     "t": 1.9,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 2.1,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 1
+    },
+    {
+     "t": 2.2,
+     "d": 0.3,
+     "lean": -5,
+     "armR": 4
+    },
+    {
+     "t": 4.0,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin",
+     "look": 1
+    },
+    {
+     "t": 4.0,
+     "d": 0.3,
+     "e": "back",
+     "armL": 120
+    },
+    {
+     "t": 5.8,
+     "d": 0.3,
+     "armL": 12,
+     "lean": -2
+    },
+    {
+     "t": 7.2,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "brows": "normal"
+    },
+    {
+     "t": 8.0,
+     "mouth": "smile",
+     "look": 1
+    },
+    {
+     "t": 8.05,
+     "d": 0.2,
+     "tilt": 8
+    },
+    {
+     "t": 8.3,
+     "d": 0.2,
+     "tilt": -8
+    },
+    {
+     "t": 8.55,
+     "d": 0.2,
+     "tilt": 8
+    },
+    {
+     "t": 8.8,
+     "d": 0.2,
+     "tilt": -8
+    },
+    {
+     "t": 9.05,
+     "d": 0.2,
+     "tilt": 8
+    },
+    {
+     "t": 9.3,
+     "d": 0.2,
+     "tilt": 0
+    },
+    {
+     "t": 9.9,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 11.9,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "lean": 0
+    },
+    {
+     "t": 12.9,
+     "d": 0.35,
+     "armR": 40,
+     "look": 1
+    },
+    {
+     "t": 13.9,
+     "d": 0.3,
+     "armR": 12
+    },
+    {
+     "t": 14.0,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 15.9,
+     "d": 0.3,
+     "e": "back",
+     "armL": 150,
+     "mouth": "bigO"
+    },
+    {
+     "t": 17.2,
+     "d": 0.3,
+     "armL": 14,
+     "mouth": "smile"
+    },
+    {
+     "t": 17.9,
+     "d": 0.3,
+     "e": "back",
+     "armL": 165,
+     "armR": 165,
+     "hop": 30,
+     "look": 0
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 790,
+    "sc": 0.78
+   },
+   "keys": [
+    {
+     "t": 0,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 0.5,
+     "d": 0.25,
+     "armL": 60
+    },
+    {
+     "t": 2.0,
+     "eyes": "open",
+     "brows": "angry",
+     "mouth": "grin"
+    },
+    {
+     "t": 2.05,
+     "d": 0.15,
+     "e": "out",
+     "jump": 70,
+     "armL": 75
+    },
+    {
+     "t": 2.25,
+     "d": 0.22,
+     "e": "in",
+     "jump": 0,
+     "armL": 60
+    },
+    {
+     "t": 2.5,
+     "d": 0.15,
+     "e": "out",
+     "jump": 70,
+     "armL": 75
+    },
+    {
+     "t": 2.7,
+     "d": 0.22,
+     "e": "in",
+     "jump": 0,
+     "armL": 60
+    },
+    {
+     "t": 2.95,
+     "d": 0.15,
+     "e": "out",
+     "jump": 70,
+     "armL": 75
+    },
+    {
+     "t": 3.15,
+     "d": 0.22,
+     "e": "in",
+     "jump": 0,
+     "armL": 60
+    },
+    {
+     "t": 3.4,
+     "d": 0.15,
+     "e": "out",
+     "jump": 70,
+     "armL": 75
+    },
+    {
+     "t": 3.6,
+     "d": 0.22,
+     "e": "in",
+     "jump": 0,
+     "armL": 60
+    },
+    {
+     "t": 4.0,
+     "d": 0.3,
+     "armL": 12,
+     "look": -1,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O"
+    },
+    {
+     "t": 6.0,
+     "eyes": "open",
+     "brows": "worried",
+     "mouth": "flat",
+     "look": 0,
+     "tilt": -8
+    },
+    {
+     "t": 7.0,
+     "d": 0.3,
+     "e": "back",
+     "armL": 130,
+     "armR": 130,
+     "tilt": 0,
+     "eyes": "happy",
+     "brows": "up",
+     "mouth": "bigO",
+     "hop": 20
+    },
+    {
+     "t": 7.95,
+     "d": 0.25,
+     "armL": 12,
+     "armR": 12,
+     "hop": 0,
+     "eyes": "open",
+     "mouth": "O",
+     "brows": "up",
+     "look": -1
+    },
+    {
+     "t": 8.4,
+     "brows": "worried",
+     "mouth": "wobble"
+    },
+    {
+     "t": 9.9,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 0
+    },
+    {
+     "t": 10.0,
+     "d": 0.3,
+     "e": "back",
+     "armR": 150
+    },
+    {
+     "t": 11.3,
+     "d": 0.3,
+     "armR": 12
+    },
+    {
+     "t": 11.9,
+     "eyes": "happy",
+     "brows": "up",
+     "mouth": "smile",
+     "look": -1,
+     "tilt": -6
+    },
+    {
+     "t": 11.9,
+     "d": 0.3,
+     "sq": 0.92
+    },
+    {
+     "t": 12.3,
+     "d": 0.3,
+     "sq": 1
+    },
+    {
+     "t": 12.9,
+     "d": 0.35,
+     "armL": 40
+    },
+    {
+     "t": 13.9,
+     "d": 0.3,
+     "armL": 22,
+     "tilt": 0
+    },
+    {
+     "t": 14.0,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "brows": "normal"
+    },
+    {
+     "t": 14.0,
+     "d": 0.3,
+     "hop": 30
+    },
+    {
+     "t": 15.7,
+     "d": 0.2,
+     "hop": 0,
+     "mouth": "smile"
+    },
+    {
+     "t": 14.1,
+     "d": 0.3,
+     "e": "back",
+     "armR": 165
+    },
+    {
+     "t": 15.7,
+     "d": 0.3,
+     "armR": 14
+    },
+    {
+     "t": 17.9,
+     "d": 0.3,
+     "e": "back",
+     "armL": 70,
+     "armR": 165,
+     "hop": 30,
+     "look": 0
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0
+    }
+   ]
+  },
+  "ball": {
+   "kind": "prop",
+   "type": "ball",
+   "init": {
+    "x": 500,
+    "y": 1300,
+    "attach": "big:R",
+    "ab": 1,
+    "oy": -34,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 13.4,
+     "d": 0.25,
+     "ab": 0,
+     "x": 634,
+     "y": 1300
+    },
+    {
+     "t": 13.66,
+     "d": 0,
+     "attach": "little:L",
+     "ox": 0,
+     "oy": -34
+    },
+    {
+     "t": 13.66,
+     "d": 0.22,
+     "ab": 1
+    }
+   ]
+  },
+  "question": {
+   "kind": "prop",
+   "type": "question",
+   "init": {
+    "x": 860,
+    "y": 930,
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 6.0,
+     "d": 0.35,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 6.9,
+     "d": 0.2,
+     "e": "in",
+     "sc": 0
+    }
+   ]
+  },
+  "bulb": {
+   "kind": "prop",
+   "type": "bulb",
+   "init": {
+    "x": 800,
+    "y": 880,
+    "sc": 0
+   },
+   "keys": [
+    {
+     "t": 9.9,
+     "d": 0.35,
+     "e": "back",
+     "sc": 0.85
+    },
+    {
+     "t": 11.6,
+     "d": 0.25,
+     "e": "in",
+     "sc": 0
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.0,
+   "x": 520,
+   "y": 1180,
+   "r": 110,
+   "dur": 1.4,
+   "n": 6
+  },
+  {
+   "type": "burst",
+   "t": 2.1,
+   "x": 860,
+   "y": 790,
+   "text": "GIMME!",
+   "r": 85,
+   "dur": 0.85,
+   "color": "#FF8FC7"
+  },
+  {
+   "type": "burst",
+   "t": 3.0,
+   "x": 660,
+   "y": 780,
+   "text": "GIMME!",
+   "r": 90,
+   "dur": 0.8,
+   "rot": 8
+  },
+  {
+   "type": "sparkle",
+   "t": 7.0,
+   "x": 790,
+   "y": 800,
+   "r": 200,
+   "dur": 1.2,
+   "n": 10,
+   "seed": 8
+  },
+  {
+   "type": "burst",
+   "t": 8.05,
+   "x": 200,
+   "y": 760,
+   "text": "NOPE!",
+   "r": 85,
+   "dur": 0.8,
+   "color": "#1EA7FD"
+  },
+  {
+   "type": "sparkle",
+   "t": 9.9,
+   "x": 800,
+   "y": 840,
+   "r": 110,
+   "dur": 1.2,
+   "n": 6,
+   "seed": 5
+  },
+  {
+   "type": "sparkle",
+   "t": 12.0,
+   "x": 800,
+   "y": 1150,
+   "r": 300,
+   "dur": 1.4,
+   "n": 8,
+   "seed": 12
+  },
+  {
+   "type": "hearts",
+   "t": 12.1,
+   "x": 845,
+   "y": 960,
+   "dur": 1.4,
+   "n": 6,
+   "seed": 4,
+   "spread": 110
+  },
+  {
+   "type": "burst",
+   "t": 14.05,
+   "x": 900,
+   "y": 800,
+   "text": "YAY!",
+   "r": 85,
+   "dur": 0.8
+  },
+  {
+   "type": "hearts",
+   "t": 16.0,
+   "x": 560,
+   "y": 860,
+   "dur": 1.6,
+   "n": 8,
+   "seed": 9,
+   "spread": 360
+  },
+  {
+   "type": "confetti",
+   "t": 17.9,
+   "dur": 3.6,
+   "n": 120
+  },
+  {
+   "type": "sparkle",
+   "t": 18.2,
+   "x": 540,
+   "y": 640,
+   "r": 200,
+   "dur": 2.4,
+   "n": 10,
+   "seed": 31
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.95,
+   "text": "Little Bro wants\nthe {BALL}!",
+   "size": 100,
+   "y": 250
+  },
+  {
+   "t0": 2.05,
+   "t1": 3.9,
+   "text": "GIMME,\n{GIMME}!",
+   "size": 112,
+   "y": 250
+  },
+  {
+   "t0": 4.0,
+   "t1": 5.9,
+   "text": "What's the\n{magic word}?",
+   "size": 104,
+   "y": 250
+  },
+  {
+   "t0": 6.0,
+   "t1": 6.95,
+   "text": "Hmm...",
+   "size": 116,
+   "y": 280
+  },
+  {
+   "t0": 7.0,
+   "t1": 7.95,
+   "text": "ABRA-\n{CADABRA}?!",
+   "size": 108,
+   "y": 250
+  },
+  {
+   "t0": 8.05,
+   "t1": 9.8,
+   "text": "Not {THAT}\nmagic word!",
+   "size": 104,
+   "y": 250
+  },
+  {
+   "t0": 9.9,
+   "t1": 11.8,
+   "text": "Oh! I {know}!",
+   "size": 112,
+   "y": 280
+  },
+  {
+   "t0": 11.9,
+   "t1": 13.8,
+   "text": "{PLEASE}?",
+   "size": 136,
+   "y": 300
+  },
+  {
+   "t0": 13.9,
+   "t1": 15.8,
+   "text": "{THANK YOU}!",
+   "size": 120,
+   "y": 280
+  },
+  {
+   "t0": 15.9,
+   "t1": 17.8,
+   "text": "You're\n{welcome}!",
+   "size": 108,
+   "y": 250
+  },
+  {
+   "t0": 17.9,
+   "t1": 22.0,
+   "text": "Please & thank you\nare {MAGIC}!",
+   "size": 92,
+   "y": 250
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.05,
+   "type": "sparkle",
+   "gain": 0.6
+  },
+  {
+   "t": 2.1,
+   "type": "boing",
+   "gain": 0.7
+  },
+  {
+   "t": 3.0,
+   "type": "boing",
+   "gain": 0.6
+  },
+  {
+   "t": 4.0,
+   "type": "ding",
+   "gain": 0.6
+  },
+  {
+   "t": 6.0,
+   "type": "pop",
+   "gain": 0.5
+  },
+  {
+   "t": 7.0,
+   "type": "sparkle"
+  },
+  {
+   "t": 7.05,
+   "type": "chime",
+   "gain": 0.7
+  },
+  {
+   "t": 8.05,
+   "type": "giggle"
+  },
+  {
+   "t": 9.9,
+   "type": "idea"
+  },
+  {
+   "t": 11.95,
+   "type": "chime"
+  },
+  {
+   "t": 12.0,
+   "type": "sparkle",
+   "gain": 0.8
+  },
+  {
+   "t": 13.4,
+   "type": "whoosh",
+   "gain": 0.4
+  },
+  {
+   "t": 13.7,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 14.05,
+   "type": "tada"
+  },
+  {
+   "t": 15.95,
+   "type": "ding",
+   "gain": 0.6
+  },
+  {
+   "t": 17.9,
+   "type": "pops",
+   "gain": 0.8
+  },
+  {
+   "t": 18.1,
+   "type": "chime"
+  }
+ ],
+ "music": {
+  "bpm": 114,
+  "seed": 19,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 6.0,
+    "t1": 7.0,
+    "gain": 0.3
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: The Magic Word! ✨ #shorts",
+  "description": "GIMME the ball! ✨ Big Bro asks Little Bro: what's the magic word? Abracadabra?! Not THAT magic word! A funny Kidszoo cartoon about good manners, where please and thank you turn out to be the real magic.\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #goodmanners #pleaseandthankyou #brothers #funnycartoon #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "good manners for kids",
+   "please and thank you",
+   "magic word",
+   "kidszoo",
+   "animated shorts",
+   "funny cartoon for kids"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}
