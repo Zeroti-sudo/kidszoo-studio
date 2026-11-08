@@ -1,0 +1,22 @@
+{
+ "file": "/home/claude/kidszoo-studio/engine/../out/ep021/ep021.mp4",
+ "duration": 22.0,
+ "lufs": -13.9,
+ "true_peak": -1.1,
+ "checks": {
+  "container mp4/h264": true,
+  "resolution 1080x1920": true,
+  "frame rate 30": true,
+  "duration 15-60s": true,
+  "duration matches script": true,
+  "audio track present (aac)": true,
+  "loudness -16..-12 LUFS": true,
+  "true peak <= -1 dBTP": true,
+  "title 1-100 chars": true,
+  "description present": true,
+  "madeForKids set": true,
+  "captions cover video": true,
+  "hook caption in first 2s": true
+ },
+ "pass": true
+}

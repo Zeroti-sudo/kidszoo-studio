@@ -170,6 +170,28 @@ def sfx(kind, dur=None):
             ph = (np.cumsum(f) / SR) % 1; tri = 2 * np.abs(2 * ph - 1) - 1
             s = int(i * 0.13 * SR); out[s:s + len(t)] += lp(tri, 3000) * np.sin(np.pi * t / 0.085) * (0.42 - i * 0.03)
         return out
+    if kind == 'stomp':  # big soft elephant stomp: low thump + a little floor rumble
+        t = tt(0.35); f = 55 + 90 * np.exp(-25 * t)
+        th = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(len(t), 0.002, 0.05, 9)
+        rb = lp(rng.standard_normal(len(t)), 300) * env(len(t), 0.002, 0.05, 14) * 0.6
+        return (th + rb) * 0.85
+    if kind == 'roar':  # friendly cartoon "RAWR": a growly sawtooth that swells and falls (not scary)
+        d = dur or 0.9; t = tt(d)
+        f = (150 + 70 * np.sin(np.pi * t / d)) * (1 + 0.06 * np.sin(2 * np.pi * 28 * t))
+        saw = 2 * ((np.cumsum(f) / SR) % 1) - 1
+        g = lp(saw, 1400) + 0.25 * bp(rng.standard_normal(len(t)), 300, 1800)
+        return g * np.sin(np.pi * np.minimum(1, t / d)) ** 0.7 * np.minimum(1, (d - t) / 0.08) * 0.42
+    if kind == 'meow':  # tiny kitten "mew": a short rising then falling triangle chirp
+        t = tt(0.42); f = 620 + 380 * np.sin(np.pi * np.minimum(1, t / 0.36))
+        ph = (np.cumsum(f) / SR) % 1; tri = 2 * np.abs(2 * ph - 1) - 1
+        return lp(tri, 3200) * np.sin(np.pi * t / 0.42) * 0.42
+    if kind == 'tweet':  # two quick bird chirps
+        out = np.zeros(int(SR * 0.45))
+        for s0 in (0.0, 0.18):
+            t = tt(0.11); f = 2200 + 1400 * (t / 0.11)
+            v = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / 0.11) * 0.35
+            s = int(s0 * SR); out[s:s + len(t)] += v
+        return out
     raise ValueError('unknown sfx ' + kind)
 
 

@@ -313,6 +313,53 @@ const PROPS = {
       <path d="M-30,-56 L30,-56 M-40,-24 L40,-24" stroke="#FFD13B" stroke-width="10" stroke-linecap="round"/>
       <path d="M-50,0 L0,-136 L50,0 Q0,14 -50,0 Z" fill="none" stroke="${OL}" stroke-width="7" stroke-linejoin="round"/>
       <circle cx="0" cy="-140" r="17" fill="#FFFFFF" stroke="${OL}" stroke-width="6"/></g>`; },
+  // cardboard rocket (pretend play), all parts bottom-centre at the same origin unless noted.
+  // part:"body" (default) 260 wide x 420 tall box; "cone" sits on the body top (its origin goes at y -420·sc), 300 x 210;
+  // "window" porthole centred on its origin, r 62 (put it at y -290·sc on the body); "fins" two fins hugging the body base;
+  // "flame" paper streamers hanging below the origin (put it at the body base, layer back)
+  rocket: (p) => {
+    const part = p.part || 'body';
+    if (part === 'cone') return `<g>
+      <path d="M-150,0 Q-120,-130 0,-210 Q120,-130 150,0 Q0,16 -150,0 Z" fill="#FF7828" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M-70,-120 Q-40,-160 -10,-178" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="12" fill="none" stroke-linecap="round"/>
+      <circle cx="0" cy="-212" r="18" fill="#FFD13B" stroke="${OL}" stroke-width="6"/></g>`;
+    if (part === 'window') return `<g>
+      <circle cx="0" cy="0" r="62" fill="#FFFFFF" stroke="${OL}" stroke-width="${SW}"/>
+      <circle cx="0" cy="0" r="42" fill="#8FD3FF" stroke="${OL}" stroke-width="6"/>
+      <path d="M-24,-12 Q-16,-28 2,-30" stroke="#FFFFFF" stroke-width="9" fill="none" stroke-linecap="round"/></g>`;
+    if (part === 'fins') return `<g>
+      <path d="M-126,-170 L-206,-40 L-206,10 L-126,-30 Z" fill="#E63980" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M126,-170 L206,-40 L206,10 L126,-30 Z" fill="#E63980" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/></g>`;
+    if (part === 'flame') return `<g>
+      <path d="M-90,-10 Q-110,70 -70,130 Q-60,60 -40,-10 Z" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-40,-10 Q-50,110 0,190 Q50,110 40,-10 Z" fill="#FF7828" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-16,-10 Q-20,70 0,120 Q20,70 16,-10 Z" fill="#FFD13B"/>
+      <path d="M90,-10 Q110,70 70,130 Q60,60 40,-10 Z" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/></g>`;
+    return `<g>
+      <rect x="-130" y="-420" width="260" height="420" rx="14" fill="#D9A066" stroke="${OL}" stroke-width="${SW}"/>
+      <rect x="-130" y="-120" width="260" height="34" fill="#F5E050" fill-opacity=".85" stroke="${OL}" stroke-width="5"/>
+      <path d="M-104,-390 L-104,-160" stroke="#B5763D" stroke-width="7" stroke-linecap="round"/>
+      <path d="${starPath(0, -48, 30, 13)}" fill="#FFFFFF" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/></g>`;
+  },
+  // paper plane seen from the side, centred on the origin, nose pointing +x, about 190 x 80 (rot to steer; p.dir -1 mirrors it)
+  // colours: p.color (top wing, default white), p.under (lower wing, default pale blue)
+  plane: (p) => `<g transform="scale(${p.dir === -1 ? -1 : 1},1)">
+      <path d="M95,0 L-95,-44 L-62,4 Z" fill="${p.color || '#FFFFFF'}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M95,0 L-62,4 L-80,36 Z" fill="${p.under || '#CFE9FF'}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M95,0 L-70,-14" stroke="#1EA7FD" stroke-width="4" stroke-linecap="round"/></g>`,
+  // rainbow arc, base-centre at the origin, outer radius 250, with a puffy cloud on each foot
+  rainbow: () => {
+    const cols = ['#E63980', '#FF7828', '#FFD13B', '#4CAF50', '#1EA7FD', '#9B5DE5'];
+    let arcs = '';
+    cols.forEach((c, i) => { const r = 230 - i * 26; arcs += `<path d="M${-r},0 A${r},${r} 0 0 1 ${r},0" fill="none" stroke="${c}" stroke-width="26"/>`; });
+    const cloud = x => `<g transform="translate(${x},0)"><circle cx="-40" cy="-6" r="34"/><circle cx="0" cy="-26" r="44"/><circle cx="42" cy="-4" r="32"/><rect x="-74" y="-8" width="150" height="36" rx="18"/></g>`;
+    return `<g>
+      <path d="M-243,0 A243,243 0 0 1 243,0" fill="none" stroke="${OL}" stroke-width="${SW}"/>
+      ${arcs}
+      <path d="M-100,0 A100,100 0 0 1 100,0" fill="none" stroke="${OL}" stroke-width="${SW}"/>
+      <g fill="#FFFFFF" stroke="${OL}" stroke-width="7">${cloud(-165)}${cloud(165)}</g>
+      <g fill="#FFFFFF">${cloud(-165)}${cloud(165)}</g></g>`;
+  },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 

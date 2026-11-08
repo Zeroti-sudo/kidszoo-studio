@@ -43,7 +43,7 @@ Source: frame-by-frame analysis of the two published Shorts (YgXSwT-h1C0 "Brothe
 - Comic impact words in starbursts: POP!, BOING!, NOM!, CRUNCH!, CHOMP!
 
 ## Recurring props / FX
-Implemented: table, cupcake (whole/half), tray, idea bulb, "?", bubble wand, soap bubble, floor pillow, fort flag, party balloon, stripy sock, toothbrush, sand timer, play ball (magenta with yellow band), letter/number toy blocks, teal toy box, big cardboard box, terracotta flower pot with sprout / pink flower, blue watering can with water drops, drinking cup, broccoli, white plate, magenta gift box with yellow ribbon (separate lid), party hats (cone; purple for Big Bro, teal for Little Bro); fx burst, hearts, sparkle, confetti, speed lines.
+Implemented: table, cupcake (whole/half), tray, idea bulb, "?", bubble wand, soap bubble, floor pillow, fort flag, party balloon, stripy sock, toothbrush, sand timer, play ball (magenta with yellow band), letter/number toy blocks, teal toy box, big cardboard box, terracotta flower pot with sprout / pink flower, blue watering can with water drops, drinking cup, broccoli, white plate, magenta gift box with yellow ribbon (separate lid), party hats (cone; purple for Big Bro, teal for Little Bro), cardboard rocket (box body, orange cone, porthole window, magenta fins, paper flames), paper plane (white; orange for Little Bro), rainbow with clouds; fx burst, hearts, sparkle, confetti, speed lines.
 Allowed to add (same style): balloons (magenta `#E63980`, sky `#1EA7FD`, yellow `#FFD13B`, orange `#FF7828`, royal `#2B60DE`), fruit basket and fruits, ball, toy blocks, pillows, kite, bubbles.
 
 ## Known glitches to avoid

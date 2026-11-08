@@ -1,0 +1,961 @@
+{
+ "id": "ep023",
+ "title": "Color Hunt",
+ "theme": "learning colours, a funny find-it game",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "d": 0,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000
+  }
+ ],
+ "actors": {
+  "rainbow": {
+   "kind": "prop",
+   "type": "rainbow",
+   "init": {
+    "x": 540,
+    "y": 820,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 16.55,
+     "d": 0.45,
+     "e": "back",
+     "sc": 0.9
+    }
+   ]
+  },
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 300,
+    "sc": 1.1,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "mouth": "smile",
+    "look": 1
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160,
+     "hop": 24
+    },
+    {
+     "t": 1.6,
+     "d": 0.25,
+     "armL": 20,
+     "armR": 20,
+     "hop": 0
+    },
+    {
+     "t": 1.9,
+     "d": 0.3,
+     "e": "back",
+     "armR": 150,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 2.9,
+     "d": 0.3,
+     "armR": 20,
+     "brows": "normal"
+    },
+    {
+     "t": 3.6,
+     "look": 1
+    },
+    {
+     "t": 4.1,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 4.15,
+     "d": 0.3,
+     "e": "back",
+     "armL": 150,
+     "armR": 150,
+     "hop": 16
+    },
+    {
+     "t": 5.0,
+     "d": 0.25,
+     "armL": 20,
+     "armR": 20,
+     "hop": 0
+    },
+    {
+     "t": 5.2,
+     "d": 0.3,
+     "e": "back",
+     "armR": 150,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 6.1,
+     "d": 0.3,
+     "armR": 20
+    },
+    {
+     "t": 6.9,
+     "eyes": "wide",
+     "mouth": "O",
+     "look": 0,
+     "tilt": 6
+    },
+    {
+     "t": 7.4,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "tilt": 0,
+     "hop": 18
+    },
+    {
+     "t": 8.3,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 8.5,
+     "look": 1,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 9.6,
+     "d": 0.3,
+     "e": "back",
+     "armR": 85
+    },
+    {
+     "t": 11.4,
+     "d": 0.3,
+     "armR": 20,
+     "brows": "normal"
+    },
+    {
+     "t": 10.1,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 11.7,
+     "d": 0.3,
+     "e": "back",
+     "armR": 150,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 12.5,
+     "d": 0.3,
+     "armR": 20
+    },
+    {
+     "t": 13.1,
+     "eyes": "wide",
+     "mouth": "O"
+    },
+    {
+     "t": 14.0,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 14.0,
+     "d": 0.3,
+     "armL": 40,
+     "armR": 40,
+     "hop": 14
+    },
+    {
+     "t": 14.9,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 15.0,
+     "look": 0,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 15.6,
+     "d": 0.3,
+     "armR": 40
+    },
+    {
+     "t": 16.6,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160,
+     "jump": 60,
+     "eyes": "wide",
+     "mouth": "bigO"
+    },
+    {
+     "t": 16.9,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 17.2,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "hop": 30
+    },
+    {
+     "t": 18.4,
+     "d": 0.2,
+     "hop": 0,
+     "armL": 30,
+     "armR": 30
+    },
+    {
+     "t": 18.5,
+     "d": 0.3,
+     "e": "back",
+     "armL": 150,
+     "armR": 150,
+     "hop": 22
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 40,
+     "armR": 40
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 790,
+    "sc": 0.78,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "mouth": "smile",
+    "look": -1
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160,
+     "hop": 30
+    },
+    {
+     "t": 1.6,
+     "d": 0.25,
+     "armL": 20,
+     "armR": 20,
+     "hop": 0
+    },
+    {
+     "t": 2.0,
+     "eyes": "open",
+     "mouth": "O",
+     "brows": "up"
+    },
+    {
+     "t": 2.2,
+     "look": 1
+    },
+    {
+     "t": 2.45,
+     "look": -1
+    },
+    {
+     "t": 2.65,
+     "look": 1
+    },
+    {
+     "t": 2.8,
+     "d": 0.45,
+     "e": "in",
+     "x": 1230,
+     "run": 26,
+     "eyes": "happy",
+     "mouth": "grin"
+    },
+    {
+     "t": 3.3,
+     "look": -1
+    },
+    {
+     "t": 3.55,
+     "d": 0.5,
+     "e": "out",
+     "x": 790
+    },
+    {
+     "t": 4.05,
+     "d": 0.1,
+     "run": 0
+    },
+    {
+     "t": 4.0,
+     "d": 0.3,
+     "e": "back",
+     "armL": 115,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 4.8,
+     "d": 0.35,
+     "armL": 40
+    },
+    {
+     "t": 5.15,
+     "d": 0.3,
+     "armL": 20
+    },
+    {
+     "t": 5.3,
+     "eyes": "open",
+     "mouth": "O",
+     "brows": "up",
+     "look": 1
+    },
+    {
+     "t": 5.55,
+     "look": -1
+    },
+    {
+     "t": 5.8,
+     "look": 1
+    },
+    {
+     "t": 6.05,
+     "look": -1
+    },
+    {
+     "t": 6.4,
+     "eyes": "happy",
+     "mouth": "grin"
+    },
+    {
+     "t": 6.4,
+     "d": 0.3,
+     "e": "back",
+     "armL": 85,
+     "lean": -4
+    },
+    {
+     "t": 7.5,
+     "d": 0.3,
+     "armL": 20,
+     "lean": 0,
+     "mouth": "smile",
+     "hop": 22
+    },
+    {
+     "t": 8.3,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 8.6,
+     "eyes": "open",
+     "mouth": "O",
+     "brows": "up",
+     "look": 1
+    },
+    {
+     "t": 8.85,
+     "look": -1
+    },
+    {
+     "t": 9.1,
+     "look": 1
+    },
+    {
+     "t": 9.35,
+     "look": -1
+    },
+    {
+     "t": 10.0,
+     "eyes": "wide",
+     "mouth": "O",
+     "look": 0,
+     "tilt": -6,
+     "sq": 0.95
+    },
+    {
+     "t": 10.4,
+     "d": 0.2,
+     "e": "back",
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "tilt": 0,
+     "sq": 1,
+     "hop": 26
+    },
+    {
+     "t": 11.4,
+     "d": 0.2,
+     "hop": 0,
+     "look": -1
+    },
+    {
+     "t": 11.8,
+     "eyes": "open",
+     "mouth": "O",
+     "brows": "up"
+    },
+    {
+     "t": 12.0,
+     "look": 1
+    },
+    {
+     "t": 12.0,
+     "d": 0.45,
+     "e": "in",
+     "x": 1230,
+     "run": 26,
+     "mouth": "grin"
+    },
+    {
+     "t": 12.5,
+     "look": -1
+    },
+    {
+     "t": 12.65,
+     "d": 0.5,
+     "e": "out",
+     "x": 790
+    },
+    {
+     "t": 13.15,
+     "d": 0.1,
+     "run": 0
+    },
+    {
+     "t": 13.1,
+     "d": 0.3,
+     "e": "back",
+     "armL": 110,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 13.9,
+     "d": 0.35,
+     "armL": -124
+    },
+    {
+     "t": 14.2,
+     "mouth": "chew"
+    },
+    {
+     "t": 14.95,
+     "d": 0.35,
+     "armL": 20
+    },
+    {
+     "t": 15.0,
+     "mouth": "smile",
+     "look": 0
+    },
+    {
+     "t": 15.1,
+     "eyes": "open",
+     "mouth": "grin",
+     "brows": "up"
+    },
+    {
+     "t": 16.6,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 160,
+     "jump": 80,
+     "eyes": "wide",
+     "mouth": "bigO"
+    },
+    {
+     "t": 16.9,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 17.2,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "hop": 36
+    },
+    {
+     "t": 18.4,
+     "d": 0.2,
+     "hop": 0,
+     "armL": 30,
+     "armR": 30
+    },
+    {
+     "t": 18.5,
+     "d": 0.3,
+     "e": "back",
+     "armL": 150,
+     "armR": 150,
+     "hop": 30
+    },
+    {
+     "t": 21.4,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 40,
+     "armR": 40
+    }
+   ]
+  },
+  "ball": {
+   "kind": "prop",
+   "type": "ball",
+   "color": "#D83838",
+   "band": "#FFD13B",
+   "init": {
+    "x": 0,
+    "y": 0,
+    "sc": 0,
+    "attach": "little:L",
+    "ab": 1,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 3.2,
+     "d": 0.01,
+     "sc": 1
+    },
+    {
+     "t": 4.8,
+     "d": 0.35,
+     "e": "in",
+     "ab": 0,
+     "x": 665,
+     "y": 1740
+    },
+    {
+     "t": 5.15,
+     "d": 0.12,
+     "e": "out",
+     "y": 1715
+    },
+    {
+     "t": 5.27,
+     "d": 0.15,
+     "e": "in",
+     "y": 1740
+    }
+   ]
+  },
+  "broc": {
+   "kind": "prop",
+   "type": "broccoli",
+   "init": {
+    "x": 0,
+    "y": 0,
+    "sc": 0,
+    "attach": "little:L",
+    "ab": 1,
+    "oy": 30,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 12.4,
+     "d": 0.01,
+     "sc": 0.75
+    },
+    {
+     "t": 13.9,
+     "d": 0.35,
+     "oy": 70,
+     "rot": 20
+    },
+    {
+     "t": 14.25,
+     "d": 0.08,
+     "sc": 0.55
+    },
+    {
+     "t": 14.55,
+     "d": 0.08,
+     "sc": 0.32
+    },
+    {
+     "t": 14.85,
+     "d": 0.1,
+     "sc": 0
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.05,
+   "x": 540,
+   "y": 1150,
+   "r": 380,
+   "dur": 1.5,
+   "n": 10,
+   "seed": 3
+  },
+  {
+   "type": "lines",
+   "t": 2.85,
+   "x": 760,
+   "y": 1300,
+   "dir": -1,
+   "dur": 0.5
+  },
+  {
+   "type": "sparkle",
+   "t": 4.05,
+   "x": 660,
+   "y": 1180,
+   "r": 90,
+   "dur": 0.9,
+   "n": 5,
+   "seed": 6
+  },
+  {
+   "type": "burst",
+   "t": 4.1,
+   "x": 560,
+   "y": 1500,
+   "text": "RED!",
+   "r": 95,
+   "dur": 1.0,
+   "color": "#E63980"
+  },
+  {
+   "type": "burst",
+   "t": 6.5,
+   "x": 540,
+   "y": 1500,
+   "text": "BLUE!",
+   "r": 95,
+   "dur": 1.4,
+   "color": "#1EA7FD"
+  },
+  {
+   "type": "burst",
+   "t": 10.1,
+   "x": 540,
+   "y": 1500,
+   "text": "YELLOW!",
+   "r": 110,
+   "dur": 1.3,
+   "color": "#FFD13B"
+  },
+  {
+   "type": "lines",
+   "t": 12.05,
+   "x": 760,
+   "y": 1300,
+   "dir": -1,
+   "dur": 0.5
+  },
+  {
+   "type": "burst",
+   "t": 13.15,
+   "x": 540,
+   "y": 1500,
+   "text": "GREEN!",
+   "r": 105,
+   "dur": 1.0,
+   "color": "#4CAF50"
+  },
+  {
+   "type": "burst",
+   "t": 14.25,
+   "x": 830,
+   "y": 830,
+   "text": "CRUNCH!",
+   "r": 90,
+   "dur": 0.7,
+   "rot": 8
+  },
+  {
+   "type": "sparkle",
+   "t": 16.55,
+   "x": 540,
+   "y": 700,
+   "r": 280,
+   "dur": 2.0,
+   "n": 12,
+   "seed": 9
+  },
+  {
+   "type": "confetti",
+   "t": 16.7,
+   "dur": 4.8,
+   "n": 130
+  },
+  {
+   "type": "hearts",
+   "t": 19.0,
+   "x": 540,
+   "y": 1250,
+   "dur": 2.0,
+   "n": 8,
+   "seed": 21,
+   "spread": 140
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.8,
+   "text": "Let's play\n{COLOR HUNT}!",
+   "size": 108
+  },
+  {
+   "t0": 1.9,
+   "t1": 3.5,
+   "text": "Find something\n{RED}!",
+   "size": 104
+  },
+  {
+   "t0": 3.6,
+   "t1": 5.1,
+   "text": "A red {BALL}!",
+   "size": 112
+  },
+  {
+   "t0": 5.2,
+   "t1": 6.8,
+   "text": "Now find {BLUE}!",
+   "size": 108
+  },
+  {
+   "t0": 6.9,
+   "t1": 8.4,
+   "text": "Big Bro's\n{SHIRT}! Ha!",
+   "size": 104
+  },
+  {
+   "t0": 8.5,
+   "t1": 9.95,
+   "text": "Find {YELLOW}!",
+   "size": 112
+  },
+  {
+   "t0": 10.05,
+   "t1": 11.6,
+   "text": "Little Bro's\n{STAR}!",
+   "size": 104
+  },
+  {
+   "t0": 11.7,
+   "t1": 13.0,
+   "text": "Find {GREEN}!",
+   "size": 112
+  },
+  {
+   "t0": 13.1,
+   "t1": 14.9,
+   "text": "Yummy\n{BROCCOLI}!",
+   "size": 104
+  },
+  {
+   "t0": 15.0,
+   "t1": 16.5,
+   "text": "Now... {ALL} the colors?",
+   "size": 84,
+   "y": 260
+  },
+  {
+   "t0": 16.6,
+   "t1": 18.4,
+   "text": "A {RAINBOW}!",
+   "size": 112,
+   "y": 260
+  },
+  {
+   "t0": 18.5,
+   "t1": 22.0,
+   "text": "Colors are\n{EVERYWHERE}!",
+   "size": 108
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.05,
+   "type": "sparkle"
+  },
+  {
+   "t": 0.1,
+   "type": "pop"
+  },
+  {
+   "t": 1.95,
+   "type": "ding",
+   "gain": 0.6
+  },
+  {
+   "t": 2.8,
+   "type": "whoosh"
+  },
+  {
+   "t": 3.55,
+   "type": "whoosh",
+   "gain": 0.6
+  },
+  {
+   "t": 4.05,
+   "type": "ding"
+  },
+  {
+   "t": 4.95,
+   "type": "boing",
+   "gain": 0.5
+  },
+  {
+   "t": 5.25,
+   "type": "ding",
+   "gain": 0.6
+  },
+  {
+   "t": 6.45,
+   "type": "pop"
+  },
+  {
+   "t": 7.0,
+   "type": "giggle"
+  },
+  {
+   "t": 8.55,
+   "type": "ding",
+   "gain": 0.6
+  },
+  {
+   "t": 10.05,
+   "type": "pop"
+  },
+  {
+   "t": 10.4,
+   "type": "chime"
+  },
+  {
+   "t": 11.75,
+   "type": "ding",
+   "gain": 0.6
+  },
+  {
+   "t": 12.0,
+   "type": "whoosh"
+  },
+  {
+   "t": 12.65,
+   "type": "whoosh",
+   "gain": 0.6
+  },
+  {
+   "t": 13.15,
+   "type": "ding"
+  },
+  {
+   "t": 14.25,
+   "type": "crunch",
+   "gain": 0.5
+  },
+  {
+   "t": 14.55,
+   "type": "crunch",
+   "gain": 0.45
+  },
+  {
+   "t": 15.0,
+   "type": "drumroll",
+   "dur": 1.5,
+   "gain": 0.7
+  },
+  {
+   "t": 16.6,
+   "type": "tada"
+  },
+  {
+   "t": 16.7,
+   "type": "pops"
+  },
+  {
+   "t": 18.5,
+   "type": "chime"
+  },
+  {
+   "t": 19.0,
+   "type": "sparkle"
+  }
+ ],
+ "music": {
+  "bpm": 118,
+  "seed": 23,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 15.0,
+    "t1": 16.5,
+    "gain": 0.45
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: Color Hunt! 🌈 #shorts",
+  "description": "Let's play COLOR HUNT! 🌈 Find something RED, BLUE, YELLOW and GREEN with Big Bro and Little Bro. Some colors are hiding in very silly places! And what has ALL the colors? A fun Kidszoo cartoon for learning colors with a rainbow surprise.\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #learncolors #colors #brothers #rainbow #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "learn colors",
+   "colors for kids",
+   "color hunt",
+   "kidszoo",
+   "animated shorts",
+   "rainbow"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}
