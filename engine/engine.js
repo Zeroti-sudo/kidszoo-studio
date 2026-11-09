@@ -360,6 +360,27 @@ const PROPS = {
       <g fill="#FFFFFF" stroke="${OL}" stroke-width="7">${cloud(-165)}${cloud(165)}</g>
       <g fill="#FFFFFF">${cloud(-165)}${cloud(165)}</g></g>`;
   },
+  // standing toy drum (conga style), bottom-centre at the origin, 150 wide x p.h tall (default 230); drum skin at y -h
+  drum: (p) => { const h = p.h || 230, c = p.color || '#FF7828'; let zz = 'M-70,' + (-h * .55);
+    for (let i = 0; i < 8; i++) zz += ` L${-70 + (i + 1) * 17.5},${(-h * .55 + (i % 2 ? 0 : 26)).toFixed(0)}`;
+    return `<g>
+      <path d="M-75,${-h} L75,${-h} L60,0 L-60,0 Z" fill="${c}" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="${zz}" fill="none" stroke="#FFD13B" stroke-width="12" stroke-linejoin="round"/>
+      <rect x="-64" y="-18" width="128" height="18" rx="6" fill="#1EA7FD" stroke="${OL}" stroke-width="6"/>
+      <ellipse cx="0" cy="${-h}" rx="78" ry="22" fill="#1EA7FD" stroke="${OL}" stroke-width="${SW}"/>
+      <ellipse cx="0" cy="${-h - 4}" rx="64" ry="15" fill="#FFF5DC" stroke="${OL}" stroke-width="5"/></g>`; },
+  // maraca: grip (handle end) at the origin, handle points up, round head ~70 wide at y -110; p.color
+  maraca: (p) => { const c = p.color || '#E63980'; return `<g>
+      <rect x="-10" y="-74" width="20" height="78" rx="9" fill="#FFD13B" stroke="${OL}" stroke-width="6"/>
+      <ellipse cx="0" cy="-112" rx="36" ry="46" fill="${c}" stroke="${OL}" stroke-width="${SW}"/>
+      <circle cx="-12" cy="-124" r="7" fill="#FFD13B" stroke="${OL}" stroke-width="3"/><circle cx="14" cy="-108" r="7" fill="#FFD13B" stroke="${OL}" stroke-width="3"/>
+      <circle cx="-6" cy="-92" r="6" fill="#FFD13B" stroke="${OL}" stroke-width="3"/>
+      <path d="M-20,-134 Q-14,-148 0,-152" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="7" fill="none" stroke-linecap="round"/></g>`; },
+  // pretend superhero cape: origin at the top-centre (put it on the neck: attach "<kid>:H", oy 319 Big / 262 Little), layer back
+  cape: (p) => { const c = p.color || '#D83838'; return `<g>
+      <path d="M-78,0 Q0,16 78,0 L150,300 Q112,322 75,306 Q38,326 0,308 Q-38,326 -75,306 Q-112,322 -150,300 Z" fill="${c}" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <path d="M-60,40 L-112,282 M60,40 L112,282" stroke="#000" stroke-opacity=".14" stroke-width="12" stroke-linecap="round"/>
+      <path d="M-84,-2 Q0,22 84,-2 L80,16 Q0,40 -80,16 Z" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/></g>`; },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 

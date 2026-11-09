@@ -1,0 +1,790 @@
+{
+ "id": "ep028",
+ "title": "Super Bros",
+ "theme": "pretend superheroes / helping is heroic",
+ "duration": 22.5,
+ "fps": 30,
+ "set": "home",
+ "camera": [
+  {
+   "t": 0,
+   "d": 0,
+   "z": 1.25,
+   "cx": 540,
+   "cy": 2000
+  }
+ ],
+ "actors": {
+  "capeB": {
+   "kind": "prop",
+   "type": "cape",
+   "color": "#D83838",
+   "init": {
+    "attach": "big:H",
+    "ab": 1,
+    "oy": 319,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.08,
+     "d": 0.35,
+     "e": "back",
+     "sc": 1.1
+    },
+    {
+     "t": 17.6,
+     "d": 0.35,
+     "e": "in",
+     "sc": 0
+    }
+   ]
+  },
+  "capeL": {
+   "kind": "prop",
+   "type": "cape",
+   "color": "#2B60DE",
+   "init": {
+    "attach": "little:H",
+    "ab": 1,
+    "oy": 262,
+    "sc": 0,
+    "layer": "back"
+   },
+   "keys": [
+    {
+     "t": 0.16,
+     "d": 0.35,
+     "e": "back",
+     "sc": 0.78
+    },
+    {
+     "t": 17.75,
+     "d": 0.35,
+     "e": "in",
+     "sc": 0
+    }
+   ]
+  },
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "x": 290,
+    "sc": 1.1,
+    "armL": 20,
+    "armR": 20,
+    "eyes": "happy",
+    "brows": "normal",
+    "mouth": "smile"
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.2,
+     "hop": 24
+    },
+    {
+     "t": 0.1,
+     "d": 0.3,
+     "e": "back",
+     "armR": 165,
+     "eyes": "happy",
+     "mouth": "smile"
+    },
+    {
+     "t": 1.8,
+     "d": 0.3,
+     "hop": 0,
+     "armR": 20
+    },
+    {
+     "t": 2.0,
+     "d": 0.2,
+     "run": 30,
+     "lean": 4,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 4.0,
+     "d": 0.2,
+     "run": 0,
+     "lean": 0,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 4.3,
+     "d": 0.3,
+     "e": "back",
+     "armL": 112,
+     "armR": 112,
+     "sq": 1.05,
+     "brows": "angry",
+     "mouth": "grin",
+     "eyes": "open"
+    },
+    {
+     "t": 5.3,
+     "d": 0.3,
+     "armL": 20,
+     "armR": 20,
+     "sq": 1,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 6.5,
+     "d": 0.2,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 1
+    },
+    {
+     "t": 8.5,
+     "d": 0.35,
+     "look": 0
+    },
+    {
+     "t": 9.0,
+     "d": 0.3,
+     "eyes": "open",
+     "brows": "angry",
+     "mouth": "grin"
+    },
+    {
+     "t": 9.9,
+     "d": 0.2,
+     "sq": 0.84,
+     "armR": 150,
+     "armL": 25
+    },
+    {
+     "t": 10.15,
+     "d": 0.4,
+     "e": "out",
+     "jump": 100,
+     "sq": 1.06
+    },
+    {
+     "t": 10.55,
+     "d": 0.35,
+     "e": "in",
+     "jump": 0,
+     "sq": 1
+    },
+    {
+     "t": 10.95,
+     "d": 0.3,
+     "eyes": "happy",
+     "brows": "up",
+     "mouth": "smile"
+    },
+    {
+     "t": 11.4,
+     "d": 0.5,
+     "armR": 88,
+     "armL": 20
+    },
+    {
+     "t": 13.3,
+     "d": 0.5,
+     "armR": 20
+    },
+    {
+     "t": 13.9,
+     "d": 0.3,
+     "look": 1,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 17.2,
+     "d": 0.3,
+     "look": 1,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 19.2,
+     "d": 0.3,
+     "e": "back",
+     "armL": 165,
+     "armR": 165,
+     "hop": 50,
+     "look": 0,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 21.8,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 20,
+     "armR": 30
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "x": 790,
+    "sc": 0.78,
+    "armL": 55,
+    "armR": 20,
+    "eyes": "happy",
+    "brows": "normal",
+    "mouth": "smile"
+   },
+   "keys": [
+    {
+     "t": 0.0,
+     "d": 0.2,
+     "hop": 30
+    },
+    {
+     "t": 0.1,
+     "d": 0.3,
+     "e": "back",
+     "armR": 165
+    },
+    {
+     "t": 1.8,
+     "d": 0.3,
+     "hop": 0,
+     "armR": 20
+    },
+    {
+     "t": 2.15,
+     "d": 0.2,
+     "run": 18,
+     "lean": -4,
+     "armL": 75,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 4.0,
+     "d": 0.2,
+     "run": 0,
+     "lean": 0,
+     "armL": 55,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 4.9,
+     "d": 0.3,
+     "e": "back",
+     "armR": 112,
+     "sq": 1.04,
+     "brows": "angry",
+     "mouth": "grin",
+     "eyes": "open"
+    },
+    {
+     "t": 5.6,
+     "d": 0.3,
+     "e": "back",
+     "armL": 112
+    },
+    {
+     "t": 6.3,
+     "d": 0.35,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 6.6,
+     "d": 0.3,
+     "armL": 150,
+     "armR": 150,
+     "mouth": "bigO"
+    },
+    {
+     "t": 7.0,
+     "d": 0.22,
+     "e": "out",
+     "jump": 90
+    },
+    {
+     "t": 7.22,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 7.7,
+     "d": 0.22,
+     "e": "out",
+     "jump": 90
+    },
+    {
+     "t": 7.92,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 8.4,
+     "d": 0.4,
+     "armL": 10,
+     "armR": 10,
+     "eyes": "open",
+     "brows": "worried",
+     "mouth": "sad",
+     "tilt": -8,
+     "sq": 0.95,
+     "look": 0
+    },
+    {
+     "t": 10.2,
+     "d": 0.2,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "tilt": 0,
+     "sq": 1,
+     "look": -1
+    },
+    {
+     "t": 11.0,
+     "d": 0.3,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "up"
+    },
+    {
+     "t": 11.8,
+     "d": 0.4,
+     "armL": 90,
+     "look": 0
+    },
+    {
+     "t": 13.4,
+     "d": 0.5,
+     "armL": 55
+    },
+    {
+     "t": 13.9,
+     "d": 0.25,
+     "e": "back",
+     "hop": 34,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 15.0,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 17.2,
+     "d": 0.3,
+     "look": -1,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 19.2,
+     "d": 0.3,
+     "e": "back",
+     "armR": 165,
+     "hop": 60,
+     "look": 0,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "smile"
+    },
+    {
+     "t": 21.8,
+     "d": 0.3,
+     "hop": 0,
+     "armR": 30
+    }
+   ]
+  },
+  "balloon": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#1EA7FD",
+   "len": 300,
+   "init": {
+    "attach": "little:L",
+    "ab": 1,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 6.3,
+     "d": 0,
+     "x": 598,
+     "y": 1233,
+     "ab": 0
+    },
+    {
+     "t": 6.3,
+     "d": 4.25,
+     "e": "out",
+     "x": 481
+    },
+    {
+     "t": 6.3,
+     "d": 4.25,
+     "e": "out",
+     "y": 877
+    },
+    {
+     "t": 6.3,
+     "d": 0.8,
+     "rot": 6
+    },
+    {
+     "t": 7.1,
+     "d": 0.8,
+     "rot": -6
+    },
+    {
+     "t": 7.9,
+     "d": 0.8,
+     "rot": 6
+    },
+    {
+     "t": 8.7,
+     "d": 0.8,
+     "rot": -6
+    },
+    {
+     "t": 9.5,
+     "d": 0.8,
+     "rot": 6
+    },
+    {
+     "t": 10.3,
+     "d": 0.2,
+     "rot": 0
+    },
+    {
+     "t": 10.55,
+     "d": 0.06,
+     "attach": "big:R",
+     "ab": 1
+    },
+    {
+     "t": 12.8,
+     "d": 0,
+     "x": 580,
+     "y": 1183,
+     "ab": 0,
+     "attach": "little:L"
+    },
+    {
+     "t": 12.8,
+     "d": 0.5,
+     "ab": 1
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.05,
+   "x": 545,
+   "y": 1250,
+   "r": 300,
+   "dur": 1.5,
+   "n": 9
+  },
+  {
+   "type": "lines",
+   "t": 2.0,
+   "x": 150,
+   "y": 1300,
+   "dir": -1,
+   "dur": 1.9
+  },
+  {
+   "type": "lines",
+   "t": 2.15,
+   "x": 930,
+   "y": 1360,
+   "dir": 1,
+   "dur": 1.8
+  },
+  {
+   "type": "burst",
+   "t": 4.35,
+   "x": 545,
+   "y": 1300,
+   "text": "STRONG!",
+   "r": 105,
+   "dur": 0.9,
+   "color": "#FF7828"
+  },
+  {
+   "type": "burst",
+   "t": 10.55,
+   "x": 720,
+   "y": 790,
+   "text": "GOT IT!",
+   "r": 110,
+   "dur": 1.0,
+   "color": "#FFD13B"
+  },
+  {
+   "type": "hearts",
+   "t": 13.9,
+   "x": 545,
+   "y": 1250,
+   "dur": 1.8,
+   "n": 8,
+   "spread": 120,
+   "seed": 13
+  },
+  {
+   "type": "sparkle",
+   "t": 17.55,
+   "x": 290,
+   "y": 1300,
+   "r": 150,
+   "dur": 1.0,
+   "n": 6,
+   "seed": 6
+  },
+  {
+   "type": "sparkle",
+   "t": 17.7,
+   "x": 790,
+   "y": 1400,
+   "r": 120,
+   "dur": 1.0,
+   "n": 6,
+   "seed": 7
+  },
+  {
+   "type": "confetti",
+   "t": 19.2,
+   "dur": 3.3,
+   "n": 120
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.9,
+   "text": "{SUPER} BROS!",
+   "size": 120
+  },
+  {
+   "t0": 2.0,
+   "t1": 4.2,
+   "text": "Super {FAST}!",
+   "size": 116
+  },
+  {
+   "t0": 4.3,
+   "t1": 6.3,
+   "text": "Super {STRONG}!",
+   "size": 112
+  },
+  {
+   "t0": 6.4,
+   "t1": 8.9,
+   "text": "Oh no! The {balloon}!",
+   "size": 92,
+   "y": 1770
+  },
+  {
+   "t0": 9.0,
+   "t1": 11.5,
+   "text": "Big Bro to the {RESCUE}!",
+   "size": 84,
+   "y": 1770
+  },
+  {
+   "t0": 11.6,
+   "t1": 13.8,
+   "text": "Here you {go}!",
+   "size": 108
+  },
+  {
+   "t0": 13.9,
+   "t1": 17.1,
+   "text": "Thank you,\n{Super Bro}!",
+   "size": 104
+  },
+  {
+   "t0": 17.2,
+   "t1": 19.1,
+   "text": "No cape\nneeded...",
+   "size": 104
+  },
+  {
+   "t0": 19.2,
+   "t1": 22.5,
+   "text": "{HELPING} makes\nyou a {HERO}!",
+   "size": 100
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.08,
+   "type": "whoosh"
+  },
+  {
+   "t": 0.15,
+   "type": "sparkle"
+  },
+  {
+   "t": 0.4,
+   "type": "tada",
+   "gain": 0.7
+  },
+  {
+   "t": 2.0,
+   "type": "whoosh"
+  },
+  {
+   "t": 2.6,
+   "type": "whoosh",
+   "gain": 0.6
+  },
+  {
+   "t": 3.2,
+   "type": "whoosh",
+   "gain": 0.6
+  },
+  {
+   "t": 4.35,
+   "type": "boing"
+  },
+  {
+   "t": 4.95,
+   "type": "boing",
+   "gain": 0.6
+  },
+  {
+   "t": 5.65,
+   "type": "boing",
+   "gain": 0.6
+  },
+  {
+   "t": 6.3,
+   "type": "pop",
+   "gain": 0.5
+  },
+  {
+   "t": 6.45,
+   "type": "whoosh",
+   "gain": 0.5
+  },
+  {
+   "t": 7.0,
+   "type": "boing",
+   "gain": 0.5
+  },
+  {
+   "t": 7.7,
+   "type": "boing",
+   "gain": 0.5
+  },
+  {
+   "t": 8.4,
+   "type": "sad"
+  },
+  {
+   "t": 9.0,
+   "type": "drumroll",
+   "dur": 1.1
+  },
+  {
+   "t": 10.15,
+   "type": "whoosh"
+  },
+  {
+   "t": 10.55,
+   "type": "ding"
+  },
+  {
+   "t": 12.8,
+   "type": "pop",
+   "gain": 0.5
+  },
+  {
+   "t": 13.9,
+   "type": "chime"
+  },
+  {
+   "t": 14.0,
+   "type": "giggle"
+  },
+  {
+   "t": 17.55,
+   "type": "sparkle"
+  },
+  {
+   "t": 19.2,
+   "type": "tada"
+  },
+  {
+   "t": 19.3,
+   "type": "pops"
+  },
+  {
+   "t": 20.3,
+   "type": "clap"
+  },
+  {
+   "t": 20.9,
+   "type": "chime"
+  }
+ ],
+ "music": {
+  "bpm": 124,
+  "seed": 28,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 8.3,
+    "t1": 9.9,
+    "gain": 0.35
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: SUPER BROS to the Rescue! 🦸 #shorts",
+  "description": "SUPER BROS! 🦸 Big Bro and Little Bro put on their capes: super fast, super strong... but oh no, Little Bro's balloon floats away! Super Big Bro jumps to the rescue and gives it back. A fun Kidszoo cartoon about pretend play, kindness and how helping makes you a hero, cape or no cape!\n\nNew Big Bro & Little Bro adventures every week on Kidszoo!\n\n#kidscartoon #cartoonforkids #superhero #pretendplay #helping #brothers #shorts",
+  "tags": [
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "superhero for kids",
+   "pretend play",
+   "helping others",
+   "kidszoo",
+   "animated shorts",
+   "kindness for kids"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}

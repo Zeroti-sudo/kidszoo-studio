@@ -192,6 +192,27 @@ def sfx(kind, dur=None):
             v = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / 0.11) * 0.35
             s = int(s0 * SR); out[s:s + len(t)] += v
         return out
+    if kind == 'knock':  # wooden toy block set down: short hollow "tok"
+        t = tt(0.12); f = 620 + 180 * np.exp(-60 * t)
+        tone = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(len(t), 0.0005, 0.01, 40)
+        n = bp(rng.standard_normal(len(t)), 900, 3200) * env(len(t), 0.0005, 0.005, 90)
+        return (tone * 0.6 + n * 0.5) * 0.8
+    if kind == 'crash':  # a soft tumble of wooden blocks: a cascade of knocks
+        out = np.zeros(int(SR * 1.0))
+        for i, d in enumerate([0, .07, .15, .21, .3, .38, .5, .62]):
+            k = sfx('knock') * (0.9 - i * 0.07); s = int(d * SR); out[s:s + len(k)] += k[:len(out) - s]
+        return out
+    if kind == 'boom':  # friendly toy-drum "boom": a round tom with a little skin slap
+        t = tt(0.4); f = 95 + 70 * np.exp(-18 * t)
+        tom = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(len(t), 0.001, 0.05, 8)
+        slap = bp(rng.standard_normal(len(t)), 400, 2500) * env(len(t), 0.0005, 0.005, 60) * 0.35
+        return (tom + slap) * 0.75
+    if kind == 'shake':  # maraca "chk-chk": two quick shaker bursts
+        out = np.zeros(int(SR * 0.3))
+        for s0, g in ((0.0, 1.0), (0.12, 0.8)):
+            n = hp(rng.standard_normal(int(SR * 0.09)), 4500) * env(int(SR * 0.09), 0.01, 0.02, 25) * 0.6 * g
+            s = int(s0 * SR); out[s:s + len(n)] += n
+        return out
     raise ValueError('unknown sfx ' + kind)
 
 
