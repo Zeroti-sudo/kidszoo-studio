@@ -381,6 +381,20 @@ const PROPS = {
       <path d="M-78,0 Q0,16 78,0 L150,300 Q112,322 75,306 Q38,326 0,308 Q-38,326 -75,306 Q-112,322 -150,300 Z" fill="${c}" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
       <path d="M-60,40 L-112,282 M60,40 L112,282" stroke="#000" stroke-opacity=".14" stroke-width="12" stroke-linecap="round"/>
       <path d="M-84,-2 Q0,22 84,-2 L80,16 Q0,40 -80,16 Z" fill="#FFD13B" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/></g>`; },
+  // kite on a string (ep031): string end (hand) at the origin, kite centre (bridle) at (0,-len), nose up, about 170 wide x 220 tall,
+  // bow tail hanging from the bottom tip; colours p.color / p.color2, string length p.len (default 160). Give the actor dyn:["len"]
+  // and a len key to reel the string out while it flies.
+  kite: (p) => { const c = p.color || '#FFD13B', c2 = p.color2 || '#E63980', L = p.len || 160, T = -L;
+    const bow = (x, y, col) => `<path d="M${x},${y} L${x - 22},${y - 14} L${x - 22},${y + 14} Z M${x},${y} L${x + 22},${y - 14} L${x + 22},${y + 14} Z" fill="${col}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>`;
+    return `<g>
+      <path d="M0,0 Q${(L * .06).toFixed(0)},${(T * .5).toFixed(0)} 0,${T}" stroke="${OL}" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M0,${T + 92} Q30,${T + 130} 4,${T + 168} Q-24,${T + 206} 10,${T + 244}" stroke="${OL}" stroke-width="5" fill="none" stroke-linecap="round"/>
+      ${bow(18, T + 136, '#1EA7FD')}${bow(-6, T + 190, '#FF7828')}${bow(12, T + 238, '#2CA58D')}
+      <path d="M0,${T - 128} L-84,${T - 30} L0,${T + 92} Z" fill="${c}"/><path d="M0,${T - 128} L84,${T - 30} L0,${T + 92} Z" fill="${c2}"/>
+      <path d="M-84,${T - 30} L84,${T - 30} L0,${T + 92} Z" fill="#000" fill-opacity=".12"/>
+      <path d="M0,${T - 128} L0,${T + 92} M-84,${T - 30} L84,${T - 30}" stroke="#8A5A2B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0,${T - 128} L84,${T - 30} L0,${T + 92} L-84,${T - 30} Z" fill="none" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
+      <circle cx="0" cy="${T - 30}" r="11" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/></g>`; },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
@@ -548,6 +562,10 @@ function renderProp(id, a, t) {
     const [kid, side] = s.attach.split(':');
     const hp = handPoint(kid, side);
     if (hp) { x = lerp(x, hp.x + s.ox, s.ab); y = lerp(y, hp.y + s.oy, s.ab); }
+  }
+  if (a.dyn) { // props whose shape follows keyed params (e.g. kite len): redraw only when they change
+    const k = a.dyn.map(p => s[p]).join('|');
+    if (g.dataset.k !== k) { g.dataset.k = k; const q = Object.assign({}, a); for (const p of a.dyn) q[p] = s[p]; g.innerHTML = PROPS[a.type](q); }
   }
   g.setAttribute('opacity', clamp(s.op));
   g.setAttribute('display', s.op <= 0.001 || s.sc <= 0.001 ? 'none' : 'inline');
