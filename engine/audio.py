@@ -213,6 +213,27 @@ def sfx(kind, dur=None):
             n = hp(rng.standard_normal(int(SR * 0.09)), 4500) * env(int(SR * 0.09), 0.01, 0.02, 25) * 0.6 * g
             s = int(s0 * SR); out[s:s + len(n)] += n
         return out
+    if kind == 'ahh':  # the "ah... ah..." build-up before a sneeze: a soft rising, wavering hum
+        d = dur or 0.7; t = tt(d)
+        f = (260 + 260 * (t / d) ** 1.4) * (1 + 0.03 * np.sin(2 * np.pi * 6 * t))
+        ph = (np.cumsum(f) / SR) % 1; tri = 2 * np.abs(2 * ph - 1) - 1
+        return lp(tri, 2200) * np.sin(np.pi * np.minimum(1, t / d) * 0.5) ** 2 * np.minimum(1, (d - t) / 0.05) * 0.32
+    if kind == 'achoo':  # cartoon sneeze: a short "a-" chirp, then a soft breathy "CHOO" burst
+        out = np.zeros(int(SR * 0.6))
+        t = tt(0.08); f = 520 + 300 * t / 0.08
+        ph = (np.cumsum(f) / SR) % 1; v = (2 * np.abs(2 * ph - 1) - 1) * np.sin(np.pi * t / 0.08) * 0.3
+        out[:len(t)] += lp(v, 2500)
+        n = rng.standard_normal(int(SR * 0.42)); tn = tt(0.42)
+        ch = bp(n, 1500, 6000) * np.exp(-7 * tn) * np.minimum(1, tn / 0.01) * 0.55
+        tone = np.sin(2 * np.pi * np.cumsum(330 * np.exp(-2.5 * tn)) / SR) * np.exp(-6 * tn) * 0.25
+        s0 = int(0.09 * SR); out[s0:s0 + len(tn)] += ch + tone
+        return out
+    if kind == 'beep':  # friendly toy-robot "beep-boop": two soft square-ish tones
+        out = np.zeros(int(SR * 0.5))
+        for s0, f in ((0.0, 880.0), (0.2, 660.0)):
+            t = tt(0.16); sq = lp(np.sign(np.sin(2 * np.pi * f * t)), 2600)
+            s = int(s0 * SR); out[s:s + len(t)] += sq * env(len(t), 0.004, 0.03, 4) * 0.22
+        return out
     raise ValueError('unknown sfx ' + kind)
 
 

@@ -395,6 +395,53 @@ const PROPS = {
       <path d="M0,${T - 128} L0,${T + 92} M-84,${T - 30} L84,${T - 30}" stroke="#8A5A2B" stroke-width="7" stroke-linecap="round"/>
       <path d="M0,${T - 128} L84,${T - 30} L0,${T + 92} L-84,${T - 30} Z" fill="none" stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"/>
       <circle cx="0" cy="${T - 30}" r="11" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/></g>`; },
+  // tissue box, bottom-centre at the origin, about 150 wide x 86 tall, one tissue poking out of the top
+  tissuebox: () => `<g>
+      <path d="M-10,-84 Q-40,-128 -16,-150 Q2,-128 18,-150 Q40,-126 12,-84 Z" fill="#FFFFFF" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="-76" y="-86" width="152" height="86" rx="10" fill="#9B5DE5" stroke="${OL}" stroke-width="${SW}"/>
+      <ellipse cx="0" cy="-86" rx="42" ry="9" fill="#5E2E9E" stroke="${OL}" stroke-width="5"/>
+      <path d="${heartPath(26)}" transform="translate(-40,-30)" fill="#FFD13B" stroke="${OL}" stroke-width="4"/>
+      <path d="${heartPath(22)}" transform="translate(42,-28)" fill="#FF8FC7" stroke="${OL}" stroke-width="4"/></g>`,
+  // one soft tissue, pinched corner (grip point) at the origin, about 110 x 110, puffing up above it
+  tissue: () => `<g>
+      <path d="M0,0 Q-58,-10 -56,-62 Q-50,-104 -8,-100 Q30,-118 52,-82 Q74,-40 34,-14 Q18,-4 0,0 Z" fill="#FFFFFF" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-30,-60 Q-6,-48 14,-74 M-10,-28 Q12,-36 30,-50" stroke="#CFE9FF" stroke-width="5" fill="none" stroke-linecap="round"/></g>`,
+  // tickly feather, quill end (grip point) at the origin, plume up to y -230; colour p.color
+  feather: (p) => { const c = p.color || '#FF8FC7'; return `<g>
+      <path d="M0,0 Q-6,-110 4,-226" stroke="${OL}" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M-3,-60 Q-70,-100 -54,-170 Q-40,-214 4,-230 Q50,-200 50,-140 Q48,-84 -3,-60 Z" fill="${c}" stroke="${OL}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-30,-110 L-4,-120 M-34,-150 L-2,-160 M30,-120 L4,-130 M34,-160 L6,-170" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="6" stroke-linecap="round"/>
+      <path d="M0,0 Q-6,-110 4,-226" stroke="#FFF5DC" stroke-width="5" fill="none" stroke-linecap="round"/></g>`; },
+  // cardboard robot, every part bottom-centre at the same origin (the robot's feet) unless noted:
+  // part:"legs" two box legs 0..-110; "body" box -110..-370 (260 wide) with buttons; "head" box -370..-530 with eyes
+  // (p.on true = lit yellow eyes and a smile); "antenna" from -530 to a red ball at -640;
+  // "armL"/"armR" one arm each, origin at the shoulder (put it at y -330 and x ∓130), hanging down; rot to wave
+  robot: (p) => {
+    const part = p.part || 'body', o = `stroke="${OL}" stroke-width="${SW}" stroke-linejoin="round"`;
+    if (part === 'legs') return `<g>
+      <rect x="-90" y="-112" width="64" height="112" rx="10" fill="#C48A50" ${o}/><rect x="26" y="-112" width="64" height="112" rx="10" fill="#C48A50" ${o}/>
+      <rect x="-104" y="-26" width="92" height="26" rx="10" fill="#1EA7FD" ${o}/><rect x="12" y="-26" width="92" height="26" rx="10" fill="#1EA7FD" ${o}/></g>`;
+    if (part === 'head') return `<g>
+      <rect x="-110" y="-530" width="220" height="164" rx="16" fill="#D9A066" ${o}/>
+      <rect x="-130" y="-480" width="22" height="60" rx="8" fill="#E63980" ${o}/><rect x="108" y="-480" width="22" height="60" rx="8" fill="#E63980" ${o}/>
+      <circle cx="-48" cy="-462" r="30" fill="${p.on ? '#FFE45C' : '#5A5A5A'}" ${o}/><circle cx="48" cy="-462" r="30" fill="${p.on ? '#FFE45C' : '#5A5A5A'}" ${o}/>
+      ${p.on ? `<circle cx="-56" cy="-472" r="8" fill="#FFFFFF"/><circle cx="40" cy="-472" r="8" fill="#FFFFFF"/>
+      <path d="M-40,-408 Q0,-382 40,-408" stroke="${OL}" stroke-width="8" fill="none" stroke-linecap="round"/>`
+      : `<path d="M-34,-400 L34,-400" stroke="${OL}" stroke-width="8" stroke-linecap="round"/>`}</g>`;
+    if (part === 'antenna') return `<g>
+      <rect x="-8" y="-612" width="16" height="86" rx="8" fill="#9AA5B1" stroke="${OL}" stroke-width="6"/>
+      <circle cx="0" cy="-628" r="22" fill="#E63980" stroke="${OL}" stroke-width="7"/><circle cx="-7" cy="-635" r="6" fill="#FFFFFF"/></g>`;
+    if (part === 'armL' || part === 'armR') return `<g>
+      <rect x="-20" y="-10" width="40" height="150" rx="14" fill="#C48A50" ${o}/>
+      <path d="M-28,150 Q-34,190 0,196 Q34,190 28,150 L12,150 Q10,172 0,172 Q-10,172 -12,150 Z" fill="#9AA5B1" ${o}/></g>`;
+    return `<g>
+      <rect x="-130" y="-372" width="260" height="262" rx="16" fill="#D9A066" ${o}/>
+      <rect x="-80" y="-326" width="160" height="110" rx="12" fill="#FFF5DC" stroke="${OL}" stroke-width="6"/>
+      <circle cx="-42" cy="-272" r="18" fill="#E63980" stroke="${OL}" stroke-width="6"/>
+      <circle cx="0" cy="-272" r="18" fill="#FFD13B" stroke="${OL}" stroke-width="6"/>
+      <circle cx="42" cy="-272" r="18" fill="#2CA58D" stroke="${OL}" stroke-width="6"/>
+      <path d="${heartPath(30)}" transform="translate(0,-150)" fill="#F06292" stroke="${OL}" stroke-width="5"/></g>`;
+  },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
