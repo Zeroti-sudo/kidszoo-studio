@@ -234,6 +234,19 @@ def sfx(kind, dur=None):
             t = tt(0.16); sq = lp(np.sign(np.sin(2 * np.pi * f * t)), 2600)
             s = int(s0 * SR); out[s:s + len(t)] += sq * env(len(t), 0.004, 0.03, 4) * 0.22
         return out
+    if kind == 'yawn':  # big cartoon yawn "aaa-ohhh": a soft triangle hum that rises, then slides down
+        d = dur or 1.3; t = tt(d); x = t / d
+        f = (200 + 230 * np.sin(np.pi * np.minimum(1, x / 0.7)) ** 1.2 - 60 * np.clip((x - 0.7) / 0.3, 0, 1)) * (1 + 0.025 * np.sin(2 * np.pi * 5 * t))
+        ph = (np.cumsum(f) / SR) % 1; tri = 2 * np.abs(2 * ph - 1) - 1
+        br = bp(rng.standard_normal(len(t)), 600, 3000) * 0.12
+        return (lp(tri, 1800) + br) * np.sin(np.pi * x) ** 0.8 * 0.34
+    if kind == 'snore':  # gentle cartoon snore: a low buzzy breath in, then a soft whistle out
+        d = dur or 1.2; t = tt(d); x = t / d
+        buzz = lp(np.sign(np.sin(2 * np.pi * 55 * t)) * (1 + 0.5 * np.sin(2 * np.pi * 23 * t)), 500)
+        inh = (buzz * 0.5 + lp(rng.standard_normal(len(t)), 900) * 0.5) * np.sin(np.pi * np.minimum(1, x / 0.55)) ** 2 * (x < 0.55)
+        wf = 900 - 300 * np.clip((x - 0.6) / 0.4, 0, 1)
+        wh = np.sin(2 * np.pi * np.cumsum(wf) / SR) * np.sin(np.pi * np.clip((x - 0.6) / 0.4, 0, 1)) * 0.25
+        return (inh * 0.45 + wh) * 0.6
     raise ValueError('unknown sfx ' + kind)
 
 
