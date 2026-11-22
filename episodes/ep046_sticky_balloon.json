@@ -1,0 +1,856 @@
+{
+ "id": "ep046",
+ "title": "The STUCK Balloon",
+ "theme": "funny mishap / a balloon stuck to Little Bro's head jumps to Big Bro, balloon hats",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [],
+ "actors": {
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "sc": 1.1,
+    "x": 360,
+    "eyes": "open",
+    "mouth": "bigO",
+    "brows": "up",
+    "look": 1
+   },
+   "keys": [
+    {
+     "t": 0.3,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 1.0,
+     "d": 0.3,
+     "hop": 12,
+     "tilt": 5
+    },
+    {
+     "t": 1.8,
+     "d": 0.2,
+     "hop": 0,
+     "tilt": 0
+    },
+    {
+     "t": 4.3,
+     "d": 0.2,
+     "mouth": "bigO",
+     "hop": 10
+    },
+    {
+     "t": 6.3,
+     "d": 0.2,
+     "hop": 0,
+     "mouth": "smile"
+    },
+    {
+     "t": 6.5,
+     "d": 0.5,
+     "x": 480,
+     "run": 16,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 7.0,
+     "d": 0.1,
+     "run": 0
+    },
+    {
+     "t": 7.0,
+     "d": 0.3,
+     "e": "out",
+     "armR": 160
+    },
+    {
+     "t": 7.2,
+     "d": 0.3,
+     "lean": 3
+    },
+    {
+     "t": 8.0,
+     "eyes": "wide",
+     "mouth": "O"
+    },
+    {
+     "t": 8.6,
+     "d": 0.2,
+     "lean": 0
+    },
+    {
+     "t": 9.0,
+     "d": 0.5,
+     "x": 400,
+     "run": 16,
+     "armR": 160
+    },
+    {
+     "t": 9.5,
+     "d": 0.1,
+     "run": 0
+    },
+    {
+     "t": 9.6,
+     "look": 1,
+     "eyes": "wide",
+     "brows": "worried",
+     "mouth": "wobble"
+    },
+    {
+     "t": 10.7,
+     "d": 0.25,
+     "e": "io",
+     "armR": 172
+    },
+    {
+     "t": 10.7,
+     "d": 0.25,
+     "e": "io",
+     "lean": 3
+    },
+    {
+     "t": 11.0,
+     "d": 0.25,
+     "e": "io",
+     "armR": 148
+    },
+    {
+     "t": 11.0,
+     "d": 0.25,
+     "e": "io",
+     "lean": -3
+    },
+    {
+     "t": 11.3,
+     "d": 0.25,
+     "e": "io",
+     "armR": 172
+    },
+    {
+     "t": 11.3,
+     "d": 0.25,
+     "e": "io",
+     "lean": 3
+    },
+    {
+     "t": 11.6,
+     "d": 0.25,
+     "e": "io",
+     "armR": 148
+    },
+    {
+     "t": 11.6,
+     "d": 0.25,
+     "e": "io",
+     "lean": -3
+    },
+    {
+     "t": 11.9,
+     "d": 0.25,
+     "e": "io",
+     "armR": 172
+    },
+    {
+     "t": 11.9,
+     "d": 0.25,
+     "e": "io",
+     "lean": 3
+    },
+    {
+     "t": 12.2,
+     "d": 0.25,
+     "e": "io",
+     "armR": 148
+    },
+    {
+     "t": 12.2,
+     "d": 0.25,
+     "e": "io",
+     "lean": -3
+    },
+    {
+     "t": 12.55,
+     "d": 0.15,
+     "armR": 165,
+     "lean": 0
+    },
+    {
+     "t": 12.7,
+     "d": 0.3,
+     "e": "out",
+     "armR": 20
+    },
+    {
+     "t": 12.7,
+     "look": 0,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO"
+    },
+    {
+     "t": 13.4,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 14.7,
+     "d": 0.3,
+     "hop": 14,
+     "mouth": "bigO"
+    },
+    {
+     "t": 16.5,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 16.7,
+     "d": 0.3,
+     "e": "back",
+     "armL": 150,
+     "armR": 150,
+     "hop": 26
+    },
+    {
+     "t": 19.3,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 30,
+     "armR": 40,
+     "mouth": "smile"
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "sc": 0.78,
+    "x": 800,
+    "eyes": "wide",
+    "mouth": "bigO",
+    "brows": "up",
+    "look": 0
+   },
+   "keys": [
+    {
+     "t": 0.4,
+     "look": 0
+    },
+    {
+     "t": 1.9,
+     "d": 0.26,
+     "e": "io",
+     "tilt": 16
+    },
+    {
+     "t": 2.2,
+     "d": 0.26,
+     "e": "io",
+     "tilt": -16
+    },
+    {
+     "t": 2.5,
+     "d": 0.26,
+     "e": "io",
+     "tilt": 16
+    },
+    {
+     "t": 2.8,
+     "d": 0.26,
+     "e": "io",
+     "tilt": -16
+    },
+    {
+     "t": 3.1,
+     "d": 0.26,
+     "e": "io",
+     "tilt": 16
+    },
+    {
+     "t": 3.4,
+     "d": 0.26,
+     "e": "io",
+     "tilt": -16
+    },
+    {
+     "t": 3.7,
+     "d": 0.26,
+     "e": "io",
+     "tilt": 16
+    },
+    {
+     "t": 4.0,
+     "d": 0.26,
+     "e": "io",
+     "tilt": -16
+    },
+    {
+     "t": 4.2,
+     "d": 0.2,
+     "tilt": 0
+    },
+    {
+     "t": 4.3,
+     "d": 0.1,
+     "sq": 0.88
+    },
+    {
+     "t": 4.4,
+     "d": 0.2,
+     "e": "out",
+     "sq": 1,
+     "jump": 75,
+     "armL": 70,
+     "armR": 70
+    },
+    {
+     "t": 4.65,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0,
+     "armL": 15,
+     "armR": 15
+    },
+    {
+     "t": 5.0,
+     "d": 0.1,
+     "sq": 0.88
+    },
+    {
+     "t": 5.1,
+     "d": 0.2,
+     "e": "out",
+     "sq": 1,
+     "jump": 75,
+     "armL": 70,
+     "armR": 70
+    },
+    {
+     "t": 5.35,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0,
+     "armL": 15,
+     "armR": 15
+    },
+    {
+     "t": 5.7,
+     "d": 0.1,
+     "sq": 0.88
+    },
+    {
+     "t": 5.8,
+     "d": 0.2,
+     "e": "out",
+     "sq": 1,
+     "jump": 75,
+     "armL": 70,
+     "armR": 70
+    },
+    {
+     "t": 6.05,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0,
+     "armL": 15,
+     "armR": 15
+    },
+    {
+     "t": 6.5,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "O",
+     "look": -1
+    },
+    {
+     "t": 8.0,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "brows": "normal"
+    },
+    {
+     "t": 9.6,
+     "mouth": "smile"
+    },
+    {
+     "t": 10.7,
+     "d": 0.3,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "hop": 14
+    },
+    {
+     "t": 12.5,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 12.7,
+     "eyes": "wide",
+     "mouth": "O"
+    },
+    {
+     "t": 13.4,
+     "d": 0.3,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "hop": 18
+    },
+    {
+     "t": 14.6,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 14.8,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 0
+    },
+    {
+     "t": 15.6,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 16.65,
+     "d": 0.1,
+     "sq": 0.88
+    },
+    {
+     "t": 16.75,
+     "d": 0.25,
+     "e": "out",
+     "sq": 1,
+     "jump": 140,
+     "armL": 160,
+     "armR": 160,
+     "mouth": "bigO"
+    },
+    {
+     "t": 17.05,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 17.5,
+     "d": 0.2,
+     "hop": 26
+    },
+    {
+     "t": 19.3,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 40,
+     "armR": 30,
+     "mouth": "smile"
+    }
+   ]
+  },
+  "b1": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#E63980",
+   "len": 24,
+   "init": {
+    "attach": "little:H",
+    "ab": 1,
+    "oy": 42,
+    "rot": 15,
+    "sc": 0,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 0.1,
+     "d": 0.35,
+     "e": "back",
+     "sc": 1
+    },
+    {
+     "t": 8.0,
+     "d": 0,
+     "x": 800.0,
+     "y": 1056.0,
+     "ab": 0
+    },
+    {
+     "t": 8.0,
+     "d": 0,
+     "attach": "big:R",
+     "ox": 0,
+     "oy": 0
+    },
+    {
+     "t": 8.01,
+     "d": 0.3,
+     "e": "out",
+     "ab": 1,
+     "rot": 22
+    },
+    {
+     "t": 12.72,
+     "d": 0,
+     "x": 629.0,
+     "y": 1037.0,
+     "ab": 0
+    },
+    {
+     "t": 12.73,
+     "d": 0.3,
+     "e": "out",
+     "x": 500,
+     "y": 800,
+     "rot": -10
+    },
+    {
+     "t": 13.03,
+     "d": 0.3,
+     "e": "in",
+     "attach": "big:H",
+     "ox": 0,
+     "oy": 50,
+     "ab": 1,
+     "rot": -15
+    }
+   ]
+  },
+  "b2": {
+   "kind": "prop",
+   "type": "balloon",
+   "color": "#FFD13B",
+   "len": 24,
+   "init": {
+    "attach": "little:H",
+    "ab": 1,
+    "oy": 42,
+    "rot": 12,
+    "sc": 0,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 14.8,
+     "d": 0.35,
+     "e": "back",
+     "sc": 0.9
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "sparkle",
+   "t": 0.1,
+   "x": 820,
+   "y": 820,
+   "r": 110,
+   "dur": 1.2,
+   "n": 6
+  },
+  {
+   "type": "burst",
+   "t": 1.95,
+   "x": 330,
+   "y": 760,
+   "text": "STUCK!",
+   "r": 86,
+   "dur": 0.9,
+   "color": "#FF8FC7"
+  },
+  {
+   "type": "burst",
+   "t": 4.45,
+   "x": 330,
+   "y": 760,
+   "text": "BOING!",
+   "r": 80,
+   "dur": 0.8
+  },
+  {
+   "type": "lines",
+   "t": 8.0,
+   "x": 780,
+   "y": 880,
+   "dir": -1,
+   "dur": 0.5
+  },
+  {
+   "type": "burst",
+   "t": 8.05,
+   "x": 860,
+   "y": 760,
+   "text": "ZIP!",
+   "r": 70,
+   "dur": 0.8,
+   "color": "#1EA7FD"
+  },
+  {
+   "type": "burst",
+   "t": 12.75,
+   "x": 760,
+   "y": 760,
+   "text": "BOING!",
+   "r": 80,
+   "dur": 0.8
+  },
+  {
+   "type": "sparkle",
+   "t": 14.8,
+   "x": 820,
+   "y": 830,
+   "r": 110,
+   "dur": 1.2,
+   "n": 6,
+   "seed": 5
+  },
+  {
+   "type": "confetti",
+   "t": 16.7,
+   "dur": 4.6,
+   "n": 120
+  },
+  {
+   "type": "hearts",
+   "t": 19.3,
+   "x": 600,
+   "y": 980,
+   "dur": 2.0,
+   "n": 8,
+   "seed": 21,
+   "spread": 90
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.8,
+   "text": "The balloon\nis {STUCK}!",
+   "size": 108
+  },
+  {
+   "t0": 1.9,
+   "t1": 4.2,
+   "text": "Shake... {SHAKE}!",
+   "size": 104
+  },
+  {
+   "t0": 4.3,
+   "t1": 6.4,
+   "text": "Hop... {HOP}!",
+   "size": 112
+  },
+  {
+   "t0": 6.5,
+   "t1": 7.9,
+   "text": "Big Bro\nwill {HELP}!",
+   "size": 108
+  },
+  {
+   "t0": 8.0,
+   "t1": 10.6,
+   "text": "ZIP! Now it's\non {BIG BRO}!",
+   "size": 96
+  },
+  {
+   "t0": 10.7,
+   "t1": 12.6,
+   "text": "Flap... {FLAP}!",
+   "size": 108
+  },
+  {
+   "t0": 12.7,
+   "t1": 14.6,
+   "text": "{BOING}!\nOn his head!",
+   "size": 104
+  },
+  {
+   "t0": 14.8,
+   "t1": 16.6,
+   "text": "Balloon {HATS}!",
+   "size": 104
+  },
+  {
+   "t0": 16.7,
+   "t1": 19.2,
+   "text": "Sticky {SILLY}\nballoons!",
+   "size": 104
+  },
+  {
+   "t0": 19.3,
+   "t1": 22.0,
+   "text": "Laugh {together}!",
+   "size": 104
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.1,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 0.2,
+   "type": "boing",
+   "gain": 0.5
+  },
+  {
+   "t": 1.0,
+   "type": "giggle",
+   "gain": 0.7
+  },
+  {
+   "t": 1.95,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 2.55,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 3.15,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 3.75,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 4.4,
+   "type": "boing",
+   "gain": 0.45
+  },
+  {
+   "t": 5.1,
+   "type": "boing",
+   "gain": 0.45
+  },
+  {
+   "t": 5.8,
+   "type": "boing",
+   "gain": 0.5
+  },
+  {
+   "t": 8.0,
+   "type": "whoosh",
+   "gain": 0.7
+  },
+  {
+   "t": 8.25,
+   "type": "pop",
+   "gain": 0.6
+  },
+  {
+   "t": 9.6,
+   "type": "sad",
+   "gain": 0.35
+  },
+  {
+   "t": 10.75,
+   "type": "whoosh",
+   "gain": 0.35
+  },
+  {
+   "t": 11.35,
+   "type": "whoosh",
+   "gain": 0.35
+  },
+  {
+   "t": 11.95,
+   "type": "whoosh",
+   "gain": 0.35
+  },
+  {
+   "t": 12.72,
+   "type": "boing",
+   "gain": 0.8
+  },
+  {
+   "t": 13.1,
+   "type": "pop",
+   "gain": 0.4
+  },
+  {
+   "t": 13.4,
+   "type": "giggle"
+  },
+  {
+   "t": 14.8,
+   "type": "pop",
+   "gain": 0.5
+  },
+  {
+   "t": 14.85,
+   "type": "ding",
+   "gain": 0.7
+  },
+  {
+   "t": 16.7,
+   "type": "tada"
+  },
+  {
+   "t": 16.75,
+   "type": "pops",
+   "gain": 0.7
+  },
+  {
+   "t": 19.3,
+   "type": "chime"
+  },
+  {
+   "t": 20.4,
+   "type": "sparkle",
+   "gain": 0.6
+  }
+ ],
+ "music": {
+  "bpm": 120,
+  "seed": 17,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 9.4,
+    "t1": 10.5,
+    "gain": 0.5
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: The STUCK Balloon! 🎈 #shorts",
+  "description": "Uh oh... the balloon is STUCK on Little Bro's head! 🎈 Shake, shake... hop, hop... it won't come off! Big Bro helps, and POP, it comes off... but now it's stuck on BIG BRO! Flap, flap, BOING! A silly Kidszoo cartoon about sticky balloons and laughing together.\n\nNew Big Bro & Little Bro adventures every day on Kidszoo!\n\n#kidscartoon #cartoonforkids #balloon #funnycartoon #brothers #shorts",
+  "tags": [
+   "stuck balloon",
+   "sticky balloon",
+   "balloon hat",
+   "silly mix up",
+   "funny mishap",
+   "funny kids video",
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "kidszoo",
+   "animated shorts",
+   "funny cartoon"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}
