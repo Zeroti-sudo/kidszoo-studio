@@ -49,6 +49,7 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 - Brushing pose: brush in the outer hand, arm `-124` (crossed to the mouth), brush `rot` ±90 with `ox` ±50 so the head sits on the mouth; oscillate the arm ±7° (see ep010).
 - Camera keys: z (1.25 is the default framing), cx, cy (clamped to the set), shake.
 - fx: burst (comic text), hearts, sparkle, confetti, lines. sfx: pop, pops, boing, whoosh, ding, idea, chime, sparkle, tada, sad, nom, crunch, clap, drumroll, scrub (brushing, takes `dur`), hic, gulp, giggle, stomp, roar, meow, tweet. Several full-gain crunches can push the true peak over -1 dBTP; keep crunch ≤ 0.55.
+- `blink:0` on a kid (key with `d:0`) turns off the automatic blink, for staring/hold-still beats; set it back to 1 afterwards (ep045). A balloon with `len` 24 attached to `"<kid>:H"` (`oy` ≈ 42 Little, 50 Big) sits stuck on top of the head (ep046). A pillow hat: `attach:"big:H"`, `oy` 4 (ep044).
 - Captions: `{t0,t1,text,size,y}`; `{word}` is highlighted yellow; `\n` breaks the line.
 
 ## Safety and compliance rules (every episode)
