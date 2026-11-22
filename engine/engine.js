@@ -503,7 +503,7 @@ function drawBg(kind) {
 
 // ---------------------------------------------------------------- keyframes
 const DEF_KID = { x: 540, y: 1590, sc: 1, flip: 1, jump: 0, hop: 0, run: 0, shiver: 0, sq: 1, lean: 0, armL: 8, armR: 8,
-  tilt: 0, op: 1, look: 0, eyes: 'open', brows: 'normal', mouth: 'grin' };
+  tilt: 0, op: 1, look: 0, blink: 1, eyes: 'open', brows: 'normal', mouth: 'grin' };
 const DEF_PROP = { x: 540, y: 960, sc: 1, rot: 0, op: 1, layer: 'front', attach: '', ab: 0, ox: 0, oy: 0 };
 const DEF_CAM = { z: 1.25, cx: 540, cy: 2000, shake: 0 };
 const DISCRETE = new Set(['eyes', 'brows', 'mouth', 'layer', 'attach', 'half', 'type']);
@@ -597,7 +597,7 @@ function renderKid(id, a, t) {
   // face
   let eyes = s.eyes;
   const blinkPhase = (t + (a.who === 'big' ? 0.7 : 2.1)) % 3.4;
-  if ((eyes === 'open' || eyes === 'wide') && blinkPhase < 0.11) eyes = 'closed';
+  if ((eyes === 'open' || eyes === 'wide') && s.blink > 0.5 && blinkPhase < 0.11) eyes = 'closed'; // blink:0 = no auto-blink (staring contest)
   const key = `${eyes}|${s.brows}|${s.mouth === 'chew' ? 'chew' + (Math.floor(t * 7) % 2) : s.mouth}|${s.look.toFixed(1)}`;
   if (faceCache[id] !== key) {
     faceCache[id] = key;
