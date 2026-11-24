@@ -50,6 +50,7 @@ Status as of 31 Oct 2026. Covers what has actually been built and tested, and wh
 - Camera keys: z (1.25 is the default framing), cx, cy (clamped to the set), shake.
 - fx: burst (comic text), hearts, sparkle, confetti, lines. sfx: pop, pops, boing, whoosh, ding, idea, chime, sparkle, tada, sad, nom, crunch, clap, drumroll, scrub (brushing, takes `dur`), hic, gulp, giggle, stomp, roar, meow, tweet. Several full-gain crunches can push the true peak over -1 dBTP; keep crunch ≤ 0.55.
 - `blink:0` on a kid (key with `d:0`) turns off the automatic blink, for staring/hold-still beats; set it back to 1 afterwards (ep045). A balloon with `len` 24 attached to `"<kid>:H"` (`oy` ≈ 42 Little, 50 Big) sits stuck on top of the head (ep046). A pillow hat: `attach:"big:H"`, `oy` 4 (ep044).
+- Crown (ep050): paper crown, base-centre origin, ~124×92, `color` (gold), `gem`; attach to `"big:H"` `oy` 36 / `"little:H"` `oy` 30 (`sc` 0.8); a second crown stacked on Big uses `oy` -40. Toy-block castle: blocks `s` 92 in columns 95 px apart, rows 92 px apart, layer back, dropped in with sc 0→1 at y−520 then an `in` ease to the row; camera z 1.12 fits Big (x 280), the castle and Little (x 850). `flip` keyed ±1 every 0.15 s reads as a spin (ep049).
 - Captions: `{t0,t1,text,size,y}`; `{word}` is highlighted yellow; `\n` breaks the line.
 
 ## Safety and compliance rules (every episode)

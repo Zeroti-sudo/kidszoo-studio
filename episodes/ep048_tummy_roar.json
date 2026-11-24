@@ -1,0 +1,853 @@
+{
+ "id": "ep048",
+ "title": "The Tummy ROAR",
+ "theme": "funny body gag / a lion-sized roar turns out to be Little Bro's hungry tummy, snack time, then Big Bro's tummy roars too",
+ "duration": 22.0,
+ "fps": 30,
+ "set": "home",
+ "camera": [],
+ "actors": {
+  "big": {
+   "kind": "kid",
+   "who": "big",
+   "init": {
+    "sc": 1.1,
+    "x": 360,
+    "eyes": "wide",
+    "brows": "up",
+    "mouth": "bigO",
+    "armL": 150,
+    "armR": 150,
+    "look": 1
+   },
+   "keys": [
+    {
+     "t": 0.1,
+     "d": 0.2,
+     "e": "out",
+     "jump": 70
+    },
+    {
+     "t": 0.35,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 1.9,
+     "d": 0.3,
+     "armL": 15,
+     "armR": 15,
+     "mouth": "O",
+     "look": -1,
+     "lean": -4
+    },
+    {
+     "t": 2.6,
+     "d": 0.3,
+     "look": 1,
+     "lean": 4
+    },
+    {
+     "t": 3.3,
+     "d": 0.3,
+     "look": -1,
+     "lean": -4
+    },
+    {
+     "t": 3.9,
+     "d": 0.2,
+     "lean": 0,
+     "look": 0
+    },
+    {
+     "t": 4.15,
+     "d": 0.2,
+     "e": "out",
+     "jump": 20,
+     "eyes": "wide",
+     "mouth": "bigO",
+     "look": 1
+    },
+    {
+     "t": 4.35,
+     "d": 0.2,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 4.4,
+     "d": 0.3,
+     "armR": 55
+    },
+    {
+     "t": 6.1,
+     "d": 0.3,
+     "armR": 15,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "bigO",
+     "hop": 14,
+     "look": 0
+    },
+    {
+     "t": 7.9,
+     "d": 0.2,
+     "hop": 0,
+     "mouth": "smile"
+    },
+    {
+     "t": 8.2,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O",
+     "look": 1
+    },
+    {
+     "t": 9.4,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal",
+     "look": 0
+    },
+    {
+     "t": 10.5,
+     "d": 0.3,
+     "e": "back",
+     "armR": 150,
+     "brows": "up",
+     "mouth": "grin"
+    },
+    {
+     "t": 12.5,
+     "d": 0.5,
+     "x": 445,
+     "run": 16
+    },
+    {
+     "t": 12.5,
+     "d": 0.4,
+     "armR": 40
+    },
+    {
+     "t": 13.0,
+     "d": 0.1,
+     "run": 0
+    },
+    {
+     "t": 13.3,
+     "d": 0.4,
+     "x": 380,
+     "run": 14
+    },
+    {
+     "t": 13.3,
+     "d": 0.3,
+     "armR": 15,
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 13.7,
+     "d": 0.1,
+     "run": 0
+    },
+    {
+     "t": 14.9,
+     "eyes": "happy",
+     "look": 1
+    },
+    {
+     "t": 16.5,
+     "d": 0.3,
+     "hop": 12,
+     "mouth": "bigO"
+    },
+    {
+     "t": 18.3,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 18.5,
+     "d": 0.2,
+     "e": "out",
+     "jump": 35,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO",
+     "look": 0
+    },
+    {
+     "t": 18.7,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 19.2,
+     "d": 0.3,
+     "e": "back",
+     "armL": 160,
+     "armR": 150,
+     "hop": 26,
+     "eyes": "happy",
+     "mouth": "bigO",
+     "brows": "normal"
+    },
+    {
+     "t": 21.3,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 30,
+     "mouth": "smile"
+    }
+   ]
+  },
+  "little": {
+   "kind": "kid",
+   "who": "little",
+   "init": {
+    "sc": 0.78,
+    "x": 800,
+    "eyes": "wide",
+    "brows": "up",
+    "mouth": "bigO",
+    "armL": 150,
+    "armR": 150,
+    "look": -1
+   },
+   "keys": [
+    {
+     "t": 0.1,
+     "d": 0.2,
+     "e": "out",
+     "jump": 70
+    },
+    {
+     "t": 0.35,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 1.9,
+     "d": 0.3,
+     "armL": 15,
+     "armR": 15,
+     "mouth": "O",
+     "look": 1,
+     "tilt": 6
+    },
+    {
+     "t": 2.6,
+     "d": 0.3,
+     "look": -1,
+     "tilt": -6
+    },
+    {
+     "t": 3.3,
+     "d": 0.3,
+     "look": 1,
+     "tilt": 6
+    },
+    {
+     "t": 3.9,
+     "d": 0.2,
+     "tilt": 0,
+     "look": 0
+    },
+    {
+     "t": 4.15,
+     "d": 0.1,
+     "sq": 0.9
+    },
+    {
+     "t": 4.25,
+     "d": 0.2,
+     "e": "out",
+     "sq": 1,
+     "jump": 30,
+     "eyes": "wide",
+     "mouth": "bigO"
+    },
+    {
+     "t": 4.45,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 6.1,
+     "d": 0.3,
+     "eyes": "happy",
+     "brows": "normal",
+     "mouth": "bigO",
+     "hop": 16,
+     "tilt": 8
+    },
+    {
+     "t": 7.9,
+     "d": 0.2,
+     "hop": 0,
+     "tilt": 0,
+     "mouth": "smile"
+    },
+    {
+     "t": 8.2,
+     "d": 0.1,
+     "sq": 0.9,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "O"
+    },
+    {
+     "t": 8.3,
+     "d": 0.2,
+     "e": "out",
+     "sq": 1,
+     "jump": 25
+    },
+    {
+     "t": 8.5,
+     "d": 0.25,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 9.4,
+     "eyes": "happy",
+     "mouth": "smile",
+     "brows": "normal"
+    },
+    {
+     "t": 10.5,
+     "eyes": "open",
+     "brows": "up",
+     "mouth": "grin",
+     "look": -1
+    },
+    {
+     "t": 12.6,
+     "d": 0.3,
+     "armL": 60
+    },
+    {
+     "t": 13.4,
+     "eyes": "happy",
+     "mouth": "bigO"
+    },
+    {
+     "t": 14.5,
+     "d": 0.4,
+     "armL": -124,
+     "look": 0
+    },
+    {
+     "t": 14.9,
+     "mouth": "chew"
+    },
+    {
+     "t": 16.1,
+     "d": 0.4,
+     "armL": 15,
+     "mouth": "smile"
+    },
+    {
+     "t": 16.5,
+     "d": 0.3,
+     "hop": 16,
+     "eyes": "happy",
+     "mouth": "bigO"
+    },
+    {
+     "t": 18.3,
+     "d": 0.2,
+     "hop": 0
+    },
+    {
+     "t": 18.5,
+     "eyes": "wide",
+     "brows": "up",
+     "mouth": "bigO",
+     "look": -1
+    },
+    {
+     "t": 19.2,
+     "d": 0.1,
+     "sq": 0.88,
+     "look": 0,
+     "eyes": "happy",
+     "brows": "normal"
+    },
+    {
+     "t": 19.3,
+     "d": 0.25,
+     "e": "out",
+     "sq": 1,
+     "jump": 110,
+     "armL": 160,
+     "armR": 160
+    },
+    {
+     "t": 19.55,
+     "d": 0.3,
+     "e": "in",
+     "jump": 0
+    },
+    {
+     "t": 19.9,
+     "d": 0.2,
+     "hop": 24
+    },
+    {
+     "t": 21.3,
+     "d": 0.3,
+     "hop": 0,
+     "armL": 40,
+     "armR": 30,
+     "mouth": "smile"
+    }
+   ]
+  },
+  "cup": {
+   "kind": "prop",
+   "type": "cupcake",
+   "init": {
+    "attach": "big:R",
+    "ab": 1,
+    "oy": -6,
+    "sc": 0,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 11.1,
+     "d": 0.35,
+     "e": "back",
+     "sc": 0.6
+    },
+    {
+     "t": 13.05,
+     "d": 0,
+     "x": 687.0,
+     "y": 1284.0,
+     "ab": 0
+    },
+    {
+     "t": 13.05,
+     "d": 0,
+     "attach": "little:L",
+     "ox": 0,
+     "oy": -6
+    },
+    {
+     "t": 13.06,
+     "d": 0.3,
+     "e": "out",
+     "ab": 1
+    },
+    {
+     "t": 14.6,
+     "d": 0.4,
+     "oy": 50
+    },
+    {
+     "t": 15.0,
+     "d": 0.3,
+     "sc": 0.45
+    },
+    {
+     "t": 15.5,
+     "d": 0.3,
+     "sc": 0.25
+    },
+    {
+     "t": 15.95,
+     "d": 0.2,
+     "sc": 0
+    }
+   ]
+  },
+  "cup2": {
+   "kind": "prop",
+   "type": "cupcake",
+   "init": {
+    "attach": "big:R",
+    "ab": 1,
+    "oy": -6,
+    "sc": 0,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 19.6,
+     "d": 0.35,
+     "e": "back",
+     "sc": 0.55
+    }
+   ]
+  },
+  "bulb": {
+   "kind": "prop",
+   "type": "bulb",
+   "init": {
+    "x": 230,
+    "y": 760,
+    "sc": 0,
+    "layer": "front"
+   },
+   "keys": [
+    {
+     "t": 10.5,
+     "d": 0.35,
+     "e": "back",
+     "sc": 0.8
+    },
+    {
+     "t": 12.2,
+     "d": 0.25,
+     "sc": 0
+    }
+   ]
+  }
+ },
+ "fx": [
+  {
+   "type": "burst",
+   "t": 0.15,
+   "x": 560,
+   "y": 690,
+   "text": "ROAR!",
+   "r": 88,
+   "dur": 1.1,
+   "color": "#FF7828"
+  },
+  {
+   "type": "burst",
+   "t": 4.15,
+   "x": 610,
+   "y": 1430,
+   "text": "GRRR!",
+   "r": 74,
+   "dur": 0.9,
+   "color": "#FF8FC7"
+  },
+  {
+   "type": "burst",
+   "t": 8.2,
+   "x": 610,
+   "y": 1430,
+   "text": "RAWR!",
+   "r": 72,
+   "dur": 0.8,
+   "color": "#1EA7FD"
+  },
+  {
+   "type": "sparkle",
+   "t": 11.1,
+   "x": 560,
+   "y": 950,
+   "r": 90,
+   "dur": 1.0,
+   "n": 6
+  },
+  {
+   "type": "burst",
+   "t": 14.95,
+   "x": 680,
+   "y": 910,
+   "text": "NOM!",
+   "r": 64,
+   "dur": 0.6
+  },
+  {
+   "type": "burst",
+   "t": 15.5,
+   "x": 680,
+   "y": 910,
+   "text": "NOM!",
+   "r": 64,
+   "dur": 0.6,
+   "rot": 8
+  },
+  {
+   "type": "burst",
+   "t": 16.5,
+   "x": 610,
+   "y": 1430,
+   "text": "MEW!",
+   "r": 70,
+   "dur": 0.9,
+   "color": "#FF8FC7"
+  },
+  {
+   "type": "burst",
+   "t": 18.5,
+   "x": 545,
+   "y": 1350,
+   "text": "ROAR!",
+   "r": 66,
+   "dur": 0.8,
+   "color": "#FF7828"
+  },
+  {
+   "type": "confetti",
+   "t": 19.2,
+   "dur": 2.6,
+   "n": 110
+  },
+  {
+   "type": "sparkle",
+   "t": 19.6,
+   "x": 600,
+   "y": 880,
+   "r": 90,
+   "dur": 1.0,
+   "n": 6,
+   "seed": 5
+  },
+  {
+   "type": "hearts",
+   "t": 20.1,
+   "x": 580,
+   "y": 960,
+   "dur": 1.9,
+   "n": 8,
+   "seed": 21,
+   "spread": 110
+  }
+ ],
+ "captions": [
+  {
+   "t0": 0.15,
+   "t1": 1.8,
+   "text": "What was\nthat {ROAR}?!",
+   "size": 104
+  },
+  {
+   "t0": 1.9,
+   "t1": 4.0,
+   "text": "A {LION}?!\nWhere?",
+   "size": 104
+  },
+  {
+   "t0": 4.1,
+   "t1": 6.0,
+   "text": "It came from...\n{Little Bro}?!",
+   "size": 96
+  },
+  {
+   "t0": 6.1,
+   "t1": 8.0,
+   "text": "It's his\n{TUMMY}!",
+   "size": 108
+  },
+  {
+   "t0": 8.1,
+   "t1": 10.4,
+   "text": "Tummy says:\n{FEED ME}!",
+   "size": 100
+  },
+  {
+   "t0": 10.5,
+   "t1": 14.4,
+   "text": "{SNACK} time!",
+   "size": 112
+  },
+  {
+   "t0": 14.5,
+   "t1": 16.4,
+   "text": "{NOM} nom nom!",
+   "size": 108
+  },
+  {
+   "t0": 16.5,
+   "t1": 18.4,
+   "text": "Happy tummy\nsays {MEW}!",
+   "size": 100
+  },
+  {
+   "t0": 18.5,
+   "t1": 19.9,
+   "text": "Now {BIG BRO}'s\ntummy!",
+   "size": 96
+  },
+  {
+   "t0": 20.0,
+   "t1": 22.0,
+   "text": "Snack {together}!",
+   "size": 104
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.1,
+   "type": "roar",
+   "gain": 0.8,
+   "dur": 1.0
+  },
+  {
+   "t": 0.2,
+   "type": "boing",
+   "gain": 0.4
+  },
+  {
+   "t": 1.95,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 2.65,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 3.35,
+   "type": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "t": 4.15,
+   "type": "roar",
+   "gain": 0.7,
+   "dur": 0.8
+  },
+  {
+   "t": 6.15,
+   "type": "giggle"
+  },
+  {
+   "t": 6.9,
+   "type": "giggle",
+   "gain": 0.7
+  },
+  {
+   "t": 8.2,
+   "type": "roar",
+   "gain": 0.5,
+   "dur": 0.6
+  },
+  {
+   "t": 8.3,
+   "type": "boing",
+   "gain": 0.35
+  },
+  {
+   "t": 10.5,
+   "type": "idea"
+  },
+  {
+   "t": 11.1,
+   "type": "pop",
+   "gain": 0.5
+  },
+  {
+   "t": 11.15,
+   "type": "sparkle",
+   "gain": 0.5
+  },
+  {
+   "t": 12.5,
+   "type": "whoosh",
+   "gain": 0.35
+  },
+  {
+   "t": 13.1,
+   "type": "pop",
+   "gain": 0.4
+  },
+  {
+   "t": 14.95,
+   "type": "nom"
+  },
+  {
+   "t": 15.5,
+   "type": "nom"
+  },
+  {
+   "t": 15.95,
+   "type": "gulp",
+   "gain": 0.6
+  },
+  {
+   "t": 16.5,
+   "type": "meow",
+   "gain": 0.8
+  },
+  {
+   "t": 16.9,
+   "type": "giggle",
+   "gain": 0.7
+  },
+  {
+   "t": 18.5,
+   "type": "roar",
+   "gain": 0.8,
+   "dur": 0.9
+  },
+  {
+   "t": 19.2,
+   "type": "tada"
+  },
+  {
+   "t": 19.25,
+   "type": "pops",
+   "gain": 0.6
+  },
+  {
+   "t": 19.6,
+   "type": "pop",
+   "gain": 0.4
+  },
+  {
+   "t": 20.1,
+   "type": "chime"
+  },
+  {
+   "t": 21.0,
+   "type": "sparkle",
+   "gain": 0.5
+  }
+ ],
+ "music": {
+  "bpm": 118,
+  "seed": 31,
+  "gain": 0.42,
+  "duck": [
+   {
+    "t0": 0.0,
+    "t1": 1.4,
+    "gain": 0.5
+   },
+   {
+    "t0": 18.4,
+    "t1": 19.1,
+    "gain": 0.5
+   }
+  ],
+  "fadeOut": 1.2
+ },
+ "youtube": {
+  "title": "Big Bro & Little Bro: Tummy ROAR! 🦁 #shorts",
+  "description": "ROAR! Is there a LION in the house? 🦁 The brothers look everywhere... but the roar is coming from Little Bro's TUMMY! Big Bro brings a snack, nom nom nom, and the happy tummy goes MEW. Then... Big Bro's tummy roars too! A silly Kidszoo cartoon about hungry tummies and snack time together.\n\nNew Big Bro & Little Bro adventures every day on Kidszoo!\n\n#kidscartoon #cartoonforkids #funnycartoon #brothers #shorts",
+  "tags": [
+   "tummy roar",
+   "hungry tummy",
+   "tummy rumble",
+   "silly lion",
+   "funny body gag",
+   "snack time",
+   "funny kids video",
+   "kids cartoon",
+   "cartoon for kids",
+   "big bro little bro",
+   "brothers cartoon",
+   "kidszoo",
+   "animated shorts",
+   "funny cartoon"
+  ],
+  "category": "FILM_ANIMATION",
+  "madeForKids": true
+ }
+}

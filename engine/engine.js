@@ -449,6 +449,15 @@ const PROPS = {
       <circle cx="22" cy="-112" r="8" fill="#FFFFFF" stroke="${OL}" stroke-width="3"/>
       <circle cx="22" cy="-38" r="8" fill="#FFFFFF" stroke="${OL}" stroke-width="3"/>
       <path d="M8,-140 L8,-90" stroke="#FFFFFF" stroke-opacity=".4" stroke-width="5" stroke-linecap="round"/></g>`; },
+  // paper crown (pretend play), base-centre at the origin, about 124 wide x 92 tall; attach to "<kid>:H" (oy ≈ 30 Little, 36 Big);
+  // colour p.color (gold by default), gem p.gem; an added costume item, so take it off (sparkle) or keep it only as a celebration hat
+  crown: (p) => { const c = p.color || '#FFD13B', g = p.gem || '#E63980'; return `<g>
+      <path d="M-62,0 L-62,-58 L-34,-30 L-16,-88 L0,-40 L16,-88 L34,-30 L62,-58 L62,0 Q0,10 -62,0 Z" fill="${c}" stroke="${OL}" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="-62" y="-22" width="124" height="16" fill="#FF7828" stroke="${OL}" stroke-width="5"/>
+      <circle cx="-62" cy="-60" r="9" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/><circle cx="62" cy="-60" r="9" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/>
+      <circle cx="-16" cy="-90" r="9" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/><circle cx="16" cy="-90" r="9" fill="#FFFFFF" stroke="${OL}" stroke-width="5"/>
+      <circle cx="0" cy="-14" r="11" fill="${g}" stroke="${OL}" stroke-width="5"/>
+      <circle cx="-36" cy="-14" r="7" fill="#1EA7FD" stroke="${OL}" stroke-width="4"/><circle cx="36" cy="-14" r="7" fill="#2CA58D" stroke="${OL}" stroke-width="4"/></g>`; },
   question: () => `<g><text x="0" y="0" text-anchor="middle" class="cap" font-size="130" fill="#1EA7FD" stroke-width="16">?</text></g>`,
 };
 
